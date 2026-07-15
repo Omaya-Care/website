@@ -1,0 +1,171 @@
+import { useEffect, useState } from "react";
+import { useScrolled } from "../hooks/useScrolled";
+import { cn } from "../lib/utils";
+
+const DOT_GRID = "url(\"data:image/svg+xml,%3Csvg width='20' height='22' viewBox='0 0 20 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='2' cy='2' r='2' fill='white'/%3E%3Ccircle cx='10' cy='2' r='2' fill='white'/%3E%3Ccircle cx='18' cy='2' r='2' fill='white'/%3E%3Ccircle cx='2' cy='11' r='2' fill='white'/%3E%3Ccircle cx='10' cy='11' r='2' fill='white'/%3E%3Ccircle cx='2' cy='20' r='2' fill='white'/%3E%3Ccircle cx='10' cy='20' r='2' fill='white'/%3E%3Ccircle cx='18' cy='20' r='2' fill='white'/%3E%3Ccircle cx='18' cy='11' r='2' fill='white'/%3E%3C/svg%3E\")";
+const DOT_GRID_DARK = "url(\"data:image/svg+xml,%3Csvg width='20' height='22' viewBox='0 0 20 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='2' cy='2' r='2' fill='black'/%3E%3Ccircle cx='10' cy='2' r='2' fill='black'/%3E%3Ccircle cx='18' cy='2' r='2' fill='black'/%3E%3Ccircle cx='2' cy='11' r='2' fill='black'/%3E%3Ccircle cx='10' cy='11' r='2' fill='black'/%3E%3Ccircle cx='2' cy='20' r='2' fill='black'/%3E%3Ccircle cx='10' cy='20' r='2' fill='black'/%3E%3Ccircle cx='18' cy='20' r='2' fill='black'/%3E%3Ccircle cx='18' cy='11' r='2' fill='black'/%3E%3C/svg%3E\")";
+
+const NAV_LINKS = [
+  { href: "/#how-it-works", label: "How It Works" },
+  { href: "/#for-hospitals", label: "For Hospitals" },
+  { href: "/#for-mothers", label: "For Mothers" },
+];
+
+const DRAWER_LINKS = [
+  { href: "/#how-it-works", label: "How it works" },
+  { href: "/#for-hospitals", label: "For Hospitals" },
+  { href: "/#for-mothers", label: "For Mothers" },
+  { href: "/faq", label: "FAQ" },
+  { href: "/privacy", label: "Privacy Policy" },
+  { href: "/terms", label: "Terms of Use" },
+  { href: "/contact", label: "Contact" },
+];
+
+export default function Navbar({ light = false, showBanner = true }: { light?: boolean; showBanner?: boolean }) {
+  const scrolled = useScrolled(50);
+  const dotGrid = light ? DOT_GRID_DARK : DOT_GRID;
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = drawerOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [drawerOpen]);
+
+  return (
+    <div className="flex fixed top-0 inset-x-0 z-9999 flex-col transition-all duration-500 ease-in-out">
+      {showBanner && (
+        <a
+          className={cn("block relative z-999 max-w-full bg-background cursor-pointer overflow-hidden transition-all duration-500 ease-in-out max-lg:h-12.5 2xl:h-12.5", scrolled ? "h-0 opacity-0 pointer-events-none" : "h-[2.8625rem]")}
+          href="https://meltwater.org/mest-ai-startup-program/"
+          target="_blank"
+          rel="noopener noreferrer"
+          id="banner-top"
+        >
+          <div className="h-12.5 flex justify-center items-center gap-6 max-md:gap-[initial]">
+            <div className="h-[1.375rem] flex gap-2 max-lg:h-6 2xl:h-6">
+              <p className="block leading-[1.375rem] tracking-[-0.2px] text-center whitespace-nowrap max-md:order-[1] max-lg:leading-6 2xl:leading-6">
+                Omaya Care is backed by MEST
+              </p>
+            </div>
+            <div className="flex">
+              <p className="block text-muted-foreground leading-[1.375rem] tracking-[-0.2px] max-md:hidden md:max-lg:leading-6 2xl:leading-6">
+                Learn more
+              </p>
+              <img className="w-6 h-6 block max-w-full overflow-clip align-middle" alt="" src="/assets/cloned/svg/a3d12be7c2fd.svg" />
+            </div>
+          </div>
+        </a>
+      )}
+      <div className={cn("flex relative z-9999 py-[1.375rem] px-[4.125rem] justify-center items-center gap-[7.3px] max-md:py-4 max-md:px-6 max-lg:gap-2 max-lg:[backdrop-filter:blur(24px)] md:max-lg:p-4 2xl:py-6 2xl:px-18 2xl:gap-2", light ? "max-lg:bg-background" : "max-lg:bg-clr-0")}>
+        <a
+          className={cn("w-[153.9px] h-[1.3125rem] flex absolute top-[40.7px] left-1/2 z-1 min-w-0 max-w-full justify-center items-center shrink-0 transform-[translate(-50%,-10.4688px)] cursor-pointer transition-opacity duration-500 ease-in-out max-md:w-34 max-md:h-[18.5px] max-lg:transform-[none] max-lg:static max-lg:top-auto max-lg:left-auto max-lg:z-[initial] md:max-lg:w-42 md:max-lg:h-[22.9px] 2xl:w-42 2xl:h-[22.9px] 2xl:top-[44.5px] 2xl:left-1/2 2xl:transform-[translate(-50%,-11.4297px)]", scrolled && "lg:opacity-0 lg:pointer-events-none")}
+          href="/"
+        >
+          <img className={cn("w-auto h-[1.3125rem] block relative top-[0.1875rem] -bottom-[0.1875rem] max-w-full overflow-clip align-middle max-md:h-[1.1875rem] max-lg:top-[0.2rem] max-lg:-bottom-[0.2rem] md:max-lg:h-[1.4375rem] 2xl:h-[1.4375rem] 2xl:top-[0.2rem] 2xl:-bottom-[0.2rem]", light && "invert")} alt="Omaya Care" src="/assets/images/omaya-care-wordmark.svg" />
+        </a>
+        <div className={cn("w-full h-[37.5px] flex max-w-full rounded-full justify-between items-center [backdrop-filter:blur(0px)] transition-opacity duration-500 ease-in-out max-lg:h-[2.5625rem] max-lg:justify-end max-lg:rounded-[initial] max-lg:[backdrop-filter:initial] 2xl:h-[2.5625rem]", scrolled && "lg:opacity-0 lg:pointer-events-none")}>
+          <div className="flex flex-1 items-center gap-[1.375rem] max-lg:hidden 2xl:gap-6">
+            {NAV_LINKS.map((link) => (
+              <a key={link.href} className={cn("flex text-[0.8125rem] leading-[1.1875rem] whitespace-nowrap text-nowrap cursor-pointer 2xl:text-sm 2xl:leading-[1.3125rem]", light ? "text-foreground" : "text-background")} href={link.href}>
+                {link.label}
+              </a>
+            ))}
+          </div>
+          <div className="flex-1 h-[37.5px] flex justify-end items-center gap-[14.7px] max-lg:h-[2.5625rem] max-lg:gap-4 2xl:h-[2.5625rem] 2xl:gap-4">
+            <a className={cn("flex text-[0.8125rem] leading-[1.1875rem] whitespace-nowrap text-nowrap cursor-pointer max-lg:hidden 2xl:text-sm 2xl:leading-[1.3125rem]", light ? "text-foreground" : "text-background")} href="https://app.omayacare.com/" target="_blank" rel="noopener noreferrer">
+              Log in
+            </a>
+            <a className={cn("h-[37.5px] flex py-[0.575rem] px-[18.3px] rounded-full justify-center items-center text-[0.8125rem] leading-[1.1875rem] whitespace-nowrap text-nowrap cursor-pointer max-lg:h-[2.5625rem] max-lg:py-2.5 max-lg:px-5 max-lg:text-sm max-lg:leading-[1.3125rem] 2xl:h-[2.5625rem] 2xl:py-2.5 2xl:px-5 2xl:text-sm 2xl:leading-[1.3125rem]", light ? "bg-foreground text-background" : "bg-background")} href="/contact?type=demo">
+              Book a demo
+            </a>
+          </div>
+        </div>
+        <button
+          type="button"
+          className={cn("w-[29.3px] h-[29.3px] flex justify-center items-center shrink-0 [background-size:18.3193px_20.1513px] [background-position:50%_50%] bg-no-repeat cursor-pointer transition-opacity duration-500 ease-in-out max-lg:w-8 max-lg:h-8 max-lg:[background-size:20px_22px] 2xl:w-8 2xl:h-8 2xl:[background-size:20px_22px] hover:opacity-80", scrolled && "lg:opacity-0 lg:pointer-events-none")}
+          style={{ backgroundImage: dotGrid }}
+          onClick={() => setDrawerOpen(true)}
+        />
+        <div className={cn("absolute inset-x-0 top-0 bottom-0 flex justify-center items-center gap-3 transition-opacity duration-500 ease-in-out max-lg:hidden", scrolled ? "opacity-100" : "opacity-0 pointer-events-none")}>
+          <div className="flex items-center h-12 gap-15 pl-16 pr-2 rounded-full bg-clr-0 [backdrop-filter:blur(24px)] text-background text-xs leading-[1.125rem]">
+            <a href="/" className="h-full flex items-center shrink-0 hover:opacity-80">
+              <img src="/assets/images/omaya-care-wordmark.svg" alt="Omaya Care" className="w-auto h-4 block max-w-full relative top-[3px]" />
+            </a>
+            {NAV_LINKS.map((link) => (
+              <a key={link.href} href={link.href} className="flex items-center whitespace-nowrap hover:opacity-80">{link.label}</a>
+            ))}
+            <a href="https://app.omayacare.com/" target="_blank" rel="noopener noreferrer" className="flex items-center whitespace-nowrap hover:opacity-80">Log in</a>
+            <a href="/contact?type=demo" className="h-8 flex items-center justify-center px-2 rounded-full text-xs bg-background text-foreground whitespace-nowrap hover:bg-border">
+              Book a demo
+            </a>
+          </div>
+          <button type="button" onClick={() => setDrawerOpen(true)} className="w-12 h-12 flex justify-center items-center rounded-full shrink-0 bg-clr-0 [backdrop-filter:blur(24px)] [background-size:20px_22px] [background-position:50%_50%] bg-no-repeat hover:opacity-80" style={{ backgroundImage: DOT_GRID }} />
+        </div>
+      </div>
+
+      {/* Side drawer */}
+      <div className={cn("fixed inset-0 z-[10000] transition-all duration-300", drawerOpen ? "pointer-events-auto" : "pointer-events-none")}>
+        {/* Backdrop */}
+        <div
+          className={cn("absolute inset-0 bg-black transition-opacity duration-300", drawerOpen ? "opacity-50" : "opacity-0")}
+          onClick={() => setDrawerOpen(false)}
+        />
+        {/* Drawer panel */}
+        <div className={cn("absolute right-0 top-0 bottom-0 w-[min(380px,90vw)] bg-background rounded-l-3xl flex flex-col transition-transform duration-300 ease-in-out overflow-hidden", drawerOpen ? "translate-x-0" : "translate-x-full")}>
+          {/* Header */}
+          <div className="flex items-center justify-between px-6 pt-6 pb-4 shrink-0">
+            <span className="text-[2rem] font-medium leading-snug text-foreground">Menu</span>
+            <div className="flex items-center gap-3">
+              <a
+                className="flex text-[0.8125rem] leading-[1.1875rem] whitespace-nowrap cursor-pointer text-foreground hover:opacity-70"
+                href="https://app.omayacare.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setDrawerOpen(false)}
+              >
+                Log in
+              </a>
+              <a
+                className="h-[37.5px] flex py-[0.575rem] px-[18.3px] rounded-full justify-center items-center text-[0.8125rem] leading-[1.1875rem] whitespace-nowrap cursor-pointer bg-foreground text-background"
+                href="/contact?type=demo"
+                onClick={() => setDrawerOpen(false)}
+              >
+                Book a demo
+              </a>
+            </div>
+          </div>
+
+          {/* Nav links */}
+          <nav className="flex flex-col px-6 mt-2 shrink-0">
+            <span className="text-[0.75rem] leading-none text-muted-foreground mb-3">Explore</span>
+            <div className="group/nav flex flex-col">
+              {DRAWER_LINKS.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setDrawerOpen(false)}
+                  className="group/link py-0.5 relative flex items-center text-[1.625rem] leading-snug text-foreground transition-all duration-200 group-hover/nav:opacity-25 hover:!opacity-100 hover:text-[1.75rem]"
+                >
+                  <span className="select-none absolute left-0 opacity-0 group-hover/link:opacity-100 transition-opacity duration-200 pointer-events-none">–</span>
+                  <span className="transition-transform duration-200 group-hover/link:translate-x-5">{link.label}</span>
+                </a>
+              ))}
+            </div>
+          </nav>
+
+          {/* Hero image at bottom */}
+          <div className="flex-1 flex items-end p-6">
+            <div className="relative w-full rounded-2xl overflow-hidden aspect-[584/520]">
+              <img
+                src="/assets/cloned/images/drawer-mother.avif"
+                alt="Mother on phone with baby"
+                className="w-full h-full object-cover object-top"
+              />
+              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_0%_0%,rgba(0,0,0,0.18)_0%,transparent_58%)] pointer-events-none" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

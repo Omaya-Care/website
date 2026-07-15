@@ -1,0 +1,546 @@
+=========================
+SUPERPOWER — LLM MASTER CONTEXT (V2)
+=========================
+
+Purpose:
+This document provides an LLM with a complete, structured understanding of Superpower: what it is, how it works, who it serves, what biomarkers it measures, how the membership operates, and how the user experience unfolds.
+
+It includes summaries, hierarchies, categories, definitions, and metadata, making it ideal for retrieval, reasoning, product knowledge, copywriting, support prompts, and grounding.
+
+=====================================
+1. EXECUTIVE SUMMARY
+=====================================
+
+Superpower is a health-intelligence membership offering 100+ biomarker lab tests once per year, delivered through CLIA-certified and CAP-accredited labs. Members receive a comprehensive blood panel, an evolving health plan, medical-team support, and access to data insights.
+
+The focus is proactive, prevention-driven health: early detection, understanding baseline biology, tracking trajectory changes, optimizing metabolic and hormonal health, and supporting long-term resilience and performance.
+
+Superpower consolidates testing, interpretation, education, and ongoing support into one annual experience that goes far beyond standard checkups.
+
+=====================================
+2. HOW SUPERpower WORKS
+=====================================
+
+SOURCE: superpower.com/how-it-works
+
+2.1 Membership Model
+
+Annual membership includes a 100+ biomarker blood test at the start of each year.
+
+No hidden fees.
+
+HSA/FSA eligible.
+
+Access to physicians, health specialists, and data insights.
+
+2.2 Process Timeline
+
+Sign Up – Member completes onboarding, medical questionnaire, and test authorization.
+
+Schedule Blood Draw – Either at a partner lab (e.g., Quest) or via a mobile phlebotomist (depending on region).
+
+Lab Processing – Samples analyzed in CLIA- and CAP-accredited labs.
+
+Results Delivered (~10 days) – Results release directly to the member dashboard.
+
+Health Plan & Review – Personalized health plan created using biomarker insights + user lifestyle data.
+
+Continuous Support – Concierge and medical team available year-round.
+
+2.3 What Makes Superpower Different
+
+Tests 5–10× more biomarkers than a standard primary care checkup.
+
+Emphasis on root-cause, functional, metabolic, and longevity biomarkers.
+
+Tracks biological baselines and interprets multi-system patterns rather than isolated values.
+
+Built for preventive health, not acute or symptom-based care.
+
+2.4 Limitations
+
+Not intended for emergency, urgent care, or acute diagnostics.
+
+Does not replace a primary care physician.
+
+Availability varies by U.S. state.
+
+=====================================
+3. WHAT SUPERPOWER TESTS
+=====================================
+
+SOURCE: superpower.com/biomarkers
+
+Superpower measures 100+ biomarkers across major physiological systems. These reveal metabolic health, hormonal balance, inflammation, organ function, nutrient status, and disease risk.
+
+Below is a structured, LLM-friendly breakdown.
+
+3.1 Cardiovascular & Vascular Health
+
+Biomarkers analyzing heart disease risk, arterial function, lipid metabolism, and endothelial integrity.
+
+Examples include:
+
+ApoB
+
+LDL-C, HDL-C, Triglycerides
+
+Lipoprotein(a)
+
+ADMA
+
+CRP-hs
+
+Homocysteine
+
+Omega-3 Index
+
+3.2 Metabolic Health & Blood Sugar
+
+Markers identifying insulin resistance, mitochondrial efficiency, metabolic syndrome, and energy utilization.
+
+Examples include:
+
+Fasting Insulin
+
+Fasting Glucose
+
+HOMA-IR
+
+Triglyceride-Glucose Index (TyG Index)
+
+Hemoglobin A1c
+
+Adiponectin
+
+Leptin
+
+3.3 Liver Health
+
+Evaluates detoxification, fat accumulation, inflammation, and metabolic stress.
+
+Examples include:
+
+ALT
+
+AST
+
+GGT
+
+ALP
+
+Bilirubin
+
+Albumin
+
+Albumin/Globulin Ratio
+
+3.4 Kidney Health
+
+Assesses filtration efficiency, electrolyte balance, hydration, and kidney stress.
+
+Examples include:
+
+Creatinine
+
+eGFR
+
+BUN
+
+Cystatin C
+
+Microalbumin
+
+3.5 Inflammation & Immune Function
+
+Detects chronic inflammation, autoimmune risk, and immune dysregulation.
+
+Examples include:
+
+hs-CRP
+
+ANA
+
+Ferritin
+
+ESR
+
+White Blood Cell Count breakdown
+
+3.6 Hormonal Health
+
+Sex hormones, stress hormones, fertility markers, adrenal function.
+
+Examples include:
+
+Testosterone (Total & Free)
+
+Estradiol
+
+Progesterone
+
+SHBG
+
+DHEA-S
+
+Cortisol
+
+AMH
+
+17-hydroxyprogesterone
+
+3.7 Thyroid Health
+
+Complete thyroid panel often missed in standard testing.
+
+Examples include:
+
+TSH
+
+Free T3
+
+Free T4
+
+Reverse T3
+
+Thyroid Peroxidase Antibodies
+
+Thyroglobulin Antibodies
+
+3.8 Nutrient Status
+
+Critical vitamins, minerals, and cofactors that support metabolism, neurological health, and cellular function.
+
+Examples include:
+
+Vitamin D
+
+Vitamin B12
+
+Folate
+
+Iron
+
+Transferrin
+
+Magnesium
+
+Zinc
+
+Copper
+
+3.9 Energy & Mitochondrial Health
+
+Evaluates markers associated with fatigue, low energy, mitochondrial dysfunction.
+
+Examples include:
+
+Lactate
+
+Carnitine
+
+CoQ10 (depending on panel availability)
+
+3.10 Body Composition & Metabolic Risk
+
+Blood indicators related to fat distribution, muscle metabolism, and metabolic strain.
+
+Examples include:
+
+Leptin
+
+Adiponectin
+
+hs-CRP
+
+ALT (overlap with liver)
+
+Triglycerides
+
+3.11 DNA & Longevity Markers
+
+Tracks predispositions and long-term resilience indicators.
+
+Examples include:
+
+Methylation-related signals (depending on membership year)
+
+telomere-associated markers (varies)
+
+(This section depends on specific annual updates.)
+
+=====================================
+4. HEALTH CALCULATORS (TOOLS)
+=====================================
+
+SOURCE: superpower.com/calculators
+
+Superpower provides medical calculators for interpretation, self-education, and decision support.
+
+A1C → Estimated Average Glucose (eAG)
+Converts HbA1c into daily average glucose interpretation.
+
+eGFR Calculator (MDRD)
+Estimates kidney filtration efficiency.
+
+Corrected Calcium (Payne Formula)
+Adjusts calcium level based on albumin concentrations.
+
+Basal Insulin Calculator
+Helps estimate total daily basal insulin needs (Type 1 & 2 context).
+
+=====================================
+5. FAQ CORE KNOWLEDGE
+=====================================
+
+SOURCE: superpower.com/faqs
+
+This is distilled into LLM-usable bullet points.
+
+5.1 What Superpower Is
+
+A preventive-health membership measuring 100+ biomarkers annually.
+
+Includes clinical team oversight.
+
+Provides lifestyle, nutrition, and health optimization plans.
+
+Not emergency or primary care.
+
+5.2 Testing Process
+
+Blood draw via Quest or mobile phlebotomy.
+
+Takes ~10 days for results.
+
+Some markers require fasting.
+
+5.3 Safety & Compliance
+
+All labs are CLIA/CAP certified.
+
+Tests are physician-authorized.
+
+Members complete informed medical consent during onboarding.
+
+5.4 Availability
+
+Available in the U.S. with some state exclusions.
+
+Members must be over 18.
+
+5.5 Membership Details
+
+Annual renewal.
+
+No hidden fees.
+
+HSA/FSA eligible.
+
+Refund policies depend on blood draw status.
+
+5.6 Medical Team
+
+Provides guidance, interpretation, personalized plans.
+
+Does not treat or diagnose acute diseases.
+
+Does not prescribe medications unless explicitly stated for certain programs.
+
+=====================================
+6. KEY SUPERPOWER VALUE PROPOSITIONS
+=====================================
+6.1 More Data Than Standard Checkups
+
+Typical checkup: 10–20 biomarkers.
+Superpower: 100+ biomarkers across every major system.
+
+6.2 Holistic, Multi-System Interpretation
+
+Patterns matter more than individual markers.
+Superpower builds longitudinal insight.
+
+6.3 Longevity + Performance Optimization
+
+Supports metabolic flexibility, hormonal balance, mitochondrial function, organ health, and inflammation reduction.
+
+6.4 Personalized Health Plan
+
+Members receive a tailored plan created from biomarker data + goals + lifestyle.
+
+6.5 Preventive, Proactive Approach
+
+Catch issues early rather than waiting for symptoms.
+
+=====================================
+7. OTHER SUPERPOWER RESOURCES
+=====================================
+7.1 Core Pages
+
+Landing/Home – General overview + CTA.
+
+Reviews – Testimonials and scientific validation.
+
+Our Why (Manifesto) – Mission & philosophy: health intelligence for all.
+
+Organizations – Employer health-intelligence programs.
+
+7.2 Blog & Library
+
+Educational content on:
+
+Metabolic Health
+
+Inflammation
+
+Thyroid
+
+Energy
+
+Kidney & Liver
+
+DNA Biomarkers
+
+Heart & Vascular Health
+
+“5 Essential Biomarkers” articles, etc.
+
+Focuses on simple explanations of complex physiology.
+
+7.3 Advanced Panels
+
+Pages detailing:
+
+TyG Index
+
+ANA
+
+AMH
+
+ADMA
+
+ALT
+
+17-hydroxyprogesterone
+…and many more.
+
+=====================================
+8. COMMUNITY, ACCESS, AND PARTNERS
+=====================================
+8.1 Partnerships
+
+Comparison pages exist for:
+
+Function Health
+
+Mito Health
+
+Marek Health
+
+InsideTracker
+
+Superpower positions itself as more comprehensive and preventive.
+
+8.2 Access Points
+
+Login / Dashboard
+
+Gift Superpower
+
+Superpower Signals
+
+Careers / Join The Team
+
+Contact: hello@superpower.com
+
+=====================================
+9. BRAND PHILOSOPHY (FROM MANIFESTO)
+=====================================
+
+Superpower exists because most checkups miss critical markers until disease is already progressing. They aim to expand access to advanced testing typically reserved for elite health clinics or performance programs.
+
+Core beliefs:
+
+Health intelligence belongs to everyone.
+
+Prevention beats treatment.
+
+Data is power.
+
+Your biology is dynamic and should be tracked over time.
+
+Modern life demands better tools than outdated annual checkups.
+
+The brand tone is:
+
+Scientific
+
+Accessible
+
+Empowering
+
+Preventive
+
+Modern
+
+Data-driven
+
+=====================================
+10. QUICK LINK DIRECTORY (RAW)
+=====================================
+
+(Useful for retrieval and grounding, placed at the bottom for cleanliness.)
+
+how-it-works
+
+biomarkers
+
+faqs
+
+reviews
+
+blog
+
+calculators
+
+manifesto
+
+organizations
+
+partner
+
+comparisons: function, mito, marek, inside tracker
+
+login
+
+gift superpower
+
+careers
+
+contact
+
+signals
+
+advanced biomarker pages
+
+library categories
+
+metabolic health pages
+
+inflammation
+
+thyroid
+
+kidney
+
+liver
+
+cancer biomarkers
+
+strength & resilience biomarkers
+
+Sebastian Genta health journey
+
+=====================================
+END OF FILE — SUPERPOWER LLM MASTER CONTEXT (V2)
+=====================================
