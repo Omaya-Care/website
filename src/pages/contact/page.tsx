@@ -157,7 +157,7 @@ export default function Page() {
                 {/* "Built in collaboration with top professionals" */}
                 <div className="h-8 flex items-center gap-2" data-cid="n12">
                   <div className="flex" data-cid="n13">
-                    {Logo_data.map((d, i) => <Logo key={i} d={d} cids={Logo_cids[i]} styles={Logo_styles[i]} />)}
+                    {Logo_data.map((d, i) => <Logo key={Logo_cids[i][0]} d={d} cids={Logo_cids[i]} styles={Logo_styles[i]} />)}
                   </div>
                   <span className="block text-color-001 max-md:text-xs max-md:leading-4.5 2xl:text-sm 2xl:leading-[1.3125rem]" data-cid="n26">
                     Built in collaboration with top professionals
@@ -312,7 +312,7 @@ export default function Page() {
                       {CAROUSEL_IMAGES.map((src, i) => {
                         return (
                           <img decoding="async"
-                            key={i}
+                            key={src}
                             className="absolute inset-0 w-full h-full object-cover block"
                             style={{ opacity: i === slide ? 1 : 0, transition: "opacity 0.6s ease" }}
                             src={src}
@@ -324,9 +324,9 @@ export default function Page() {
                     {/* Dot navigation */}
                     <div className="h-10 flex absolute bottom-4 inset-x-4 z-10 justify-end" data-cid="n74">
                       <div className="flex py-2 px-4 rounded-full items-center bg-clr-6 [backdrop-filter:blur(8px)]" data-cid="n75">
-                        {CAROUSEL_IMAGES.map((_, i) => (
+                        {CAROUSEL_IMAGES.map((src, i) => (
                           <button
-                            key={i}
+                            key={src}
                             className="h-6 block p-2 shrink-0 text-center cursor-pointer"
                             type="button"
                             aria-label={`Go to slide ${i + 1}`}
