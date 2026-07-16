@@ -13,14 +13,14 @@ export default function LogoCloudSection({ logos = logosContent, logos2 = logos2
             <div className="h-full block max-md:flex max-md:flex-col max-md:justify-start max-md:items-center" data-cid="n66">
               <div className="h-[40.3px] flex mb-[29.3px] justify-center items-center gap-[7.3px] max-md:h-[5.4375rem] max-md:max-w-52 max-lg:mb-8 max-md:flex-col max-lg:gap-2 max-md:text-center md:max-lg:h-11 2xl:h-11 2xl:mb-8 2xl:gap-2" data-cid="n67">
                 <div className="flex mr-[14.7px] justify-between items-center max-lg:mr-4 2xl:mr-4" data-cid="n68">
-                  {logos.map((d, i) => <Logo key={i} d={d} cids={Logo_cids[i]} styles={Logo_styles[i]} />)}
+                  {logos.map((d, i) => <Logo key={Logo_cids[i][0]} d={d} cids={Logo_cids[i]} styles={Logo_styles[i]} />)}
                 </div>
                 <h4 className="block leading-[1.375rem] max-lg:text-sm max-lg:leading-[1.125rem] max-lg:tracking-[-0.21px] 2xl:leading-5 2xl:tracking-[-0.24px]" data-cid="n72" data-component="heading">
                   Built in collaboration with top professionals
                 </h4>
               </div>
               <div className="flex justify-center items-center gap-12 max-md:grid max-md:gap-6 max-md:grid-cols-[1fr_1fr] max-md:place-items-center md:max-lg:gap-14 2xl:gap-16" data-cid="n73">
-                {logos2.map((d, i) => <Logo2 key={i} d={d} cids={Logo2_cids[i]} styles={Logo2_styles[i]} />)}
+                {logos2.map((d, i) => <Logo2 key={Logo2_cids[i][0]} d={d} cids={Logo2_cids[i]} styles={Logo2_styles[i]} />)}
               </div>
             </div>
           </div>
