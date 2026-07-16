@@ -414,12 +414,12 @@ export default function Page() {
           <section className="block" data-id="n520" id="for-mothers">
             <div className="block pt-10 pb-10 px-[2.2875rem] max-md:pt-12 max-lg:pb-12 max-md:px-6 md:max-lg:pt-10 md:max-lg:px-10 2xl:pt-10 2xl:pb-10 2xl:px-10" data-id="n521">
               <div className="block max-w-[73.275rem] mx-auto justify-center max-lg:max-w-320 2xl:max-w-320" data-id="n522">
-                <div className="grid items-center gap-[clamp(3rem,1.192857rem_+_3.764881vw,5rem)] grid-rows-[695.2px] [grid-auto-columns:1fr] grid-cols-2 max-lg:flex-col max-md:gap-8 max-md:grid-rows-[525px_509.359px] max-lg:grid-cols-1 md:max-lg:grid-rows-[525px_544.984px] 2xl:grid-rows-[759px]" data-id="n523">
+                <div className="grid items-center gap-[clamp(3rem,1.192857rem_+_3.764881vw,5rem)] grid-rows-[695.2px] [grid-auto-columns:1fr] grid-cols-2 max-lg:flex-col max-md:gap-8 max-md:grid-rows-[auto_auto] max-lg:grid-cols-1 md:max-lg:grid-rows-[auto_auto] md:max-lg:gap-8 2xl:grid-rows-[759px]" data-id="n523">
                   <div className="flex min-w-0 max-w-[35.725rem] flex-col shrink-0 gap-[1.375rem] max-lg:max-w-156 max-lg:gap-6 2xl:max-w-156 2xl:gap-6" data-id="n524">
                     <MembershipCarousel data={Logo3_data.slice(0, 4)} cids={Logo3_cids} />
                   </div>
                   <div className="flex flex-col shrink-0 gap-[18.3px] max-md:gap-4 md:max-lg:gap-5 2xl:gap-5" data-id="n558">
-                    <div className="block -mt-4 max-md:-mt-2 md:max-lg:-mt-3 2xl:-mt-3" data-id="n559">
+                    <div className="block -mt-4 max-md:mt-0 md:max-lg:mt-0 2xl:-mt-3" data-id="n559">
                       <h2 className="block text-[2.3125rem] leading-11 tracking-[-0.73px] max-md:text-2xl max-md:leading-[1.8125rem] max-md:tracking-[-0.54px] md:max-lg:text-[2.5rem] md:max-lg:leading-12 md:max-lg:tracking-[-0.9px] 2xl:text-5xl 2xl:leading-[3.625rem] 2xl:tracking-[-1.08px]" data-id="n560">
                         Aya Bundle for new mothers
                       </h2>

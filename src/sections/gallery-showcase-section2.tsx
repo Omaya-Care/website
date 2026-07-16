@@ -86,7 +86,7 @@ export default function GalleryShowcaseSection2({ mediaTile5Data = MediaTile5_da
 
   return (
     <section
-      className="h-[clamp(51rem,49.857143rem_+_2.380952vw,65rem)] flex pt-[4rem] pb-8 flex-col gap-[clamp(3rem,2.242857rem_+_1.577381vw,4rem)] overflow-hidden leading-[1.375rem] bg-surface max-md:h-[50rem] max-md:pt-10 max-md:pb-16 max-md:gap-10 max-lg:leading-6 md:max-lg:pt-12 md:max-lg:pb-10 2xl:pt-12 2xl:pb-10 2xl:leading-6"
+      className="h-[clamp(51rem,49.857143rem_+_2.380952vw,65rem)] flex pt-[4rem] pb-8 flex-col gap-[clamp(3rem,2.242857rem_+_1.577381vw,4rem)] overflow-hidden leading-[1.375rem] bg-surface max-md:h-auto max-md:pt-10 max-md:pb-12 max-md:gap-10 max-lg:leading-6 md:max-lg:h-auto md:max-lg:pt-12 md:max-lg:pb-10 2xl:pt-12 2xl:pb-10 2xl:leading-6"
       data-id="n372"
       id="for-hospitals"
     >
