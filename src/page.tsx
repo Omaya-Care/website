@@ -327,8 +327,8 @@ export default function Page() {
                 <div className="h-full flex absolute top-0 inset-x-0 z-2 pb-[3.6625rem] pl-[3.6625rem] flex-col justify-center items-start overflow-hidden max-md:pb-20 max-md:px-6 max-lg:justify-end md:max-lg:pb-12 md:max-lg:pl-12 2xl:pb-16 2xl:pl-16" data-cid="n26">
                   <div className="w-[calc(100%+3.925rem)] h-full block absolute top-0 -left-[3.925rem] min-w-0 overflow-hidden [filter:brightness(1)] max-md:w-[401.5px] max-md:-left-[1.1375rem] md:max-lg:w-[52.1125rem] md:max-lg:left-[-37.9px] 2xl:w-[130.2125rem] 2xl:left-[-94.7px]" data-cid="n27">
                     <picture className="contents">
-                      <source srcSet="/assets/images/hero-omaya.avif" type="image/avif" />
-                      <source srcSet="/assets/images/hero-omaya.webp" type="image/webp" />
+                      <source type="image/avif" sizes="100vw" srcSet="/assets/images/hero-omaya-768.avif 768w, /assets/images/hero-omaya-1440.avif 1440w, /assets/images/hero-omaya.avif 3264w" />
+                      <source type="image/webp" sizes="100vw" srcSet="/assets/images/hero-omaya-768.webp 768w, /assets/images/hero-omaya-1440.webp 1440w, /assets/images/hero-omaya.webp 3264w" />
                       <img decoding="async" fetchPriority="high" className="w-full h-[clamp(748.7px,min(calc(258.7px_+_47.8vw),calc(100dvh_-_6.5rem)),1024px)] max-h-[calc(100dvh-2.8625rem)] block max-w-full overflow-clip object-cover align-middle max-md:h-203 max-md:max-h-dvh md:max-lg:h-[51.1875rem] md:max-lg:max-h-dvh 2xl:h-254 2xl:max-h-[calc(100dvh-3.125rem)]" style={{ transform: "scaleX(-1)" }} data-cid="n28" data-component="image" alt="Hero background" src="/assets/images/hero-omaya.png" />
                     </picture>
                     <div className="h-[370.7px] block absolute bottom-0 inset-x-0 opacity-30 [mix-blend-mode:overlay] pointer-events-none max-md:h-101.5 md:max-lg:h-[25.6rem] 2xl:h-127" style={{ backgroundImage: "linear-gradient(var(--clr-3) 0%, var(--clr-2) 100%)" }} data-cid="n29" />
