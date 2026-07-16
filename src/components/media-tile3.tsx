@@ -16,12 +16,12 @@ export default function MediaTile3({ d, cids, styles }: { d: MediaTile3Data; cid
   return (
     <div data-cid={cids[0]} className="h-[242.7px] border-r border-solid border-r-color-005 flex items-center shrink-0 max-md:h-25 max-md:border-b max-md:border-b-border max-md:max-w-72 max-md:py-4 max-md:border-r-[0] max-md:border-initial max-md:border-r-[initial] md:max-lg:h-56 2xl:h-[16.5625rem]">
       <div data-cid={cids[1]} className={cn("w-[15.0641rem] h-full block relative rounded-[11px] shrink-0 overflow-hidden bg-surface shadow-[var(--clr-9)_0px_1.35563px_1.35563px_0px] max-md:w-[23.5%] max-lg:rounded-xl max-lg:shadow-[var(--clr-9)_0px_1.48px_1.48px_0px] 2xl:w-[17.34rem] 2xl:rounded-xl 2xl:shadow-[var(--clr-9)_0px_1.48px_1.48px_0px]", styles.className)}>
-        <img data-cid={cids[2]} className="w-full h-full block absolute top-0 left-0 max-w-full overflow-clip object-cover object-top align-middle pointer-events-none" data-component="image" alt="" sizes="(max-width: 669px) 100vw, 669px" src={d.imgSrc} srcSet={d.srcSet} />
+        <img loading="lazy" decoding="async" data-cid={cids[2]} className="w-full h-full block absolute top-0 left-0 max-w-full overflow-clip object-cover object-top align-middle pointer-events-none" data-component="image" alt="" sizes="(max-width: 669px) 100vw, 669px" src={d.imgSrc} srcSet={d.srcSet} />
       </div>
       <div data-cid={cids[3]} className={cn("flex py-[7.3px] px-[18px] flex-col justify-between shrink-0 max-md:px-4 max-md:justify-center max-md:items-start max-md:self-stretch max-md:py-0 max-md:shrink-[initial] md:max-lg:py-2 md:max-lg:px-4 2xl:py-2 2xl:px-5", styles.className2)}>
         {d.imgSrc2 && (
           <div data-cid={cids[4]} className={cn("h-[2.13rem] block max-md:hidden md:max-lg:h-[2.325rem] 2xl:h-[2.325rem]", styles.className3)}>
-            <img data-cid={cids[5]} className={cn("inline-block max-w-full overflow-clip align-middle", styles.className4)} alt="" src={d.imgSrc2} />
+            <img loading="lazy" decoding="async" data-cid={cids[5]} className={cn("inline-block max-w-full overflow-clip align-middle", styles.className4)} alt="" src={d.imgSrc2} />
           </div>
         )}
         <div data-cid={cids[6]} className={cn("flex flex-col gap-[1.375rem] max-w-[32.5rem] max-md:max-w-none max-md:justify-center max-md:items-start max-md:gap-4 md:max-lg:gap-6 2xl:max-w-[37.5rem] 2xl:gap-6", styles.className5)}>

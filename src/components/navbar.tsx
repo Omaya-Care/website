@@ -51,7 +51,7 @@ export default function Navbar({ light = false, showBanner = true }: { light?: b
               <p className="block text-muted-foreground leading-[1.375rem] tracking-[-0.2px] max-md:hidden md:max-lg:leading-6 2xl:leading-6">
                 Learn more
               </p>
-              <img className="w-6 h-6 block max-w-full overflow-clip align-middle" alt="" src="/assets/cloned/svg/a3d12be7c2fd.svg" />
+              <img decoding="async" className="w-6 h-6 block max-w-full overflow-clip align-middle" alt="" src="/assets/cloned/svg/a3d12be7c2fd.svg" />
             </div>
           </div>
         </a>
@@ -61,7 +61,7 @@ export default function Navbar({ light = false, showBanner = true }: { light?: b
           className={cn("w-[153.9px] h-[1.3125rem] flex absolute top-[40.7px] left-1/2 z-1 min-w-0 max-w-full justify-center items-center shrink-0 transform-[translate(-50%,-10.4688px)] cursor-pointer transition-opacity duration-500 ease-in-out max-md:w-34 max-md:h-[18.5px] max-lg:transform-[none] max-lg:static max-lg:top-auto max-lg:left-auto max-lg:z-[initial] md:max-lg:w-42 md:max-lg:h-[22.9px] 2xl:w-42 2xl:h-[22.9px] 2xl:top-[44.5px] 2xl:left-1/2 2xl:transform-[translate(-50%,-11.4297px)]", scrolled && "lg:opacity-0 lg:pointer-events-none")}
           href="/"
         >
-          <img className={cn("w-auto h-[1.3125rem] block relative top-[0.1875rem] -bottom-[0.1875rem] max-w-full overflow-clip align-middle max-md:h-[1.1875rem] max-lg:top-[0.2rem] max-lg:-bottom-[0.2rem] md:max-lg:h-[1.4375rem] 2xl:h-[1.4375rem] 2xl:top-[0.2rem] 2xl:-bottom-[0.2rem]", light && "invert")} alt="Omaya Care" src="/assets/images/omaya-care-wordmark.svg" />
+          <img decoding="async" className={cn("w-auto h-[1.3125rem] block relative top-[0.1875rem] -bottom-[0.1875rem] max-w-full overflow-clip align-middle max-md:h-[1.1875rem] max-lg:top-[0.2rem] max-lg:-bottom-[0.2rem] md:max-lg:h-[1.4375rem] 2xl:h-[1.4375rem] 2xl:top-[0.2rem] 2xl:-bottom-[0.2rem]", light && "invert")} alt="Omaya Care" src="/assets/images/omaya-care-wordmark.svg" />
         </a>
         <div className={cn("w-full h-[37.5px] flex max-w-full rounded-full justify-between items-center [backdrop-filter:blur(0px)] transition-opacity duration-500 ease-in-out max-lg:h-[2.5625rem] max-lg:justify-end max-lg:rounded-[initial] max-lg:[backdrop-filter:initial] 2xl:h-[2.5625rem]", scrolled && "lg:opacity-0 lg:pointer-events-none")}>
           <div className="flex flex-1 items-center gap-[1.375rem] max-lg:hidden 2xl:gap-6">
@@ -85,11 +85,12 @@ export default function Navbar({ light = false, showBanner = true }: { light?: b
           className={cn("w-[29.3px] h-[29.3px] flex justify-center items-center shrink-0 [background-size:18.3193px_20.1513px] [background-position:50%_50%] bg-no-repeat cursor-pointer transition-opacity duration-500 ease-in-out max-lg:w-8 max-lg:h-8 max-lg:[background-size:20px_22px] 2xl:w-8 2xl:h-8 2xl:[background-size:20px_22px] hover:opacity-80", scrolled && "lg:opacity-0 lg:pointer-events-none")}
           style={{ backgroundImage: dotGrid }}
           onClick={() => setDrawerOpen(true)}
+          aria-label="Open menu"
         />
         <div className={cn("absolute inset-x-0 top-0 bottom-0 flex justify-center items-center gap-3 transition-opacity duration-500 ease-in-out max-lg:hidden", scrolled ? "opacity-100" : "opacity-0 pointer-events-none")}>
           <div className="flex items-center h-12 gap-15 pl-16 pr-2 rounded-full bg-clr-0 [backdrop-filter:blur(24px)] text-background text-xs leading-[1.125rem]">
             <a href="/" className="h-full flex items-center shrink-0 hover:opacity-80">
-              <img src="/assets/images/omaya-care-wordmark.svg" alt="Omaya Care" className="w-auto h-4 block max-w-full relative top-[3px]" />
+              <img decoding="async" src="/assets/images/omaya-care-wordmark.svg" alt="Omaya Care" className="w-auto h-4 block max-w-full relative top-[3px]" />
             </a>
             {NAV_LINKS.map((link) => (
               <a key={link.href} href={link.href} className="flex items-center whitespace-nowrap hover:opacity-80">{link.label}</a>
@@ -99,7 +100,7 @@ export default function Navbar({ light = false, showBanner = true }: { light?: b
               Book a demo
             </a>
           </div>
-          <button type="button" onClick={() => setDrawerOpen(true)} className="w-12 h-12 flex justify-center items-center rounded-full shrink-0 bg-clr-0 [backdrop-filter:blur(24px)] [background-size:20px_22px] [background-position:50%_50%] bg-no-repeat hover:opacity-80" style={{ backgroundImage: DOT_GRID }} />
+          <button type="button" aria-label="Open menu" onClick={() => setDrawerOpen(true)} className="w-12 h-12 flex justify-center items-center rounded-full shrink-0 bg-clr-0 [backdrop-filter:blur(24px)] [background-size:20px_22px] [background-position:50%_50%] bg-no-repeat hover:opacity-80" style={{ backgroundImage: DOT_GRID }} />
         </div>
       </div>
 
@@ -156,7 +157,7 @@ export default function Navbar({ light = false, showBanner = true }: { light?: b
           {/* Hero image at bottom */}
           <div className="flex-1 flex items-end p-6">
             <div className="relative w-full rounded-2xl overflow-hidden aspect-[584/520]">
-              <img
+              <img decoding="async"
                 src="/assets/cloned/images/drawer-mother.avif"
                 alt="Mother on phone with baby"
                 className="w-full h-full object-cover object-top"

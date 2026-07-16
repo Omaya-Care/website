@@ -46,15 +46,15 @@ function FeatureGridItemSlot1({ d }: { d: FeatureGridItemData }) {
       );
     case "get-a-complete-picture-of-your-health-data":
       return (
-        <img className="w-full h-72 inline-block max-w-full rounded-[11px] overflow-clip object-cover aspect-square align-middle max-md:h-[13.1875rem] max-lg:rounded-xl max-md:object-[50%_33%] max-md:aspect-[3/2] md:max-lg:h-[20.9375rem] 2xl:h-78.5 2xl:rounded-xl" data-cid="n97" data-component="image" alt="Omaya Care incoming call notification on iPhone" sizes="(max-width: 664px) 100vw, 664px" src="/assets/images/omaya-proactive-calls.png" />
+        <img loading="lazy" decoding="async" className="w-full h-72 inline-block max-w-full rounded-[11px] overflow-clip object-cover aspect-square align-middle max-md:h-[13.1875rem] max-lg:rounded-xl max-md:object-[50%_33%] max-md:aspect-[3/2] md:max-lg:h-[20.9375rem] 2xl:h-78.5 2xl:rounded-xl" data-cid="n97" data-component="image" alt="Omaya Care incoming call notification on iPhone" sizes="(max-width: 664px) 100vw, 664px" src="/assets/images/omaya-proactive-calls.png" />
       );
     case "ai-builds-evidence-backed-protocols-inform":
       return (
-        <img className="w-full h-72 inline-block max-w-full rounded-[11px] overflow-clip object-cover aspect-square align-middle max-md:h-[13.1875rem] max-lg:rounded-xl max-md:object-[50%_33%] max-md:aspect-[3/2] md:max-lg:h-[20.9375rem] 2xl:h-78.5 2xl:rounded-xl" data-cid="n105" data-component="image" alt="Omaya Care contact screen on iPhone" sizes="(max-width: 664px) 100vw, 664px" src="/assets/images/omaya-mother-reaches-out.png" />
+        <img loading="lazy" decoding="async" className="w-full h-72 inline-block max-w-full rounded-[11px] overflow-clip object-cover aspect-square align-middle max-md:h-[13.1875rem] max-lg:rounded-xl max-md:object-[50%_33%] max-md:aspect-[3/2] md:max-lg:h-[20.9375rem] 2xl:h-78.5 2xl:rounded-xl" data-cid="n105" data-component="image" alt="Omaya Care contact screen on iPhone" sizes="(max-width: 664px) 100vw, 664px" src="/assets/images/omaya-mother-reaches-out.png" />
       );
     case "take-action-access-everything-you-need-the":
       return (
-        <img className="w-full h-72 inline-block max-w-full rounded-[11px] overflow-clip object-cover aspect-square align-middle max-md:h-[13.1875rem] max-lg:rounded-xl max-md:object-[50%_33%] max-md:aspect-[3/2] md:max-lg:h-[20.9375rem] 2xl:h-78.5 2xl:rounded-xl" data-cid="n112" data-component="image" alt="Hospital portal dashboard on tablet showing Omaya Care" sizes="(max-width: 996px) 100vw, 996px" src="/assets/images/omaya-hospital-portal.png" />
+        <img loading="lazy" decoding="async" className="w-full h-72 inline-block max-w-full rounded-[11px] overflow-clip object-cover aspect-square align-middle max-md:h-[13.1875rem] max-lg:rounded-xl max-md:object-[50%_33%] max-md:aspect-[3/2] md:max-lg:h-[20.9375rem] 2xl:h-78.5 2xl:rounded-xl" data-cid="n112" data-component="image" alt="Hospital portal dashboard on tablet showing Omaya Care" sizes="(max-width: 996px) 100vw, 996px" src="/assets/images/omaya-hospital-portal.png" />
       );
     default:
       return null;
@@ -65,7 +65,7 @@ function FeatureGridItemSlot2({ d }: { d: FeatureGridItemData }) {
   switch (d.variant) {
     case "one-simple-blood-draw-to-measure-100-bioma":
       return (
-        <img className="w-full h-72 inline-block max-w-full rounded-[11px] overflow-clip object-cover aspect-square align-middle max-md:h-[13.1875rem] max-lg:rounded-xl max-md:object-[50%_33%] max-md:aspect-[3/2] md:max-lg:h-[20.9375rem] 2xl:h-78.5 2xl:rounded-xl" data-cid="n91" data-component="image" alt="A nurse showing a tablet to a new mother holding her newborn in a hospital room" sizes="(max-width: 664px) 100vw, 664px" src="/assets/images/omaya-hospital-onboards.png" />
+        <img loading="lazy" decoding="async" className="w-full h-72 inline-block max-w-full rounded-[11px] overflow-clip object-cover aspect-square align-middle max-md:h-[13.1875rem] max-lg:rounded-xl max-md:object-[50%_33%] max-md:aspect-[3/2] md:max-lg:h-[20.9375rem] 2xl:h-78.5 2xl:rounded-xl" data-cid="n91" data-component="image" alt="A nurse showing a tablet to a new mother holding her newborn in a hospital room" sizes="(max-width: 664px) 100vw, 664px" src="/assets/images/omaya-hospital-onboards.png" />
       );
     case "get-a-complete-picture-of-your-health-data":
       return (

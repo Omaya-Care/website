@@ -37,6 +37,19 @@ export default defineConfig({
       "tos": fileURLToPath(new URL("./tos.html", import.meta.url)),
       "terms": fileURLToPath(new URL("./terms.html", import.meta.url))
       },
+      output: {
+        // Hoist React/ReactDOM/scheduler into one long-cache vendor chunk shared
+        // across all 6 MPA entries, instead of re-bundling them into each entry.
+        // Pure delivery/caching win — identical rendered output.
+        manualChunks(id: string) {
+          if (id.includes("node_modules")) {
+            if (/[\\/]node_modules[\\/](react|react-dom|scheduler)[\\/]/.test(id)) {
+              return "vendor-react";
+            }
+            return "vendor";
+          }
+        },
+      },
     },
   },
 });

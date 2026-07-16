@@ -144,7 +144,7 @@ export const MediaTile4_styles: MediaTile4Styles[] = [
     { className: "w-full hover:opacity-[0.711973] focus:opacity-[0.504412]" },
     { className: "w-full hover:opacity-[0.711944] focus:opacity-[0.510261]" }
 ];
-export const MediaTile5_styles: MediaTile5Styles[] = [
+const MediaTile5_styles: MediaTile5Styles[] = [
     { className: "opacity-50", className3: "h-27 max-md:h-[9.3875rem] md:max-lg:h-[106.3px] 2xl:h-[7.375rem]" },
     {  },
     { className: "opacity-50" },

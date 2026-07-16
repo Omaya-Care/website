@@ -1,6 +1,6 @@
 // Per-instance node ids, kept out of content.ts so the content stays semantic.
 
-export const TextLink_cids: string[][] = [
+const TextLink_cids: string[][] = [
     ["n15"],
     ["n16"],
     ["n17"]

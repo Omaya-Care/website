@@ -28,6 +28,11 @@ export default function DropdownMenu({ menus }: { menus: RTMenu[] }) {
       const open = () => {
         if (panel) return;
         const wrap = document.createElement("div");
+        // Trusted static: `m.html` is a build-time-captured menu fragment baked into
+        // the component props by the Ditto tooling — not user input, URL, or fetched
+        // data. No sanitizer is applied deliberately: sanitizing would strip the
+        // inlined computed styles and change the rendered panel. Do not feed dynamic
+        // data into `m.html`.
         wrap.innerHTML = m.html;
         panel = wrap.firstElementChild as HTMLElement | null;
         if (!panel) return;

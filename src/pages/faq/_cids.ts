@@ -1,11 +1,11 @@
 // Per-instance node ids, kept out of content.ts so the content stays semantic.
 
-export const TextLink_cids: string[][] = [
+const TextLink_cids: string[][] = [
     ["n8"],
     ["n9"],
     ["n10"]
 ];
-export const Tile_cids: string[][] = [
+const Tile_cids: string[][] = [
     ["n65", "n66", "n67", "n68"],
     ["n69", "n70", "n71", "n72"],
     ["n73", "n74", "n75", "n76"]
@@ -130,7 +130,7 @@ export const Tile3_cids: string[][] = [
     ["n558", "n559", "n560"],
     ["n561", "n562", "n563"]
 ];
-export const MediaLink_cids: string[][] = [
+const MediaLink_cids: string[][] = [
     ["n566", "n567", "n568", "n569"],
     ["n570", "n571", "n572", "n573"],
     ["n574", "n575", "n576", "n577"]
@@ -141,7 +141,7 @@ export const TextLink7_cids: string[][] = [
     ["n604"],
     ["n605"]
 ];
-export const Tile4_cids: string[][] = [
+const Tile4_cids: string[][] = [
     ["n649", "n650", "n651"],
     ["n652", "n653", "n654"],
     ["n655", "n656", "n657"]

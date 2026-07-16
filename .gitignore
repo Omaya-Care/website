@@ -5,3 +5,7 @@ dist
 
 # Large local artifact — exceeds GitHub 100MB limit
 superpower-clone.tgz
+
+# Playwright transient output (baselines live in visual/*-snapshots)
+test-results
+playwright-report

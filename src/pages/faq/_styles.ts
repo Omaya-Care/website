@@ -30,7 +30,7 @@ export type Tile4Styles = {
   className?: string;
 };
 
-export const Tile_styles: TileStyles[] = [
+const Tile_styles: TileStyles[] = [
     { className3: "border-foreground" },
     { className: "h-[3.7125rem] max-md:h-12 md:max-lg:h-16", className2: "h-[3.4rem] max-md:h-[2.675rem] md:max-lg:h-[3.7rem]", className3: "border-clr-3 hover:border-clr-21", className4: "h-full" },
     { className: "h-[3.7125rem] max-md:h-12 md:max-lg:h-16", className2: "h-[3.4rem] max-md:h-[2.675rem] md:max-lg:h-[3.7rem]", className3: "border-clr-3 hover:border-clr-21", className4: "h-full" }
@@ -83,7 +83,7 @@ export const TextLink4_styles2: TextLink4Styles[] = [
     {  },
     { className: "h-[20.5px] max-md:h-[1.225rem] md:max-lg:h-[1.4rem] 2xl:h-[1.4rem]" }
 ];
-export const Tile4_styles: Tile4Styles[] = [
+const Tile4_styles: Tile4Styles[] = [
     { className2: "max-md:w-[4.3px] md:max-lg:w-1" },
     { className2: "md:max-lg:w-[0.3rem]" },
     { className: "h-[1.375rem] max-lg:h-6 2xl:h-6" }

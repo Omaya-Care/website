@@ -5,7 +5,7 @@ export const Logo_cids: string[][] = [
     ["n18", "n19", "n20", "n21"],
     ["n22", "n23", "n24", "n25"]
 ];
-export const Logo2_cids: string[][] = [
+const Logo2_cids: string[][] = [
     ["n68", "n69"],
     ["n70", "n71"],
     ["n72", "n73"],

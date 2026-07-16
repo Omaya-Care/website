@@ -4,7 +4,7 @@ export type TextLinkDataItem = {
   href: string;
   label: string;
 };
-export const textLinkData: TextLinkDataItem[] = [
+const textLinkData: TextLinkDataItem[] = [
     { href: "/biomarkers", label: "What we test" },
     { href: "/reviews", label: "Reviews" },
     { href: "/faqs", label: "FAQs" }
@@ -47,7 +47,7 @@ export const features: FeaturesItem[] = [
 export type MediaTileDataItem = {
   label: string;
 };
-export const mediaTileData: MediaTileDataItem[] = [
+const mediaTileData: MediaTileDataItem[] = [
     { label: "How is Superpower better than a standard physical?" },
     { label: "What biomarkers do you test?" },
     { label: "What locations do you test at?" }
@@ -65,7 +65,7 @@ export const mediaTile4Data: MediaTile4DataItem[] = [
 export type Tile3DataItem = {
   description: string;
 };
-export const tile3Data: Tile3DataItem[] = [
+const tile3Data: Tile3DataItem[] = [
     { description: "Professional health monitoring for you and your baby" },
     { description: "Support by voice, WhatsApp or SMS" },
     { description: "A 24/7 safety net, whenever you need it" },
@@ -78,7 +78,7 @@ export type Logos3Item = {
   imgSrc: string;
   text: string;
 };
-export const logos3: Logos3Item[] = [
+const logos3: Logos3Item[] = [
     { imgSrc: "/assets/cloned/svg/phone-icon.svg", text: "Works on any phone" },
     { imgSrc: "/assets/cloned/svg/f94a0722d30a.svg", text: "Cancel anytime" },
     { imgSrc: "/assets/cloned/svg/644a08effc9a.svg", text: "Full postpartum support" }
@@ -91,7 +91,7 @@ export type Logos4Item = {
   imgSrc: string;
   srcSet?: string;
 };
-export const logos4: Logos4Item[] = [
+const logos4: Logos4Item[] = [
     { ariaLabel: "Ask Claude", href: "https://claude.ai/new?q=tell+me+about+https%3A%2F%2Fsuperpower.com%2F", sizes: "100vw", imgSrc: "/assets/cloned/images/a297399f982c.avif", srcSet: "/assets/cloned/images/4e6333fcabeb.png 500w, /assets/cloned/images/2adea8e249b4.png 800w, /assets/cloned/images/0eb816dd9ad6.png 1080w, /assets/cloned/images/a297399f982c.avif 1200w" },
     { ariaLabel: "Ask Gemini", href: "https://www.google.com/search?q=tell+me+about+https%3A%2F%2Fsuperpower.com%2F&udm=50", imgSrc: "/assets/cloned/svg/d40fe4aac666.svg" },
     { ariaLabel: "Ask Grok", href: "https://x.com/i/grok?text=tell+me+about+https%3A%2F%2Fsuperpower.com%2F", imgSrc: "/assets/cloned/svg/ff93db0f1a39.svg" },
@@ -103,7 +103,7 @@ export type TextLink2DataItem = {
   href: string;
   label: string;
 };
-export const textLink2Data: TextLink2DataItem[] = [
+const textLink2Data: TextLink2DataItem[] = [
     { href: "/how-it-works", label: "How it works" },
     { href: "/biomarkers", label: "What we test" },
     { href: "https://app.superpower.com/signin?redirectTo=%2F", label: "Member Login" },
@@ -115,7 +115,7 @@ export type TextLink3DataItem = {
   href: string;
   label: string;
 };
-export const textLink3Data: TextLink3DataItem[] = [
+const textLink3Data: TextLink3DataItem[] = [
     { href: "https://healthiesthoodie.com/", label: "Superpower Labs" },
     { href: "mailto:hello@superpower.com", label: "Contact Us" },
     { href: "/blog", label: "Blog" },
@@ -126,7 +126,7 @@ export type TextLink2Data2Item = {
   href: string;
   label: string;
 };
-export const textLink2Data2: TextLink2Data2Item[] = [
+const textLink2Data2: TextLink2Data2Item[] = [
     { href: "/superpower-vs-function-health", label: "Function Health" },
     { href: "/superpower-vs-mito-health", label: "Mito Health" },
     { href: "/superpower-vs-insidetracker", label: "InsideTracker" }
@@ -136,7 +136,7 @@ export type TextLink4DataItem = {
   href: string;
   label: string;
 };
-export const textLink4Data: TextLink4DataItem[] = [
+const textLink4Data: TextLink4DataItem[] = [
     { href: "https://superpower-health.typeform.com/to/VQKeJvKr?typeform-source=www.canva.com", label: "For Creators" },
     { href: "/organizations", label: "For Partners" },
     { href: "/organizations", label: "For Business" }
@@ -146,7 +146,7 @@ export type Tile4DataItem = {
   href: string;
   label: string;
 };
-export const tile4Data: Tile4DataItem[] = [
+const tile4Data: Tile4DataItem[] = [
     { href: "/library/guide-to-biomarker-testing", label: "The Complete Guide to Biomarker Testing" },
     { href: "/library/immune-system-biomarkers", label: "Immune System Biomarker" },
     { href: "/library/energy-biomarkers", label: "Energy Biomarkers" },
@@ -162,7 +162,7 @@ export type TextLink5DataItem = {
   href: string;
   label: string;
 };
-export const textLink5Data: TextLink5DataItem[] = [
+const textLink5Data: TextLink5DataItem[] = [
     { href: "/legal/terms", label: "Terms" },
     { href: "/legal/privacy", label: "Privacy policy" },
     { href: "/legal/medical-consent", label: "Medical consent" },
@@ -172,7 +172,7 @@ export const textLink5Data: TextLink5DataItem[] = [
 export type MediaTile6DataItem = {
   label: string;
 };
-export const mediaTile6Data: MediaTile6DataItem[] = [
+const mediaTile6Data: MediaTile6DataItem[] = [
     { label: "How is Superpower better than a standard physical?" },
     { label: "What biomarkers do you test?" },
     { label: "What locations do you test at?" },

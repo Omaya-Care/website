@@ -3,7 +3,7 @@ import Icon12 from "../svgs/svg-icon12";
 export default function LogoCloudSection() {
   return (
     <div className="h-full block relative rounded-[6.6px] flex-col justify-center items-center overflow-hidden cursor-pointer 2xl:rounded-[7.2px]" data-cid="n460" aria-label="Open Video" src="/assets/cloned/videos/38f2aded4e9c.mp4">
-      <img className="w-full h-full block absolute top-0 left-0 z-0 max-w-full overflow-clip object-cover align-middle pointer-events-none" data-cid="n461" data-component="image" alt="" />
+      <img loading="lazy" decoding="async" className="w-full h-full block absolute top-0 left-0 z-0 max-w-full overflow-clip object-cover align-middle pointer-events-none" data-cid="n461" data-component="image" alt="" />
       <video className="w-full h-[4.9375rem] block relative z-1 overflow-clip object-cover 2xl:h-21.5" data-cid="n462" loop playsInline poster="/assets/cloned/images/03291207bfe1.jpg" preload="metadata" src="/assets/cloned/videos/38f2aded4e9c.mp4" />
       <div className="w-[1.375rem] h-[1.375rem] flex absolute top-[2.4625rem] left-[clamp(63.5px,_50%,_calc(100%_-_63.5px))] z-10 rounded-[999px] flex-col justify-center items-center text-background bg-clr-5 transform-[matrix(1,0,0,1,-10.9844,-10.9844)] 2xl:w-6 2xl:h-6 2xl:top-[2.6875rem] 2xl:transform-[matrix(1,0,0,1,-12,-12)]" data-cid="n463">
         <div className="w-[1.375rem] h-full flex absolute top-0 min-w-0 justify-center items-center 2xl:w-6" data-cid="n464">

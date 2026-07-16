@@ -111,7 +111,7 @@ export default function Page() {
           {/* Navbar */}
           <div className="flex pt-10 pb-6 justify-between items-center" data-cid="n3">
             <a className="block cursor-pointer" data-cid="n4" data-component="link" href="/">
-              <img src="/assets/images/omaya-care-wordmark-black.svg" alt="Omaya Care" className="h-5 w-auto block max-w-full" />
+              <img decoding="async" src="/assets/images/omaya-care-wordmark-black.svg" alt="Omaya Care" className="h-5 w-auto block max-w-full" />
             </a>
           </div>
 
@@ -311,7 +311,7 @@ export default function Page() {
                     <div className="relative h-64 md:max-lg:h-[10.6875rem]" data-cid="n66">
                       {CAROUSEL_IMAGES.map((src, i) => {
                         return (
-                          <img
+                          <img decoding="async"
                             key={i}
                             className="absolute inset-0 w-full h-full object-cover block"
                             style={{ opacity: i === slide ? 1 : 0, transition: "opacity 0.6s ease" }}
