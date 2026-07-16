@@ -114,11 +114,16 @@ export default function GalleryShowcaseSection2({ mediaTile5Data = MediaTile5_da
                 onTransitionEnd={handleTransitionEnd}
                 data-cid="n385"
               >
+                {/* key={i}: tripled infinite-loop track — position index IS the stable identity; any data-derived id collides across the 3 duplicated copies and breaks snap reconciliation. */}
                 {tiles.map((d, i) => (
                   <div
                     key={i}
                     ref={(el) => { tileRefs.current[i] = el; }}
+                    role="button"
+                    tabIndex={-1}
+                    aria-label={paused ? "Resume carousel" : "Pause carousel"}
                     onClick={() => setPaused((p) => !p)}
+                    onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setPaused((p) => !p); } }}
                     className="shrink-0 cursor-pointer transition-opacity duration-500"
                     style={{ opacity: i % count === active ? 1 : 0.5 }}
                   >

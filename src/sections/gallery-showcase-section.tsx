@@ -105,7 +105,7 @@ export default function GalleryShowcaseSection({ mediaTile3Data = MediaTile3_dat
           Our Advisors
         </p>
         <ul className="flex flex-col gap-[0.6875rem] text-muted-foreground [list-style-type:none] list-outside pointer-events-none 2xl:gap-3" data-cid="n336">
-          {mediaTile4Data.map((d, i) => <MediaTile4 key={i} d={d} cids={MediaTile4_cids[i]} styles={MediaTile4_styles[i]} />)}
+          {mediaTile4Data.map((d, i) => <MediaTile4 key={MediaTile4_cids[i][0]} d={d} cids={MediaTile4_cids[i]} styles={MediaTile4_styles[i]} />)}
         </ul>
       </nav>
       <nav className="hidden fixed bottom-0 inset-x-0 z-1100 opacity-0 p-[14.7px] justify-between items-center gap-[0.6875rem] text-background text-[0.8125rem] leading-[1.1875rem] transform-[none] pointer-events-none" data-cid="n361">
