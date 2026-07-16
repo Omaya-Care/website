@@ -9,3 +9,6 @@ superpower-clone.tgz
 # Playwright transient output (baselines live in visual/*-snapshots)
 test-results
 playwright-report
+
+# Internal working notes (kept local, not tracked)
+REACT_DOCTOR_FINDINGS.md
