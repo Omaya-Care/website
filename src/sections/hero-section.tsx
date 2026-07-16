@@ -44,7 +44,7 @@ export default function HeroSection({ tile5Data = tile5DataContent } = {}) {
               Free protocols for
             </p>
             <div className="flex flex-col gap-1 pointer-events-none" data-cid="n887">
-              {tile5Data.map((d, i) => <Tile5 key={i} d={d} cids={Tile5_cids[i]} styles={Tile5_styles[i]} />)}
+              {tile5Data.map((d, i) => <Tile5 key={Tile5_cids[i][0]} d={d} cids={Tile5_cids[i]} styles={Tile5_styles[i]} />)}
             </div>
           </div>
         </div>
