@@ -1,5 +1,5 @@
 {
-  "name": "cloned-app",
+  "name": "omaya-website",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -23,6 +23,7 @@
     "@types/react": "19.2.17",
     "@types/react-dom": "19.2.3",
     "@vitejs/plugin-react": "^4.7.0",
+    "beasties": "^0.4.3",
     "playwright": "^1.61.1",
     "react-doctor": "^0.7.8",
     "tailwindcss": "^4",

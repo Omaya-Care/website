@@ -4,11 +4,21 @@
 // hydrateRoot()s the same tree. Runs after `vite build` + the `--ssr` build.
 import { readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath, pathToFileURL } from "node:url";
+import Beasties from "beasties";
 
 const serverEntry = fileURLToPath(new URL("../dist-server/entry-server.js", import.meta.url));
 const { render } = await import(pathToFileURL(serverEntry).href);
 
 const DIST = new URL("../dist/", import.meta.url);
+// Inline above-fold critical CSS into each page and lazy-load the full stylesheet,
+// so first paint no longer blocks on a separate render-blocking CSS request.
+const beasties = new Beasties({
+  path: fileURLToPath(DIST),
+  publicPath: "/",
+  preload: "swap",
+  pruneSource: false,
+  logLevel: "silent",
+});
 // terms.html shares the tos tree (same MPA entry).
 const ROUTES = [
   ["index.html", "main"],
@@ -26,6 +36,8 @@ for (const [file, name] of ROUTES) {
     throw new Error(`prerender: '<div id="root"></div>' not found in ${file}`);
   }
   const app = render(name);
-  writeFileSync(path, html.replace('<div id="root"></div>', `<div id="root">${app}</div>`));
-  console.log(`prerendered ${file} <- ${name}  (${(app.length / 1024).toFixed(1)} KB static HTML)`);
+  const withApp = html.replace('<div id="root"></div>', `<div id="root">${app}</div>`);
+  const out = await beasties.process(withApp);
+  writeFileSync(path, out);
+  console.log(`prerendered ${file} <- ${name}  (${(app.length / 1024).toFixed(1)} KB static HTML, critical CSS inlined)`);
 }
