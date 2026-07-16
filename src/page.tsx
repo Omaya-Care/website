@@ -78,13 +78,13 @@ const Tile2_data: Tile2Data[] = [
     { text: "Access prescriptions" }
 ];
 const Logo3_data: Logo3Data[] = [
-    { alt: "New mother holding her baby while speaking on the phone", imgSrc: "/assets/cloned/images/aya-mother-baby-phone.avif", srcSet: "/assets/cloned/images/aya-mother-baby-phone.avif 1872w" },
-    { alt: "Mother baby care essentials", imgSrc: "/assets/cloned/images/aya-baby-essentials.avif", srcSet: "/assets/cloned/images/aya-baby-essentials.avif 1872w", overlay: { icon: "/assets/cloned/images/omaya-logo-mark.png", title: "Omaya Care Pack", subtitle: "Order #0987654 · Delivered" } },
-    { alt: "New parents using emergency contact support on their phone", imgSrc: "/assets/cloned/images/aya-emergency-contact.avif", srcSet: "/assets/cloned/images/aya-emergency-contact.avif 1872w" },
-    { alt: "Membership slide 2", imgSrc: "/assets/cloned/images/78621ada786b.avif", srcSet: "/assets/cloned/images/e60205091f24.avif 500w, /assets/cloned/images/b68af40c0a8b.avif 800w, /assets/cloned/images/dd201e11c8ad.avif 1080w, /assets/cloned/images/44f85a74dfe9.avif 1600w, /assets/cloned/images/78621ada786b.avif 1872w", kind: "image" },
-    { alt: "Membership slide 3", imgSrc: "/assets/cloned/images/2b3f3a879ef1.avif", srcSet: "/assets/cloned/images/4b128f994b40.avif 500w, /assets/cloned/images/7f83d844aba2.avif 800w, /assets/cloned/images/fa8d148e4aa8.avif 1080w, /assets/cloned/images/763e12a441c8.avif 1600w, /assets/cloned/images/2b3f3a879ef1.avif 1872w", kind: "image" },
-    { alt: "Membership slide 1", imgSrc: "/assets/cloned/images/2625a03874cc.avif", srcSet: "/assets/cloned/images/37467bd7b060.avif 500w, /assets/cloned/images/6bb3447c978c.avif 800w, /assets/cloned/images/6ef60097c290.avif 1080w, /assets/cloned/images/f41d7a863f64.avif 1600w, /assets/cloned/images/2625a03874cc.avif 1872w", kind: "image" },
-    { alt: "Membership slide 1", imgSrc: "/assets/cloned/images/b28b4949b3fb.avif", srcSet: "/assets/cloned/images/9535d630a93b.avif 500w, /assets/cloned/images/da43de3427ba.avif 800w, /assets/cloned/images/f552f8b2b10c.avif 1080w, /assets/cloned/images/42bd9f32f1be.avif 1600w, /assets/cloned/images/b28b4949b3fb.avif 1872w", kind: "image" }
+    { alt: "New mother holding her baby while speaking on the phone", imgSrc: "/assets/media/images/aya-mother-baby-phone.avif", srcSet: "/assets/media/images/aya-mother-baby-phone.avif 1872w" },
+    { alt: "Mother baby care essentials", imgSrc: "/assets/media/images/aya-baby-essentials.avif", srcSet: "/assets/media/images/aya-baby-essentials.avif 1872w", overlay: { icon: "/assets/media/images/omaya-logo-mark.png", title: "Omaya Care Pack", subtitle: "Order #0987654 · Delivered" } },
+    { alt: "New parents using emergency contact support on their phone", imgSrc: "/assets/media/images/aya-emergency-contact.avif", srcSet: "/assets/media/images/aya-emergency-contact.avif 1872w" },
+    { alt: "Membership slide 2", imgSrc: "/assets/media/images/78621ada786b.avif", srcSet: "/assets/media/images/e60205091f24.avif 500w, /assets/media/images/b68af40c0a8b.avif 800w, /assets/media/images/dd201e11c8ad.avif 1080w, /assets/media/images/44f85a74dfe9.avif 1600w, /assets/media/images/78621ada786b.avif 1872w", kind: "image" },
+    { alt: "Membership slide 3", imgSrc: "/assets/media/images/2b3f3a879ef1.avif", srcSet: "/assets/media/images/4b128f994b40.avif 500w, /assets/media/images/7f83d844aba2.avif 800w, /assets/media/images/fa8d148e4aa8.avif 1080w, /assets/media/images/763e12a441c8.avif 1600w, /assets/media/images/2b3f3a879ef1.avif 1872w", kind: "image" },
+    { alt: "Membership slide 1", imgSrc: "/assets/media/images/2625a03874cc.avif", srcSet: "/assets/media/images/37467bd7b060.avif 500w, /assets/media/images/6bb3447c978c.avif 800w, /assets/media/images/6ef60097c290.avif 1080w, /assets/media/images/f41d7a863f64.avif 1600w, /assets/media/images/2625a03874cc.avif 1872w", kind: "image" },
+    { alt: "Membership slide 1", imgSrc: "/assets/media/images/b28b4949b3fb.avif", srcSet: "/assets/media/images/9535d630a93b.avif 500w, /assets/media/images/da43de3427ba.avif 800w, /assets/media/images/f552f8b2b10c.avif 1080w, /assets/media/images/42bd9f32f1be.avif 1600w, /assets/media/images/b28b4949b3fb.avif 1872w", kind: "image" }
 ];
 const Tile3_data: Tile3Data[] = [
     { description: "Professional health monitoring for you and your baby" },
@@ -95,16 +95,16 @@ const Tile3_data: Tile3Data[] = [
     { description: "One place to shop mother and baby care essentials" }
 ];
 const Logo4_data: Logo4Data[] = [
-    { imgSrc: "/assets/cloned/svg/phone-icon.svg", text: "Works on any phone" },
-    { imgSrc: "/assets/cloned/svg/f94a0722d30a.svg", text: "Cancel anytime" },
-    { imgSrc: "/assets/cloned/svg/644a08effc9a.svg", text: "Full postpartum support" }
+    { imgSrc: "/assets/media/svg/phone-icon.svg", text: "Works on any phone" },
+    { imgSrc: "/assets/media/svg/f94a0722d30a.svg", text: "Cancel anytime" },
+    { imgSrc: "/assets/media/svg/644a08effc9a.svg", text: "Full postpartum support" }
 ];
 const Logo5_data: Logo5Data[] = [
-    { ariaLabel: "Ask Claude", href: "https://claude.ai/new?q=tell+me+about+https%3A%2F%2Fsuperpower.com%2F", sizes: "100vw", imgSrc: "/assets/cloned/images/a297399f982c.avif", srcSet: "/assets/cloned/images/4e6333fcabeb.png 500w, /assets/cloned/images/2adea8e249b4.png 800w, /assets/cloned/images/0eb816dd9ad6.png 1080w, /assets/cloned/images/a297399f982c.avif 1200w" },
-    { ariaLabel: "Ask Gemini", href: "https://www.google.com/search?q=tell+me+about+https%3A%2F%2Fsuperpower.com%2F&udm=50", imgSrc: "/assets/cloned/svg/d40fe4aac666.svg" },
-    { ariaLabel: "Ask Grok", href: "https://x.com/i/grok?text=tell+me+about+https%3A%2F%2Fsuperpower.com%2F", imgSrc: "/assets/cloned/svg/ff93db0f1a39.svg" },
-    { ariaLabel: "Ask ChatGPT", href: "https://chat.openai.com/?q=tell+me+about+https%3A%2F%2Fsuperpower.com%2F", imgSrc: "/assets/cloned/svg/3e9f8339f4b9.svg" },
-    { ariaLabel: "Ask Perplexity", href: "https://www.perplexity.ai/search/new?q=tell+me+about+https%3A%2F%2Fsuperpower.com%2F", imgSrc: "/assets/cloned/svg/9a042afd1ff4.svg" }
+    { ariaLabel: "Ask Claude", href: "https://claude.ai/new?q=tell+me+about+https%3A%2F%2Fsuperpower.com%2F", sizes: "100vw", imgSrc: "/assets/media/images/a297399f982c.avif", srcSet: "/assets/media/images/4e6333fcabeb.png 500w, /assets/media/images/2adea8e249b4.png 800w, /assets/media/images/0eb816dd9ad6.png 1080w, /assets/media/images/a297399f982c.avif 1200w" },
+    { ariaLabel: "Ask Gemini", href: "https://www.google.com/search?q=tell+me+about+https%3A%2F%2Fsuperpower.com%2F&udm=50", imgSrc: "/assets/media/svg/d40fe4aac666.svg" },
+    { ariaLabel: "Ask Grok", href: "https://x.com/i/grok?text=tell+me+about+https%3A%2F%2Fsuperpower.com%2F", imgSrc: "/assets/media/svg/ff93db0f1a39.svg" },
+    { ariaLabel: "Ask ChatGPT", href: "https://chat.openai.com/?q=tell+me+about+https%3A%2F%2Fsuperpower.com%2F", imgSrc: "/assets/media/svg/3e9f8339f4b9.svg" },
+    { ariaLabel: "Ask Perplexity", href: "https://www.perplexity.ai/search/new?q=tell+me+about+https%3A%2F%2Fsuperpower.com%2F", imgSrc: "/assets/media/svg/9a042afd1ff4.svg" }
 ];
 const TextLink2_data: TextLink2Data[] = [
     { href: "/how-it-works", label: "How it works" },

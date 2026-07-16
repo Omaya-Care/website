@@ -8,10 +8,10 @@ const SLIDE_DURATION = 6000;
 const SLIDE_TRANSITION = 500;
 
 const MediaTile5_data: MediaTile5Data[] = [
-    { imgSrc: "/assets/cloned/images/role-midwives-nurses.avif", description: "For Midwives and Nurses", description2: "Omaya handles every routine post-discharge check-in automatically. Your staff only step in when a patient genuinely needs clinical attention.", description3: "Returns over 20 hours of midwife time per month" },
-    { imgSrc: "/assets/cloned/images/role-administration.avif", kind: "image", description: "For Administration", description2: "Patients who feel supported after discharge come back. Omaya secures that relationship and protects the lifetime value of every mother you serve.", description3: "Reduces post-discharge dropout and repeat visit loss" },
-    { imgSrc: "/assets/cloned/images/role-clinical-directors.avif", kind: "image", description: "For Clinical Directors", description2: "Every Omaya call is triaged by urgency before it reaches your staff. Critical cases escalate instantly. Stable ones are documented and closed.", description3: "Full audit trail on every post-discharge interaction" },
-    { imgSrc: "/assets/cloned/images/role-institution.avif", description: "For the Institution", description2: "Omaya aligns your hospital with national maternal health policy with zero new hardware, zero new workflows, and zero staff retraining required.", description3: "Compliant, scalable, and live within days of onboarding" }
+    { imgSrc: "/assets/media/images/role-midwives-nurses.avif", description: "For Midwives and Nurses", description2: "Omaya handles every routine post-discharge check-in automatically. Your staff only step in when a patient genuinely needs clinical attention.", description3: "Returns over 20 hours of midwife time per month" },
+    { imgSrc: "/assets/media/images/role-administration.avif", kind: "image", description: "For Administration", description2: "Patients who feel supported after discharge come back. Omaya secures that relationship and protects the lifetime value of every mother you serve.", description3: "Reduces post-discharge dropout and repeat visit loss" },
+    { imgSrc: "/assets/media/images/role-clinical-directors.avif", kind: "image", description: "For Clinical Directors", description2: "Every Omaya call is triaged by urgency before it reaches your staff. Critical cases escalate instantly. Stable ones are documented and closed.", description3: "Full audit trail on every post-discharge interaction" },
+    { imgSrc: "/assets/media/images/role-institution.avif", description: "For the Institution", description2: "Omaya aligns your hospital with national maternal health policy with zero new hardware, zero new workflows, and zero staff retraining required.", description3: "Compliant, scalable, and live within days of onboarding" }
 ];
 /** Gallery Showcase section. */
 export default function GalleryShowcaseSection2({ mediaTile5Data = MediaTile5_data } = {}) {

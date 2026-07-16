@@ -119,7 +119,7 @@ fieldset, legend { min-width: 0; }
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/assets/cloned/fonts/84bca6298f66.woff2") format("woff2");
+  src: url("/assets/media/fonts/84bca6298f66.woff2") format("woff2");
 }
 
 @font-face {
@@ -127,7 +127,7 @@ fieldset, legend { min-width: 0; }
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/assets/cloned/fonts/4a32becdfd6a.woff2") format("woff2");
+  src: url("/assets/media/fonts/4a32becdfd6a.woff2") format("woff2");
 }
 
 @font-face {
@@ -135,7 +135,7 @@ fieldset, legend { min-width: 0; }
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("/assets/cloned/fonts/51b9199e1b4b.woff2") format("woff2");
+  src: url("/assets/media/fonts/51b9199e1b4b.woff2") format("woff2");
 }
 html { background: rgb(255, 255, 255); }
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }

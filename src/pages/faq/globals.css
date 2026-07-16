@@ -218,7 +218,7 @@ fieldset, legend { min-width: 0; }
   font-style: italic;
   font-weight: 300;
   font-display: auto;
-  src: url("/assets/cloned/fonts/f914778fce5a.woff2") format("woff2");
+  src: url("/assets/media/fonts/f914778fce5a.woff2") format("woff2");
 }
 
 @font-face {
@@ -226,7 +226,7 @@ fieldset, legend { min-width: 0; }
   font-style: normal;
   font-weight: 300;
   font-display: auto;
-  src: url("/assets/cloned/fonts/ba2a0a05fc0d.woff2") format("woff2");
+  src: url("/assets/media/fonts/ba2a0a05fc0d.woff2") format("woff2");
 }
 
 @font-face {
@@ -234,7 +234,7 @@ fieldset, legend { min-width: 0; }
   font-style: italic;
   font-weight: 400;
   font-display: auto;
-  src: url("/assets/cloned/fonts/3e2bdc2a69e4.woff2") format("woff2");
+  src: url("/assets/media/fonts/3e2bdc2a69e4.woff2") format("woff2");
 }
 
 @font-face {
@@ -242,7 +242,7 @@ fieldset, legend { min-width: 0; }
   font-style: normal;
   font-weight: 400;
   font-display: auto;
-  src: url("/assets/cloned/fonts/5ab6f3d132e3.woff2") format("woff2");
+  src: url("/assets/media/fonts/5ab6f3d132e3.woff2") format("woff2");
 }
 
 @font-face {
@@ -250,7 +250,7 @@ fieldset, legend { min-width: 0; }
   font-style: italic;
   font-weight: 600;
   font-display: auto;
-  src: url("/assets/cloned/fonts/555fdfa4c21f.woff2") format("woff2");
+  src: url("/assets/media/fonts/555fdfa4c21f.woff2") format("woff2");
 }
 
 @font-face {
@@ -258,7 +258,7 @@ fieldset, legend { min-width: 0; }
   font-style: normal;
   font-weight: 600;
   font-display: auto;
-  src: url("/assets/cloned/fonts/a77482ee1c79.woff2") format("woff2");
+  src: url("/assets/media/fonts/a77482ee1c79.woff2") format("woff2");
 }
 
 @font-face {
@@ -266,7 +266,7 @@ fieldset, legend { min-width: 0; }
   font-style: italic;
   font-weight: 100 900;
   font-display: swap;
-  src: url("/assets/cloned/fonts/6615bd4a0d99.woff2") format("woff2");
+  src: url("/assets/media/fonts/6615bd4a0d99.woff2") format("woff2");
 }
 
 @font-face {
@@ -274,7 +274,7 @@ fieldset, legend { min-width: 0; }
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
-  src: url("/assets/cloned/fonts/c3bedc54da4f.woff2") format("woff2");
+  src: url("/assets/media/fonts/c3bedc54da4f.woff2") format("woff2");
 }
 
 @font-face {
@@ -282,7 +282,7 @@ fieldset, legend { min-width: 0; }
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/assets/cloned/fonts/fc0e7c002c2e.woff2") format("woff2");
+  src: url("/assets/media/fonts/fc0e7c002c2e.woff2") format("woff2");
 }
 
 @font-face {
@@ -290,7 +290,7 @@ fieldset, legend { min-width: 0; }
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/assets/cloned/fonts/fc62463004c9.woff2") format("woff2");
+  src: url("/assets/media/fonts/fc62463004c9.woff2") format("woff2");
 }
 
 @font-face {
@@ -298,7 +298,7 @@ fieldset, legend { min-width: 0; }
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("/assets/cloned/fonts/ce599a22f30d.woff2") format("woff2");
+  src: url("/assets/media/fonts/ce599a22f30d.woff2") format("woff2");
 }
 
 @font-face {
@@ -306,7 +306,7 @@ fieldset, legend { min-width: 0; }
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url("/assets/cloned/fonts/30113265a144.ttf") format("truetype");
+  src: url("/assets/media/fonts/30113265a144.ttf") format("truetype");
 }
 
 @font-face {
@@ -314,7 +314,7 @@ fieldset, legend { min-width: 0; }
   font-style: italic;
   font-weight: 100 900;
   font-display: swap;
-  src: url("/assets/cloned/fonts/4c14d66cbd18.ttf") format("truetype");
+  src: url("/assets/media/fonts/4c14d66cbd18.ttf") format("truetype");
 }
 
 @font-face {
@@ -322,7 +322,7 @@ fieldset, legend { min-width: 0; }
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
-  src: url("/assets/cloned/fonts/97ba13243606.ttf") format("truetype");
+  src: url("/assets/media/fonts/97ba13243606.ttf") format("truetype");
 }
 
 @font-face {
@@ -330,7 +330,7 @@ fieldset, legend { min-width: 0; }
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/assets/cloned/fonts/b72bc9766ba2.woff2") format("woff2");
+  src: url("/assets/media/fonts/b72bc9766ba2.woff2") format("woff2");
 }
 
 @font-face {
@@ -338,7 +338,7 @@ fieldset, legend { min-width: 0; }
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/assets/cloned/fonts/073e5c33898e.ttf") format("truetype");
+  src: url("/assets/media/fonts/073e5c33898e.ttf") format("truetype");
 }
 
 @font-face {

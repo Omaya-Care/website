@@ -51,7 +51,7 @@ export default function Navbar({ light = false, showBanner = true }: { light?: b
               <p className="block text-muted-foreground leading-[1.375rem] tracking-[-0.2px] max-md:hidden md:max-lg:leading-6 2xl:leading-6">
                 Learn more
               </p>
-              <img decoding="async" className="w-6 h-6 block max-w-full overflow-clip align-middle" alt="" src="/assets/cloned/svg/a3d12be7c2fd.svg" />
+              <img decoding="async" className="w-6 h-6 block max-w-full overflow-clip align-middle" alt="" src="/assets/media/svg/a3d12be7c2fd.svg" />
             </div>
           </div>
         </a>
@@ -162,7 +162,7 @@ export default function Navbar({ light = false, showBanner = true }: { light?: b
           <div className="flex-1 flex items-end p-6">
             <div className="relative w-full rounded-2xl overflow-hidden aspect-[584/520]">
               <img decoding="async"
-                src="/assets/cloned/images/drawer-mother.avif"
+                src="/assets/media/images/drawer-mother.avif"
                 alt="Mother on phone with baby"
                 className="w-full h-full object-cover object-top"
               />

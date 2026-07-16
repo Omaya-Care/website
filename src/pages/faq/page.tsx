@@ -92,11 +92,11 @@ const ListRow2_data: ListRow2Data[] = [
     { text: "Wisconsin" }
 ];
 const Logo_data: LogoData[] = [
-    { ariaLabel: "Ask Claude", href: "https://claude.ai/new?q=tell+me+about+https%3A%2F%2Fsuperpower.com%2Ffaqs", sizes: "100vw", imgSrc: "/assets/cloned/images/a297399f982c.avif", srcSet: "/assets/cloned/images/4e6333fcabeb.png 500w, /assets/cloned/images/2adea8e249b4.png 800w, /assets/cloned/images/0eb816dd9ad6.png 1080w, /assets/cloned/images/a297399f982c.avif 1200w" },
-    { ariaLabel: "Ask Gemini", href: "https://www.google.com/search?q=tell+me+about+https%3A%2F%2Fsuperpower.com%2Ffaqs&udm=50", imgSrc: "/assets/cloned/svg/d40fe4aac666.svg" },
-    { ariaLabel: "Ask Grok", href: "https://x.com/i/grok?text=tell+me+about+https%3A%2F%2Fsuperpower.com%2Ffaqs", imgSrc: "/assets/cloned/svg/ff93db0f1a39.svg" },
-    { ariaLabel: "Ask ChatGPT", href: "https://chat.openai.com/?q=tell+me+about+https%3A%2F%2Fsuperpower.com%2Ffaqs", imgSrc: "/assets/cloned/svg/3e9f8339f4b9.svg" },
-    { ariaLabel: "Ask Perplexity", href: "https://www.perplexity.ai/search/new?q=tell+me+about+https%3A%2F%2Fsuperpower.com%2Ffaqs", imgSrc: "/assets/cloned/svg/9a042afd1ff4.svg" }
+    { ariaLabel: "Ask Claude", href: "https://claude.ai/new?q=tell+me+about+https%3A%2F%2Fsuperpower.com%2Ffaqs", sizes: "100vw", imgSrc: "/assets/media/images/a297399f982c.avif", srcSet: "/assets/media/images/4e6333fcabeb.png 500w, /assets/media/images/2adea8e249b4.png 800w, /assets/media/images/0eb816dd9ad6.png 1080w, /assets/media/images/a297399f982c.avif 1200w" },
+    { ariaLabel: "Ask Gemini", href: "https://www.google.com/search?q=tell+me+about+https%3A%2F%2Fsuperpower.com%2Ffaqs&udm=50", imgSrc: "/assets/media/svg/d40fe4aac666.svg" },
+    { ariaLabel: "Ask Grok", href: "https://x.com/i/grok?text=tell+me+about+https%3A%2F%2Fsuperpower.com%2Ffaqs", imgSrc: "/assets/media/svg/ff93db0f1a39.svg" },
+    { ariaLabel: "Ask ChatGPT", href: "https://chat.openai.com/?q=tell+me+about+https%3A%2F%2Fsuperpower.com%2Ffaqs", imgSrc: "/assets/media/svg/3e9f8339f4b9.svg" },
+    { ariaLabel: "Ask Perplexity", href: "https://www.perplexity.ai/search/new?q=tell+me+about+https%3A%2F%2Fsuperpower.com%2Ffaqs", imgSrc: "/assets/media/svg/9a042afd1ff4.svg" }
 ];
 const TextLink4_data: TextLink4Data[] = [
     { href: "/how-it-works", label: "How it works" },

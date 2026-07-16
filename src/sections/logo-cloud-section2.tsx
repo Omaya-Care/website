@@ -2,9 +2,9 @@ import Icon6 from "../svgs/svg-icon6";
 /** Logo Cloud section. */
 export default function LogoCloudSection2() {
   return (
-    <div className="h-full block relative rounded-[6.6px] flex-col justify-center items-center overflow-hidden cursor-pointer 2xl:rounded-[7.2px]" data-cid="n644" aria-label="Open Video" data-src="/assets/cloned/videos/38f2aded4e9c.mp4">
+    <div className="h-full block relative rounded-[6.6px] flex-col justify-center items-center overflow-hidden cursor-pointer 2xl:rounded-[7.2px]" data-cid="n644" aria-label="Open Video" data-src="/assets/media/videos/38f2aded4e9c.mp4">
       <img loading="lazy" decoding="async" className="w-full h-full block absolute top-0 left-0 z-0 max-w-full overflow-clip object-cover align-middle pointer-events-none" data-cid="n645" data-component="image" alt="" />
-      <video className="w-full h-[4.9375rem] block relative z-1 overflow-clip object-cover 2xl:h-21.5" data-cid="n646" loop playsInline poster="/assets/cloned/images/9fc04b930d19.jpg" preload="metadata" src="/assets/cloned/videos/38f2aded4e9c.mp4">
+      <video className="w-full h-[4.9375rem] block relative z-1 overflow-clip object-cover 2xl:h-21.5" data-cid="n646" loop playsInline poster="/assets/media/images/9fc04b930d19.jpg" preload="metadata" src="/assets/media/videos/38f2aded4e9c.mp4">
         <track kind="captions" src="/assets/captions/empty.vtt" />
       </video>
       <div className="w-[1.375rem] h-[1.375rem] flex absolute top-[2.4625rem] left-[clamp(63.5px,_50%,_calc(100%_-_63.5px))] z-10 rounded-[999px] flex-col justify-center items-center text-background bg-surface-4 transform-[matrix(1,0,0,1,-10.9844,-10.9844)] 2xl:w-6 2xl:h-6 2xl:top-[2.6875rem] 2xl:transform-[matrix(1,0,0,1,-12,-12)]" data-cid="n647">
