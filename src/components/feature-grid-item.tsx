@@ -49,7 +49,7 @@ function FeatureGridItemSlot1({ d }: { d: FeatureGridItemData }) {
         <picture className="contents">
           <source srcSet="/assets/images/omaya-proactive-calls.avif" type="image/avif" />
           <source srcSet="/assets/images/omaya-proactive-calls.webp" type="image/webp" />
-          <img loading="lazy" decoding="async" className="w-full h-72 inline-block max-w-full rounded-[11px] overflow-clip object-cover aspect-square align-middle max-md:h-[13.1875rem] max-lg:rounded-xl max-md:object-[50%_33%] max-md:aspect-[3/2] md:max-lg:h-[20.9375rem] 2xl:h-78.5 2xl:rounded-xl" data-id="n97" alt="Omaya Care incoming call notification on iPhone" sizes="(max-width: 664px) 100vw, 664px" src="/assets/images/omaya-proactive-calls.png" />
+          <img loading="lazy" decoding="async" className="w-full h-72 inline-block max-w-full rounded-[11px] overflow-clip object-cover aspect-square align-middle max-md:h-[13.1875rem] max-lg:rounded-xl max-md:object-[50%_33%] max-md:aspect-[3/2] md:max-lg:h-[20.9375rem] 2xl:h-78.5 2xl:rounded-xl" data-id="n97" alt="Omaya Care incoming call notification on iPhone" sizes="(max-width: 664px) 100vw, 664px" src="/assets/images/omaya-proactive-calls.webp" />
         </picture>
       );
     case "ai-builds-evidence-backed-protocols-inform":
@@ -57,7 +57,7 @@ function FeatureGridItemSlot1({ d }: { d: FeatureGridItemData }) {
         <picture className="contents">
           <source srcSet="/assets/images/omaya-mother-reaches-out.avif" type="image/avif" />
           <source srcSet="/assets/images/omaya-mother-reaches-out.webp" type="image/webp" />
-          <img loading="lazy" decoding="async" className="w-full h-72 inline-block max-w-full rounded-[11px] overflow-clip object-cover aspect-square align-middle max-md:h-[13.1875rem] max-lg:rounded-xl max-md:object-[50%_33%] max-md:aspect-[3/2] md:max-lg:h-[20.9375rem] 2xl:h-78.5 2xl:rounded-xl" data-id="n105" alt="Omaya Care contact screen on iPhone" sizes="(max-width: 664px) 100vw, 664px" src="/assets/images/omaya-mother-reaches-out.png" />
+          <img loading="lazy" decoding="async" className="w-full h-72 inline-block max-w-full rounded-[11px] overflow-clip object-cover aspect-square align-middle max-md:h-[13.1875rem] max-lg:rounded-xl max-md:object-[50%_33%] max-md:aspect-[3/2] md:max-lg:h-[20.9375rem] 2xl:h-78.5 2xl:rounded-xl" data-id="n105" alt="Omaya Care contact screen on iPhone" sizes="(max-width: 664px) 100vw, 664px" src="/assets/images/omaya-mother-reaches-out.webp" />
         </picture>
       );
     case "take-action-access-everything-you-need-the":
@@ -65,7 +65,7 @@ function FeatureGridItemSlot1({ d }: { d: FeatureGridItemData }) {
         <picture className="contents">
           <source srcSet="/assets/images/omaya-hospital-portal.avif" type="image/avif" />
           <source srcSet="/assets/images/omaya-hospital-portal.webp" type="image/webp" />
-          <img loading="lazy" decoding="async" className="w-full h-72 inline-block max-w-full rounded-[11px] overflow-clip object-cover aspect-square align-middle max-md:h-[13.1875rem] max-lg:rounded-xl max-md:object-[50%_33%] max-md:aspect-[3/2] md:max-lg:h-[20.9375rem] 2xl:h-78.5 2xl:rounded-xl" data-id="n112" alt="Hospital portal dashboard on tablet showing Omaya Care" sizes="(max-width: 996px) 100vw, 996px" src="/assets/images/omaya-hospital-portal.png" />
+          <img loading="lazy" decoding="async" className="w-full h-72 inline-block max-w-full rounded-[11px] overflow-clip object-cover aspect-square align-middle max-md:h-[13.1875rem] max-lg:rounded-xl max-md:object-[50%_33%] max-md:aspect-[3/2] md:max-lg:h-[20.9375rem] 2xl:h-78.5 2xl:rounded-xl" data-id="n112" alt="Hospital portal dashboard on tablet showing Omaya Care" sizes="(max-width: 996px) 100vw, 996px" src="/assets/images/omaya-hospital-portal.webp" />
         </picture>
       );
     default:
@@ -80,7 +80,7 @@ function FeatureGridItemSlot2({ d }: { d: FeatureGridItemData }) {
         <picture className="contents">
           <source srcSet="/assets/images/omaya-hospital-onboards.avif" type="image/avif" />
           <source srcSet="/assets/images/omaya-hospital-onboards.webp" type="image/webp" />
-          <img loading="lazy" decoding="async" className="w-full h-72 inline-block max-w-full rounded-[11px] overflow-clip object-cover aspect-square align-middle max-md:h-[13.1875rem] max-lg:rounded-xl max-md:object-[50%_33%] max-md:aspect-[3/2] md:max-lg:h-[20.9375rem] 2xl:h-78.5 2xl:rounded-xl" data-id="n91" alt="A nurse showing a tablet to a new mother holding her newborn in a hospital room" sizes="(max-width: 664px) 100vw, 664px" src="/assets/images/omaya-hospital-onboards.png" />
+          <img loading="lazy" decoding="async" className="w-full h-72 inline-block max-w-full rounded-[11px] overflow-clip object-cover aspect-square align-middle max-md:h-[13.1875rem] max-lg:rounded-xl max-md:object-[50%_33%] max-md:aspect-[3/2] md:max-lg:h-[20.9375rem] 2xl:h-78.5 2xl:rounded-xl" data-id="n91" alt="A nurse showing a tablet to a new mother holding her newborn in a hospital room" sizes="(max-width: 664px) 100vw, 664px" src="/assets/images/omaya-hospital-onboards.webp" />
         </picture>
       );
     case "get-a-complete-picture-of-your-health-data":

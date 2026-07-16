@@ -12,6 +12,11 @@ const ROUTES = [
 
 const VIEWPORTS = [
   { name: "desktop", width: 1440, height: 900 },
+  // Mid-band widths in the previously-"jumpy" zones (between md/lg/2xl breakpoints).
+  // These lock the fluid clamp() curves so future changes can't reintroduce the
+  // discrete jumps at 1025 / 1601 that the responsive-fluid pass removed.
+  { name: "wide", width: 1200, height: 900 },
+  { name: "xwide", width: 1700, height: 900 },
   { name: "tablet", width: 768, height: 1024 },
   { name: "mobile", width: 390, height: 844 },
 ];

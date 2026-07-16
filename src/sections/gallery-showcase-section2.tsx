@@ -86,7 +86,7 @@ export default function GalleryShowcaseSection2({ mediaTile5Data = MediaTile5_da
 
   return (
     <section
-      className="h-[52rem] flex pt-[4rem] pb-8 flex-col gap-[3.6625rem] overflow-hidden leading-[1.375rem] bg-surface max-md:h-[50rem] max-md:pt-10 max-md:pb-16 max-md:gap-10 max-lg:leading-6 md:max-lg:h-[51rem] md:max-lg:pt-12 md:max-lg:pb-10 md:max-lg:gap-12 2xl:h-[1040px] 2xl:pt-12 2xl:pb-10 2xl:gap-16 2xl:leading-6"
+      className="h-[clamp(51rem,49.857143rem_+_2.380952vw,65rem)] flex pt-[4rem] pb-8 flex-col gap-[clamp(3rem,2.242857rem_+_1.577381vw,4rem)] overflow-hidden leading-[1.375rem] bg-surface max-md:h-[50rem] max-md:pt-10 max-md:pb-16 max-md:gap-10 max-lg:leading-6 md:max-lg:pt-12 md:max-lg:pb-10 2xl:pt-12 2xl:pb-10 2xl:leading-6"
       data-id="n372"
       id="for-hospitals"
     >
@@ -133,7 +133,7 @@ export default function GalleryShowcaseSection2({ mediaTile5Data = MediaTile5_da
               </div>
             </div>
           </div>
-          <div className="flex max-w-[42.1375rem] mt-[3.6625rem] items-center gap-[1.375rem] max-lg:mt-6 max-md:pr-5 max-lg:gap-6 max-md:max-w-none md:max-lg:max-w-184 md:max-lg:pr-10 2xl:max-w-184 2xl:mt-16 2xl:gap-6" data-id="n418">
+          <div className="flex max-w-[42.1375rem] mt-[clamp(1.5rem,5.14881vw_-_0.971429rem,4rem)] items-center gap-[1.375rem] max-md:mt-6 max-md:pr-5 max-lg:gap-6 max-md:max-w-none md:max-lg:max-w-184 md:max-lg:pr-10 2xl:max-w-184 2xl:gap-6" data-id="n418">
             <div className="flex min-w-0 items-center flex-1 gap-2" data-id="n419">
               <button
                 type="button"

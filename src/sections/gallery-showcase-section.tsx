@@ -61,7 +61,7 @@ export default function GalleryShowcaseSection({ mediaTile3Data = MediaTile3_dat
                 Doctors and legal professionals with firsthand knowledge of maternal health in Ghana.
               </p>
             </div>
-            <div className="w-[38.3rem] block relative mt-[3.6625rem] max-md:w-86.5 max-md:mt-12 md:max-lg:w-[22.5rem] md:max-lg:mt-16 2xl:w-[50rem] 2xl:mt-16" data-id="n289">
+            <div className="w-[clamp(22.5rem,4.442857rem_+_37.619048vw,50rem)] block relative mt-[3.6625rem] max-md:w-86.5 max-md:mt-12 md:max-lg:mt-16 2xl:mt-16" data-id="n289">
               <div className="flex relative" data-id="n290">
                 <div
                   ref={trackRef}

@@ -35,7 +35,7 @@ export default function Navbar({ light = false, showBanner = true }: { light?: b
     <div className="flex fixed top-0 inset-x-0 z-9999 flex-col transition-all duration-500 ease-in-out">
       {showBanner && (
         <a
-          className={cn("block relative z-999 max-w-full bg-background cursor-pointer overflow-hidden transition-all duration-500 ease-in-out max-lg:h-12.5 2xl:h-12.5", scrolled ? "h-0 opacity-0 pointer-events-none" : "h-[2.8625rem]")}
+          className={cn("block relative z-999 max-w-full bg-background cursor-pointer overflow-hidden transition-all duration-500 ease-in-out", scrolled ? "h-0 opacity-0 pointer-events-none" : "h-[2.8625rem] max-lg:h-12.5 2xl:h-12.5")}
           href="https://meltwater.org/mest-ai-startup-program/"
           target="_blank"
           rel="noopener noreferrer"
@@ -56,14 +56,14 @@ export default function Navbar({ light = false, showBanner = true }: { light?: b
           </div>
         </a>
       )}
-      <div className={cn("flex relative z-9999 py-[1.375rem] px-[4.125rem] justify-center items-center gap-[7.3px] max-md:py-4 max-md:px-6 max-lg:gap-2 max-lg:[backdrop-filter:blur(24px)] md:max-lg:p-4 2xl:py-6 2xl:px-18 2xl:gap-2", light ? "max-lg:bg-background" : "max-lg:bg-clr-0")}>
+      <div className={cn("flex relative z-9999 py-[1.375rem] px-[4.125rem] justify-center items-center gap-[7.3px] max-lg:gap-2 max-lg:mx-4 max-lg:mt-2 max-lg:rounded-full max-lg:[backdrop-filter:blur(24px)] max-md:py-2 max-md:px-3 md:max-lg:py-2.5 md:max-lg:px-4 2xl:py-6 2xl:px-18 2xl:gap-2", light ? "max-lg:bg-background" : "max-lg:bg-clr-0")}>
         <a
-          className={cn("w-[153.9px] h-[1.3125rem] flex absolute top-[40.7px] left-1/2 z-1 min-w-0 max-w-full justify-center items-center shrink-0 transform-[translate(-50%,-10.4688px)] cursor-pointer transition-opacity duration-500 ease-in-out max-md:w-34 max-md:h-[18.5px] max-lg:transform-[none] max-lg:static max-lg:top-auto max-lg:left-auto max-lg:z-[initial] md:max-lg:w-42 md:max-lg:h-[22.9px] 2xl:w-42 2xl:h-[22.9px] 2xl:top-[44.5px] 2xl:left-1/2 2xl:transform-[translate(-50%,-11.4297px)]", scrolled && "lg:opacity-0 lg:pointer-events-none")}
+          className={cn("w-[153.9px] h-[1.3125rem] flex absolute top-[40.7px] left-1/2 z-1 min-w-0 max-w-full justify-center items-center shrink-0 transform-[translate(-50%,-10.4688px)] cursor-pointer transition-opacity duration-500 ease-in-out max-md:w-28 max-md:h-4 max-lg:transform-[none] max-lg:static max-lg:top-auto max-lg:left-auto max-lg:z-[initial] md:max-lg:w-36 md:max-lg:h-5 2xl:w-42 2xl:h-[22.9px] 2xl:top-[44.5px] 2xl:left-1/2 2xl:transform-[translate(-50%,-11.4297px)]", scrolled && "lg:opacity-0 lg:pointer-events-none")}
           href="/"
         >
-          <img decoding="async" className={cn("w-auto h-[1.3125rem] block relative top-[0.1875rem] -bottom-[0.1875rem] max-w-full overflow-clip align-middle max-md:h-[1.1875rem] max-lg:top-[0.2rem] max-lg:-bottom-[0.2rem] md:max-lg:h-[1.4375rem] 2xl:h-[1.4375rem] 2xl:top-[0.2rem] 2xl:-bottom-[0.2rem]", light && "invert")} alt="Omaya Care" src="/assets/images/omaya-care-wordmark.svg" />
+          <img decoding="async" className={cn("w-auto h-[1.3125rem] block relative top-[0.1875rem] -bottom-[0.1875rem] max-w-full overflow-clip align-middle max-md:h-3.5 max-md:top-[0.15rem] max-md:-bottom-[0.15rem] max-lg:top-[0.2rem] max-lg:-bottom-[0.2rem] md:max-lg:h-[1.125rem] 2xl:h-[1.4375rem] 2xl:top-[0.2rem] 2xl:-bottom-[0.2rem]", light && "invert")} alt="Omaya Care" src="/assets/images/omaya-care-wordmark.svg" />
         </a>
-        <div className={cn("w-full h-[37.5px] flex max-w-full rounded-full justify-between items-center [backdrop-filter:blur(0px)] transition-opacity duration-500 ease-in-out max-lg:h-[2.5625rem] max-lg:justify-end max-lg:rounded-[initial] max-lg:[backdrop-filter:initial] 2xl:h-[2.5625rem]", scrolled && "lg:opacity-0 lg:pointer-events-none")}>
+        <div className={cn("w-full h-[37.5px] flex max-w-full rounded-full justify-between items-center [backdrop-filter:blur(0px)] transition-opacity duration-500 ease-in-out max-md:h-8 md:max-lg:h-9 max-lg:justify-end max-lg:rounded-[initial] max-lg:[backdrop-filter:initial] 2xl:h-[2.5625rem]", scrolled && "lg:opacity-0 lg:pointer-events-none")}>
           <div className="flex flex-1 items-center gap-[1.375rem] max-lg:hidden 2xl:gap-6">
             {NAV_LINKS.map((link) => (
               <a key={link.href} className={cn("flex text-[0.8125rem] leading-[1.1875rem] whitespace-nowrap text-nowrap cursor-pointer 2xl:text-sm 2xl:leading-[1.3125rem]", light ? "text-foreground" : "text-background")} href={link.href}>
@@ -71,18 +71,18 @@ export default function Navbar({ light = false, showBanner = true }: { light?: b
               </a>
             ))}
           </div>
-          <div className="flex-1 h-[37.5px] flex justify-end items-center gap-[14.7px] max-lg:h-[2.5625rem] max-lg:gap-4 2xl:h-[2.5625rem] 2xl:gap-4">
+          <div className="flex-1 h-[37.5px] flex justify-end items-center gap-[14.7px] max-md:h-8 max-md:gap-2.5 md:max-lg:h-9 md:max-lg:gap-3 2xl:h-[2.5625rem] 2xl:gap-4">
             <a className={cn("flex text-[0.8125rem] leading-[1.1875rem] whitespace-nowrap text-nowrap cursor-pointer max-lg:hidden 2xl:text-sm 2xl:leading-[1.3125rem]", light ? "text-foreground" : "text-background")} href="https://app.omayacare.com/" target="_blank" rel="noopener noreferrer">
               Log in
             </a>
-            <a className={cn("h-[37.5px] flex py-[0.575rem] px-[18.3px] rounded-full justify-center items-center text-[0.8125rem] leading-[1.1875rem] whitespace-nowrap text-nowrap cursor-pointer max-lg:h-[2.5625rem] max-lg:py-2.5 max-lg:px-5 max-lg:text-sm max-lg:leading-[1.3125rem] 2xl:h-[2.5625rem] 2xl:py-2.5 2xl:px-5 2xl:text-sm 2xl:leading-[1.3125rem]", light ? "bg-foreground text-background" : "bg-background")} href="/contact?type=demo">
+            <a className={cn("h-[37.5px] flex py-[0.575rem] px-[18.3px] rounded-full justify-center items-center text-[0.8125rem] leading-[1.1875rem] whitespace-nowrap text-nowrap cursor-pointer max-md:h-8 max-md:py-0 max-md:px-3.5 max-md:text-xs max-md:leading-none md:max-lg:h-9 md:max-lg:py-0 md:max-lg:px-4 md:max-lg:text-sm md:max-lg:leading-none 2xl:h-[2.5625rem] 2xl:py-2.5 2xl:px-5 2xl:text-sm 2xl:leading-[1.3125rem]", light ? "bg-foreground text-background" : "bg-background")} href="/contact?type=demo">
               Book a demo
             </a>
           </div>
         </div>
         <button
           type="button"
-          className={cn("w-[29.3px] h-[29.3px] flex justify-center items-center shrink-0 [background-size:18.3193px_20.1513px] [background-position:50%_50%] bg-no-repeat cursor-pointer transition-opacity duration-500 ease-in-out max-lg:w-8 max-lg:h-8 max-lg:[background-size:20px_22px] 2xl:w-8 2xl:h-8 2xl:[background-size:20px_22px] hover:opacity-80", scrolled && "lg:opacity-0 lg:pointer-events-none")}
+          className={cn("w-[29.3px] h-[29.3px] flex justify-center items-center shrink-0 [background-size:18.3193px_20.1513px] [background-position:50%_50%] bg-no-repeat cursor-pointer transition-opacity duration-500 ease-in-out max-md:w-6 max-md:h-6 max-md:[background-size:16px_18px] md:max-lg:w-8 md:max-lg:h-8 md:max-lg:[background-size:20px_22px] 2xl:w-8 2xl:h-8 2xl:[background-size:20px_22px] hover:opacity-80", scrolled && "lg:opacity-0 lg:pointer-events-none")}
           style={{ backgroundImage: dotGrid }}
           onClick={() => setDrawerOpen(true)}
           aria-label="Open menu"
