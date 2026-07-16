@@ -108,8 +108,12 @@ export default function Navbar({ light = false, showBanner = true }: { light?: b
       <div className={cn("fixed inset-0 z-[10000] transition-all duration-300", drawerOpen ? "pointer-events-auto" : "pointer-events-none")}>
         {/* Backdrop */}
         <div
+          role="button"
+          tabIndex={drawerOpen ? 0 : -1}
+          aria-label="Close menu"
           className={cn("absolute inset-0 bg-black transition-opacity duration-300", drawerOpen ? "opacity-50" : "opacity-0")}
           onClick={() => setDrawerOpen(false)}
+          onKeyDown={(e) => { if (e.key === "Enter" || e.key === " " || e.key === "Escape") { e.preventDefault(); setDrawerOpen(false); } }}
         />
         {/* Drawer panel */}
         <div className={cn("absolute right-0 top-0 bottom-0 w-[min(380px,90vw)] bg-background rounded-l-3xl flex flex-col transition-transform duration-300 ease-in-out overflow-hidden", drawerOpen ? "translate-x-0" : "translate-x-full")}>
