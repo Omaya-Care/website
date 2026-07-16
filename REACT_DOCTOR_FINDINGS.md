@@ -1,5 +1,25 @@
 # React Doctor — Website Remediation Plan
 
+> ## ✅ PASS 2 — the previously-"risky" fixes, done pixel-perfectly (2026-07-16)
+> Went back through the deliberately-skipped, UI-shift-risk findings section by section
+> (hero → how-it-works → logo clouds → galleries → carousel → footer → modal → navbar →
+> cookie banner → contact → faq), using the Software Architect + Frontend Developer agents,
+> and kept each change only after the Playwright gate confirmed **18/18 at maxDiffPixels:0**.
+> Findings **56 → 25**. Commits are per-section.
+>
+> **Kept (all gate-verified pixel-identical):**
+> - **no-array-index-as-key** — converted every *static, single-copy* list to a stable key (logo clouds, galleries, hero modal, membership dots, Tile3/Logo4/MediaTile6, contact carousel, faq TextLink lists). Keys never render, and these lists never reorder, so DOM is byte-identical.
+> - **rendering-svg-precision** — rounded 1650+ path coordinates to 2 decimals (icons, social glyphs, nav arrows). Empirically **zero pixel diff** at every route/viewport (max 0.005px error) — the agents predicted shifts; the gate proved otherwise. Small bundle-byte win.
+> - **prefer-tag-over-role** — `tile3`/`tile4` `role="listitem"` → real `<li class="block list-none">`.
+> - **a11y interactions** — keyboard handlers + `role`/`tabIndex` on the navbar drawer backdrop, carousel pause toggles, and cookie Accept (attribute-only, no tag change → no UA-style shift).
+> - **media-has-caption** — empty captions `<track>` on the decorative logo-cloud videos (+ `public/assets/captions/empty.vtt`).
+>
+> **Kept as index-key ON PURPOSE (documented in code):** the two tripled infinite-loop carousels (`page.tsx:245`, `gallery-showcase-section2:120`) — a data-derived key collides across the 3 duplicated copies and would remount/flash tiles on snap. The index IS the stable identity.
+>
+> **Not done (intentional):** `<div/a role="button">`→`<button>` (3× `prefer-tag-over-role`) would risk carousel-tile sizing + tab-order — the pixel-safe keyboard-accessible `role` version is correct; `no-giant-component`/`rerender-state`/`no-layout-transition`/`js-flatmap-filter` (pure maintainability, no UI/perf/a11y value); `effect-needs-cleanup` ×5 + `unused-file` ×8 (verified false positives); `dangerous-html-sink` ×2 (trusted static). Method: `scripts/svg-round.mjs`.
+
+---
+
 > ## ✅ IMPLEMENTED & VERIFIED (2026-07-16)
 > All discussed batches shipped and proven **pixel-identical** via a Playwright visual gate
 > (6 routes × 3 viewports, `maxDiffPixels: 0`, animations/motion frozen). Findings **184 → 56**
