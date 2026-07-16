@@ -12,3 +12,5 @@ playwright-report
 
 # Internal working notes (kept local, not tracked)
 REACT_DOCTOR_FINDINGS.md
+
+dist-server
