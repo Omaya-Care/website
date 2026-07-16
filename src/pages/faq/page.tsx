@@ -190,7 +190,7 @@ export default function Page() {
                   <div className="block max-lg:h-[2.225rem] max-lg:overflow-hidden" data-cid="n91">
                     <div className="block before:content-['_'] before:table before:text-foreground before:text-[0.9375rem] before:leading-[1.3125rem] max-lg:before:w-0 max-lg:before:h-0 max-lg:before:text-base max-lg:before:leading-[1.375rem] 2xl:before:text-base 2xl:before:leading-[1.375rem] after:content-['_'] after:table after:text-foreground after:text-[0.9375rem] after:leading-[1.3125rem] max-lg:after:w-0 max-lg:after:h-0 max-lg:after:text-base max-lg:after:leading-[1.375rem] 2xl:after:text-base 2xl:after:leading-[1.375rem]" data-cid="n92" />
                     <div className="flex relative overflow-x-auto overflow-y-hidden max-lg:h-[2.225rem] max-lg:py-2 max-md:px-5 max-md:justify-start max-lg:items-center max-lg:gap-4 max-lg:text-muted-foreground max-lg:text-sm max-lg:leading-[1.25rem] md:max-lg:justify-center" data-cid="n93">
-                      {TextLink2_data.map((d, i) => <TextLink2 key={i} d={d} cids={TextLink2_cids[i]} styles={TextLink2_styles[i]} />)}
+                      {TextLink2_data.map((d, i) => <TextLink2 key={TextLink2_cids[i][0]} d={d} cids={TextLink2_cids[i]} styles={TextLink2_styles[i]} />)}
                       <div className="w-0 h-px block absolute bottom-0 left-0 min-w-0 bg-color-002 transform-[none] pointer-events-none max-lg:w-[4.9375rem] max-md:transform-[matrix(1,0,0,1,20,0)] md:max-lg:transform-[matrix(1,0,0,1,92,0)]" data-cid="n100" />
                     </div>
                   </div>
@@ -213,7 +213,7 @@ export default function Page() {
                         const isActive = SECTION_IDS[i] === activeSection;
                         return (
                           <TextLink3
-                            key={i}
+                            key={TextLink3_cids[i][0]}
                             d={d}
                             cids={TextLink3_cids[i]}
                             styles={{
