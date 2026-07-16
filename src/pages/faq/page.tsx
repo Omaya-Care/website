@@ -42,10 +42,10 @@ const ListRow_data: ListRowData[] = [
     { text: "Al Chat to dig deeper into your data" }
 ];
 const Tile2_data: Tile2Data[] = [
-    { description: "Kidney, Liver, Thyroid, Sex Hormones, and Metabolic Health:", description2: " Superpower monitors HbA1c, fasting glucose, and uric acid levels to assess kidney and metabolic health, with clinician-guided protocols to support optimization. Personalized protocols may help support healthy hormone balance — including testosterone, progesterone, DHEA, vitamin D, and inflammatory markers like CRP. Thyroid function is monitored through T3, T4, and TSH testing, with clinician interpretation and guidance. Mineral management includes monitoring levels of iron, magnesium, and lipoprotein(a), as well as supporting healthy blood pressure. Protocols are also available to support fertility assessment through hormone and biomarker testing, with clinician guidance." },
-    { description: "Gut Health and Nutrition: ", description2: "Superpower offers protocols to support gut health and digestive wellness. Protocols focus on supporting gastrointestinal function, hydration, and nutrient absorption. Your care team can help you understand results related to gut health and connect you with appropriate next steps." },
-    { description: "Toxins and Environmental Health:", description2: " We test for mold, heavy metals, PFAS, and plastics, with personalized protocols based on your results. Superpower provides guidance to help reduce exposure to environmental toxins and support a toxin-reduced lifestyle, including recommendations for maintaining a clean home environment." },
-    { description: "Physical and Cognitive Performance: ", description2: "Protocols are designed to support physical health — including weight management, skin health, anti-aging processes, and hair health. Superpower identifies biomarkers related to physical performance, recovery, and sleep, with clinician guidance on optimization strategies for flexibility, posture, strength, aerobic fitness, and cardiovascular health. Additional protocols support mitochondrial function and cognitive wellness. Your care team can screen for biomarkers that may contribute to mood changes, with appropriate clinical referral when needed" }
+    { description: "Kidney, Liver, Thyroid, Sex Hormones, and Metabolic Health:", description2: " Omaya monitors HbA1c, fasting glucose, and uric acid levels to assess kidney and metabolic health, with clinician-guided protocols to support optimization. Personalized protocols may help support healthy hormone balance — including testosterone, progesterone, DHEA, vitamin D, and inflammatory markers like CRP. Thyroid function is monitored through T3, T4, and TSH testing, with clinician interpretation and guidance. Mineral management includes monitoring levels of iron, magnesium, and lipoprotein(a), as well as supporting healthy blood pressure. Protocols are also available to support fertility assessment through hormone and biomarker testing, with clinician guidance." },
+    { description: "Gut Health and Nutrition: ", description2: "Omaya offers protocols to support gut health and digestive wellness. Protocols focus on supporting gastrointestinal function, hydration, and nutrient absorption. Your care team can help you understand results related to gut health and connect you with appropriate next steps." },
+    { description: "Toxins and Environmental Health:", description2: " We test for mold, heavy metals, PFAS, and plastics, with personalized protocols based on your results. Omaya provides guidance to help reduce exposure to environmental toxins and support a toxin-reduced lifestyle, including recommendations for maintaining a clean home environment." },
+    { description: "Physical and Cognitive Performance: ", description2: "Protocols are designed to support physical health — including weight management, skin health, anti-aging processes, and hair health. Omaya identifies biomarkers related to physical performance, recovery, and sleep, with clinician guidance on optimization strategies for flexibility, posture, strength, aerobic fitness, and cardiovascular health. Additional protocols support mitochondrial function and cognitive wellness. Your care team can screen for biomarkers that may contribute to mood changes, with appropriate clinical referral when needed" }
 ];
 const ListRow2_data: ListRow2Data[] = [
     { text: "Alabama" },
@@ -92,34 +92,34 @@ const ListRow2_data: ListRow2Data[] = [
     { text: "Wisconsin" }
 ];
 const Logo_data: LogoData[] = [
-    { ariaLabel: "Ask Claude", href: "https://claude.ai/new?q=tell+me+about+https%3A%2F%2Fsuperpower.com%2Ffaqs", sizes: "100vw", imgSrc: "/assets/media/images/a297399f982c.avif", srcSet: "/assets/media/images/4e6333fcabeb.png 500w, /assets/media/images/2adea8e249b4.png 800w, /assets/media/images/0eb816dd9ad6.png 1080w, /assets/media/images/a297399f982c.avif 1200w" },
-    { ariaLabel: "Ask Gemini", href: "https://www.google.com/search?q=tell+me+about+https%3A%2F%2Fsuperpower.com%2Ffaqs&udm=50", imgSrc: "/assets/media/svg/d40fe4aac666.svg" },
-    { ariaLabel: "Ask Grok", href: "https://x.com/i/grok?text=tell+me+about+https%3A%2F%2Fsuperpower.com%2Ffaqs", imgSrc: "/assets/media/svg/ff93db0f1a39.svg" },
-    { ariaLabel: "Ask ChatGPT", href: "https://chat.openai.com/?q=tell+me+about+https%3A%2F%2Fsuperpower.com%2Ffaqs", imgSrc: "/assets/media/svg/3e9f8339f4b9.svg" },
-    { ariaLabel: "Ask Perplexity", href: "https://www.perplexity.ai/search/new?q=tell+me+about+https%3A%2F%2Fsuperpower.com%2Ffaqs", imgSrc: "/assets/media/svg/9a042afd1ff4.svg" }
+    { ariaLabel: "Ask Claude", href: "https://claude.ai/new?q=tell+me+about+https%3A%2F%2Fomayacare.com%2Ffaqs", sizes: "100vw", imgSrc: "/assets/media/images/a297399f982c.avif", srcSet: "/assets/media/images/4e6333fcabeb.png 500w, /assets/media/images/2adea8e249b4.png 800w, /assets/media/images/0eb816dd9ad6.png 1080w, /assets/media/images/a297399f982c.avif 1200w" },
+    { ariaLabel: "Ask Gemini", href: "https://www.google.com/search?q=tell+me+about+https%3A%2F%2Fomayacare.com%2Ffaqs&udm=50", imgSrc: "/assets/media/svg/d40fe4aac666.svg" },
+    { ariaLabel: "Ask Grok", href: "https://x.com/i/grok?text=tell+me+about+https%3A%2F%2Fomayacare.com%2Ffaqs", imgSrc: "/assets/media/svg/ff93db0f1a39.svg" },
+    { ariaLabel: "Ask ChatGPT", href: "https://chat.openai.com/?q=tell+me+about+https%3A%2F%2Fomayacare.com%2Ffaqs", imgSrc: "/assets/media/svg/3e9f8339f4b9.svg" },
+    { ariaLabel: "Ask Perplexity", href: "https://www.perplexity.ai/search/new?q=tell+me+about+https%3A%2F%2Fomayacare.com%2Ffaqs", imgSrc: "/assets/media/svg/9a042afd1ff4.svg" }
 ];
 const TextLink4_data: TextLink4Data[] = [
     { href: "/how-it-works", label: "How it works" },
     { href: "/biomarkers", label: "What we test" },
-    { href: "https://app.superpower.com/signin?redirectTo=%2F", label: "Member Login" },
-    { href: "/gift", label: "Gift Superpower" },
+    { href: "https://app.omayacare.com/signin?redirectTo=%2F", label: "Member Login" },
+    { href: "/gift", label: "Gift Omaya" },
     { href: "/reviews", label: "Reviews" }
 ];
 const TextLink5_data: TextLink5Data[] = [
     { href: "/manifesto", label: "Our Why" },
-    { href: "https://healthiesthoodie.com/", target: "_blank", label: "Superpower Labs" },
-    { href: "mailto:hello@superpower.com", label: "Contact Us" },
+    { href: "https://healthiesthoodie.com/", target: "_blank", label: "Omaya Labs" },
+    { href: "mailto:hello@omayacare.com", label: "Contact Us" },
     { href: "/careers", label: "Careers" },
     { href: "/blog", label: "Blog" },
     { href: "/faqs", ariacurrent: "page", label: "FAQs" }
 ];
 const TextLink4_data2: TextLink4Data[] = [
-    { href: "/superpower-vs-function-health", label: "Function Health" },
-    { href: "/superpower-vs-mito-health", label: "Mito Health" },
-    { href: "/superpower-vs-insidetracker", label: "InsideTracker" }
+    { href: "/compare-function-health", label: "Function Health" },
+    { href: "/compare-mito-health", label: "Mito Health" },
+    { href: "/compare-insidetracker", label: "InsideTracker" }
 ];
 const TextLink6_data: TextLink6Data[] = [
-    { href: "https://superpower-health.typeform.com/to/VQKeJvKr?typeform-source=www.canva.com", label: "For Creators" },
+    { href: "/contact?typeform-source=www.canva.com", label: "For Creators" },
     { href: "/organizations", label: "For Partners" },
     { href: "/organizations", label: "For Business" }
 ];

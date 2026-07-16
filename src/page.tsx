@@ -45,17 +45,17 @@ const FeatureCard_data: FeatureCardData[] = [
     { title: "Message your private care team 24/7", description: "A private care-team in your pocket at all times for any health questions or concerns" }
 ];
 const MediaTile_data: MediaTileData[] = [
-    { label: "How is Superpower better than a standard physical?" },
+    { label: "How is Omaya better than a standard physical?" },
     { label: "What biomarkers do you test?" },
     { label: "What locations do you test at? " }
 ];
 const MediaLink_data: MediaLinkData[] = [
-    { kind: "button", label: "How does Superpower use my data?", kind2: "icon" },
+    { kind: "button", label: "How does Omaya use my data?", kind2: "icon" },
     { kind: "button", label: "How safe and secure is my data?", kind2: "icon" },
     { label: "What locations do you test at? " }
 ];
 const MediaTile2_data: MediaTile2Data[] = [
-    { label: "How do we turn labs into a personalized protocol?", kind: "icon", label2: "How is Superpower’s action plan better than others?", kind2: "icon" },
+    { label: "How do we turn labs into a personalized protocol?", kind: "icon", label2: "How is Omaya’s action plan better than others?", kind2: "icon" },
     { label: "Who do I speak to when I have questions?", kind: "icon", label2: "Isn’t this just another AI chatbot?", kind2: "icon" },
     { label: "Who do I speak to when I have questions?", label2: "Isn’t this just another AI chatbot?" }
 ];
@@ -100,32 +100,32 @@ const Logo4_data: Logo4Data[] = [
     { imgSrc: "/assets/media/svg/644a08effc9a.svg", text: "Full postpartum support" }
 ];
 const Logo5_data: Logo5Data[] = [
-    { ariaLabel: "Ask Claude", href: "https://claude.ai/new?q=tell+me+about+https%3A%2F%2Fsuperpower.com%2F", sizes: "100vw", imgSrc: "/assets/media/images/a297399f982c.avif", srcSet: "/assets/media/images/4e6333fcabeb.png 500w, /assets/media/images/2adea8e249b4.png 800w, /assets/media/images/0eb816dd9ad6.png 1080w, /assets/media/images/a297399f982c.avif 1200w" },
-    { ariaLabel: "Ask Gemini", href: "https://www.google.com/search?q=tell+me+about+https%3A%2F%2Fsuperpower.com%2F&udm=50", imgSrc: "/assets/media/svg/d40fe4aac666.svg" },
-    { ariaLabel: "Ask Grok", href: "https://x.com/i/grok?text=tell+me+about+https%3A%2F%2Fsuperpower.com%2F", imgSrc: "/assets/media/svg/ff93db0f1a39.svg" },
-    { ariaLabel: "Ask ChatGPT", href: "https://chat.openai.com/?q=tell+me+about+https%3A%2F%2Fsuperpower.com%2F", imgSrc: "/assets/media/svg/3e9f8339f4b9.svg" },
-    { ariaLabel: "Ask Perplexity", href: "https://www.perplexity.ai/search/new?q=tell+me+about+https%3A%2F%2Fsuperpower.com%2F", imgSrc: "/assets/media/svg/9a042afd1ff4.svg" }
+    { ariaLabel: "Ask Claude", href: "https://claude.ai/new?q=tell+me+about+https%3A%2F%2Fomayacare.com%2F", sizes: "100vw", imgSrc: "/assets/media/images/a297399f982c.avif", srcSet: "/assets/media/images/4e6333fcabeb.png 500w, /assets/media/images/2adea8e249b4.png 800w, /assets/media/images/0eb816dd9ad6.png 1080w, /assets/media/images/a297399f982c.avif 1200w" },
+    { ariaLabel: "Ask Gemini", href: "https://www.google.com/search?q=tell+me+about+https%3A%2F%2Fomayacare.com%2F&udm=50", imgSrc: "/assets/media/svg/d40fe4aac666.svg" },
+    { ariaLabel: "Ask Grok", href: "https://x.com/i/grok?text=tell+me+about+https%3A%2F%2Fomayacare.com%2F", imgSrc: "/assets/media/svg/ff93db0f1a39.svg" },
+    { ariaLabel: "Ask ChatGPT", href: "https://chat.openai.com/?q=tell+me+about+https%3A%2F%2Fomayacare.com%2F", imgSrc: "/assets/media/svg/3e9f8339f4b9.svg" },
+    { ariaLabel: "Ask Perplexity", href: "https://www.perplexity.ai/search/new?q=tell+me+about+https%3A%2F%2Fomayacare.com%2F", imgSrc: "/assets/media/svg/9a042afd1ff4.svg" }
 ];
 const TextLink2_data: TextLink2Data[] = [
     { href: "/how-it-works", label: "How it works" },
     { href: "/biomarkers", label: "What we test" },
-    { href: "https://app.superpower.com/signin?redirectTo=%2F", label: "Member Login", target: "_blank" },
-    { href: "/gift", label: "Gift Superpower" },
+    { href: "https://app.omayacare.com/signin?redirectTo=%2F", label: "Member Login", target: "_blank" },
+    { href: "/gift", label: "Gift Omaya" },
     { href: "/reviews", label: "Reviews" }
 ];
 const TextLink3_data: TextLink3Data[] = [
-    { href: "https://healthiesthoodie.com/", label: "Superpower Labs" },
-    { href: "mailto:hello@superpower.com", label: "Contact Us" },
+    { href: "https://healthiesthoodie.com/", label: "Omaya Labs" },
+    { href: "mailto:hello@omayacare.com", label: "Contact Us" },
     { href: "/blog", label: "Blog" },
     { href: "/faqs", label: "FAQs" }
 ];
 const TextLink2_data2: TextLink2Data[] = [
-    { href: "/superpower-vs-function-health", label: "Function Health" },
-    { href: "/superpower-vs-mito-health", label: "Mito Health" },
-    { href: "/superpower-vs-insidetracker", label: "InsideTracker" }
+    { href: "/compare-function-health", label: "Function Health" },
+    { href: "/compare-mito-health", label: "Mito Health" },
+    { href: "/compare-insidetracker", label: "InsideTracker" }
 ];
 const TextLink4_data: TextLink4Data[] = [
-    { href: "https://superpower-health.typeform.com/to/VQKeJvKr?typeform-source=www.canva.com", label: "For Creators" },
+    { href: "/contact?typeform-source=www.canva.com", label: "For Creators" },
     { href: "/organizations", label: "For Partners" },
     { href: "/organizations", label: "For Business" }
 ];
@@ -141,13 +141,13 @@ const Tile4_data: Tile4Data[] = [
     { href: "/library/5-biomarkers-everyone-should-test", label: "5 Biomarkers Everyone Should Test" }
 ];
 const MediaLink2_data: MediaLink2Data[] = [
-    { href: "https://x.com/superpower", icon: <>
+    { href: "https://x.com/omayacare", icon: <>
           <path d="M14.5 2.92H16.9L11.66 8.92L17.83 17.08H13L9.21 12.13L4.88 17.08H2.48L8.09 10.66L2.17 2.92H7.12L10.55 7.44L14.5 2.92ZM13.66 15.65H14.99L6.4 4.28H4.97L13.66 15.65Z" fill="#A1A1AA" />
           </>, label: "Twitter / X" },
-    { href: "https://www.instagram.com/superpower", icon: <>
+    { href: "https://www.instagram.com/omayacare", icon: <>
           <path d="M10 3.51C12.11 3.51 12.36 3.52 13.2 3.56C13.7 3.56 14.2 3.65 14.67 3.83C15.01 3.96 15.32 4.16 15.58 4.42C15.84 4.68 16.04 4.99 16.17 5.33C16.35 5.8 16.44 6.3 16.44 6.8C16.48 7.64 16.49 7.89 16.49 10C16.49 12.11 16.48 12.36 16.44 13.2C16.44 13.7 16.35 14.2 16.17 14.67C16.04 15.01 15.84 15.32 15.58 15.58C15.32 15.84 15.01 16.04 14.67 16.17C14.2 16.35 13.7 16.44 13.2 16.44C12.36 16.48 12.11 16.49 10 16.49C7.89 16.49 7.64 16.48 6.8 16.44C6.3 16.44 5.8 16.35 5.33 16.17C4.99 16.04 4.68 15.84 4.42 15.58C4.16 15.32 3.96 15.01 3.83 14.67C3.65 14.2 3.56 13.7 3.56 13.2C3.52 12.36 3.51 12.11 3.51 10C3.51 7.89 3.52 7.64 3.56 6.8C3.56 6.3 3.65 5.8 3.83 5.33C3.96 4.99 4.16 4.68 4.42 4.42C4.68 4.16 4.99 3.96 5.33 3.83C5.8 3.65 6.3 3.56 6.8 3.56C7.64 3.52 7.89 3.51 10 3.51ZM10 2.08C7.85 2.08 7.58 2.09 6.74 2.13C6.08 2.14 5.43 2.27 4.81 2.5C4.29 2.7 3.81 3.01 3.41 3.41C3.01 3.81 2.7 4.29 2.5 4.81C2.27 5.43 2.14 6.08 2.13 6.74C2.09 7.58 2.08 7.85 2.08 10C2.08 12.15 2.09 12.42 2.13 13.26C2.14 13.92 2.27 14.57 2.5 15.19C2.7 15.71 3.01 16.19 3.41 16.59C3.81 16.99 4.29 17.3 4.81 17.5C5.43 17.73 6.08 17.86 6.74 17.87C7.58 17.91 7.85 17.92 10 17.92C12.15 17.92 12.42 17.91 13.26 17.87C13.92 17.86 14.57 17.73 15.19 17.5C15.71 17.3 16.19 16.99 16.59 16.59C16.99 16.19 17.3 15.71 17.5 15.19C17.73 14.57 17.86 13.92 17.87 13.26C17.91 12.42 17.92 12.15 17.92 10C17.92 7.85 17.91 7.58 17.87 6.74C17.86 6.08 17.73 5.43 17.5 4.81C17.3 4.29 16.99 3.81 16.59 3.41C16.19 3.01 15.71 2.7 15.19 2.5C14.57 2.27 13.92 2.14 13.26 2.13C12.42 2.09 12.15 2.08 10 2.08ZM10 5.93C9.2 5.93 8.41 6.17 7.74 6.62C7.07 7.07 6.55 7.7 6.24 8.44C5.94 9.19 5.86 10 6.01 10.79C6.17 11.58 6.56 12.31 7.13 12.87C7.69 13.44 8.42 13.83 9.21 13.99C10 14.14 10.81 14.06 11.56 13.76C12.3 13.45 12.93 12.93 13.38 12.26C13.83 11.59 14.07 10.8 14.07 10C14.07 8.92 13.64 7.89 12.87 7.13C12.11 6.36 11.08 5.93 10 5.93ZM10 12.64C9.48 12.64 8.97 12.48 8.53 12.19C8.1 11.9 7.76 11.49 7.56 11.01C7.36 10.53 7.31 10 7.41 9.49C7.51 8.97 7.76 8.5 8.13 8.13C8.5 7.76 8.97 7.51 9.49 7.41C10 7.31 10.53 7.36 11.01 7.56C11.49 7.76 11.9 8.1 12.19 8.53C12.48 8.97 12.64 9.48 12.64 10C12.64 10.7 12.36 11.37 11.87 11.87C11.37 12.36 10.7 12.64 10 12.64ZM14.23 4.82C14.04 4.82 13.85 4.88 13.7 4.98C13.54 5.09 13.42 5.24 13.35 5.41C13.28 5.58 13.26 5.77 13.29 5.96C13.33 6.14 13.42 6.31 13.55 6.45C13.69 6.58 13.86 6.67 14.04 6.71C14.23 6.74 14.42 6.72 14.59 6.65C14.76 6.58 14.91 6.46 15.02 6.3C15.12 6.15 15.18 5.96 15.18 5.77C15.18 5.52 15.08 5.28 14.9 5.1C14.72 4.92 14.48 4.82 14.23 4.82Z" fill="#A1A1AA" />
           </>, label: "Instagram" },
-    { href: "https://www.linkedin.com/company/superpower", icon: <>
+    { href: "https://www.linkedin.com/company/omayacare", icon: <>
           <path d="M16.38 2.5H3.63C3.33 2.5 3.04 2.62 2.83 2.83C2.62 3.04 2.5 3.33 2.5 3.63V16.38C2.5 16.67 2.62 16.96 2.83 17.17C3.04 17.38 3.33 17.5 3.63 17.5H16.38C16.67 17.5 16.96 17.38 17.17 17.17C17.38 16.96 17.5 16.67 17.5 16.38V3.63C17.5 3.33 17.38 3.04 17.17 2.83C16.96 2.62 16.67 2.5 16.38 2.5ZM7 15.25H4.75V8.5H7V15.25ZM5.88 7.19C5.62 7.18 5.37 7.1 5.16 6.95C4.95 6.8 4.78 6.59 4.69 6.35C4.6 6.11 4.58 5.85 4.63 5.6C4.68 5.34 4.81 5.11 5 4.93C5.18 4.75 5.42 4.63 5.67 4.59C5.92 4.54 6.19 4.57 6.42 4.67C6.66 4.77 6.86 4.93 7.01 5.15C7.15 5.36 7.22 5.62 7.23 5.88C7.22 6.23 7.07 6.56 6.82 6.81C6.57 7.06 6.23 7.19 5.88 7.19ZM15.25 15.25H13V11.7C13 10.63 12.55 10.25 11.97 10.25C11.79 10.26 11.63 10.3 11.47 10.38C11.32 10.46 11.18 10.56 11.07 10.69C10.95 10.82 10.87 10.97 10.81 11.14C10.76 11.3 10.74 11.47 10.75 11.64C10.75 11.68 10.75 11.71 10.75 11.75V15.25H8.5V8.5H10.68V9.48C10.89 9.14 11.2 8.87 11.55 8.69C11.91 8.5 12.3 8.41 12.7 8.43C13.86 8.43 15.22 9.07 15.22 11.17L15.25 15.25Z" fill="#A1A1AA" />
           </>, label: "LinkedIn" }
 ];
@@ -158,13 +158,13 @@ const TextLink5_data: TextLink5Data[] = [
     { href: "#", label: "Cookie preferences" }
 ];
 const MediaTile6_data: MediaTile6Data[] = [
-    { label: "How is Superpower better than a standard physical?" },
+    { label: "How is Omaya better than a standard physical?" },
     { label: "What biomarkers do you test?" },
     { label: "What locations do you test at?" },
-    { label: "How does Superpower use my data?" },
+    { label: "How does Omaya use my data?" },
     { label: "How safe and secure is my data?" },
     { label: "How do we turn labs into a personalized protocol?" },
-    { label: "How is Superpower’s action plan better than others?" },
+    { label: "How is Omaya’s action plan better than others?" },
     { label: "Who do I speak to when I have questions?" },
     { label: "Isn’t this just another AI chatbot?" }
 ];
