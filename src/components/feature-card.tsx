@@ -7,11 +7,11 @@ export type FeatureCardData = {
 /** A feature card. */
 export default function FeatureCard({ d, cids, styles }: { d: FeatureCardData; cids: string[]; styles: FeatureCardStyles }) {
   return (
-    <div data-cid={cids[0]} className={styles.className}>
-      <h2 data-cid={cids[1]} className={styles.className2} data-component={d.kind}>
+    <div data-id={cids[0]} className={styles.className}>
+      <h2 data-id={cids[1]} className={styles.className2}>
         {d.title}
       </h2>
-      <p data-cid={cids[2]} className={styles.className3}>
+      <p data-id={cids[2]} className={styles.className3}>
         {d.description}
       </p>
     </div>

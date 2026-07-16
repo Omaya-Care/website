@@ -222,11 +222,11 @@ function MembershipCarousel({ data, cids }: { data: Logo3Data[]; cids: string[][
 
   return (
     <>
-      <div className="h-163.5 block relative min-w-0 max-w-full rounded-[11px] overflow-hidden max-lg:h-120 max-lg:rounded-xl 2xl:h-178.5 2xl:rounded-xl" data-cid="n525">
+      <div className="h-163.5 block relative min-w-0 max-w-full rounded-[11px] overflow-hidden max-lg:h-120 max-lg:rounded-xl 2xl:h-178.5 2xl:rounded-xl" data-id="n525">
         <div
           className="absolute top-4 right-4 z-10 flex items-center rounded-full px-3.5 py-1.5 text-background text-xs leading-[1.125rem] whitespace-nowrap [backdrop-filter:blur(24px)] max-lg:top-3 max-lg:right-3"
           style={{ backgroundColor: "rgba(122, 40, 80, 0.55)" }}
-          data-cid="n525-badge"
+          data-id="n525-badge"
         >
           Coming soon
         </div>
@@ -238,7 +238,7 @@ function MembershipCarousel({ data, cids }: { data: Logo3Data[]; cids: string[][
             transition: snapping || !ready ? "none" : `transform ${MEMBERSHIP_SLIDE_TRANSITION}ms ease-out`,
           }}
           onTransitionEnd={handleTransitionEnd}
-          data-cid="n526"
+          data-id="n526"
         >
           {/* key={i}: tripled infinite-loop track — position index IS the stable identity; a data-derived id (imgSrc) collides across the 3 duplicated copies and would remount/flash tiles on snap. */}
           {tiles.map((d, i) => (
@@ -246,8 +246,8 @@ function MembershipCarousel({ data, cids }: { data: Logo3Data[]; cids: string[][
           ))}
         </div>
       </div>
-      <div className="flex items-center gap-[1.375rem] max-lg:gap-6 2xl:gap-6" data-cid="n541">
-        <div className="flex min-w-0 items-center flex-1 gap-2" data-cid="n542">
+      <div className="flex items-center gap-[1.375rem] max-lg:gap-6 2xl:gap-6" data-id="n541">
+        <div className="flex min-w-0 items-center flex-1 gap-2" data-id="n542">
           <button
             type="button"
             onClick={() => setPaused((p) => !p)}
@@ -295,8 +295,8 @@ function MembershipCarousel({ data, cids }: { data: Logo3Data[]; cids: string[][
             </button>
           ))}
         </div>
-        <p className="block shrink-0 overflow-hidden text-color-001 text-[0.8125rem] leading-[1.1875rem] tracking-[-0.2px] whitespace-nowrap text-nowrap max-lg:text-sm max-lg:leading-[1.3125rem] 2xl:text-sm 2xl:leading-[1.3125rem]" data-cid="n555">
-          <span className="inline-block" data-cid="n556">
+        <p className="block shrink-0 overflow-hidden text-color-001 text-[0.8125rem] leading-[1.1875rem] tracking-[-0.2px] whitespace-nowrap text-nowrap max-lg:text-sm max-lg:leading-[1.3125rem] 2xl:text-sm 2xl:leading-[1.3125rem]" data-id="n555">
+          <span className="inline-block" data-id="n556">
             {active + 1}
           </span>
           {` / ${count}`}
@@ -318,51 +318,51 @@ export default function Page() {
 
   return (
     <>
-      <div className="block relative" data-cid="n1">
+      <div className="block relative" data-id="n1">
         <Navbar />
-        <div className="block max-lg:relative" data-cid="n22">
-          <div className="h-[clamp(748.7px,min(calc(258.7px_+_47.8vw),calc(100dvh_-_6.5rem)),1024px)] max-h-[calc(100dvh-2.8625rem)] flex relative max-w-full mt-[2.8625rem] pb-[7.3px] px-[7.3px] flex-col justify-between items-center overflow-hidden max-md:h-203 max-md:max-h-dvh max-lg:justify-end max-md:gap-12 max-lg:mt-0 max-lg:pb-0 max-lg:px-0 md:max-lg:h-[51.2rem] md:max-lg:max-h-dvh md:max-lg:gap-20 2xl:h-256 2xl:max-h-[calc(100dvh-3.125rem)] 2xl:mt-12.5 2xl:pb-2 2xl:px-2" data-cid="n23">
-            <div className="h-full flex relative pb-[3.6625rem] pl-[3.6625rem] rounded-[11px] flex-col justify-center items-start self-stretch overflow-hidden bg-clr-2 max-lg:min-h-180 max-md:pb-6 max-lg:justify-end max-md:pl-0 max-lg:rounded-[initial] md:max-lg:pb-12 md:max-lg:pl-12 2xl:pb-16 2xl:pl-16 2xl:rounded-xl" data-cid="n24" id="om-main-hero">
-              <div className="h-full block absolute top-0 inset-x-0 min-w-0" data-cid="n25">
-                <div className="h-full flex absolute top-0 inset-x-0 z-2 pb-[3.6625rem] pl-[3.6625rem] flex-col justify-center items-start overflow-hidden max-md:pb-20 max-md:px-6 max-lg:justify-end md:max-lg:pb-12 md:max-lg:pl-12 2xl:pb-16 2xl:pl-16" data-cid="n26">
-                  <div className="w-[calc(100%+3.925rem)] h-full block absolute top-0 -left-[3.925rem] min-w-0 overflow-hidden [filter:brightness(1)] max-md:w-[401.5px] max-md:-left-[1.1375rem] md:max-lg:w-[52.1125rem] md:max-lg:left-[-37.9px] 2xl:w-[130.2125rem] 2xl:left-[-94.7px]" data-cid="n27">
+        <div className="block max-lg:relative" data-id="n22">
+          <div className="h-[clamp(748.7px,min(calc(258.7px_+_47.8vw),calc(100dvh_-_6.5rem)),1024px)] max-h-[calc(100dvh-2.8625rem)] flex relative max-w-full mt-[2.8625rem] pb-[7.3px] px-[7.3px] flex-col justify-between items-center overflow-hidden max-md:h-203 max-md:max-h-dvh max-lg:justify-end max-md:gap-12 max-lg:mt-0 max-lg:pb-0 max-lg:px-0 md:max-lg:h-[51.2rem] md:max-lg:max-h-dvh md:max-lg:gap-20 2xl:h-256 2xl:max-h-[calc(100dvh-3.125rem)] 2xl:mt-12.5 2xl:pb-2 2xl:px-2" data-id="n23">
+            <div className="h-full flex relative pb-[3.6625rem] pl-[3.6625rem] rounded-[11px] flex-col justify-center items-start self-stretch overflow-hidden bg-clr-2 max-lg:min-h-180 max-md:pb-6 max-lg:justify-end max-md:pl-0 max-lg:rounded-[initial] md:max-lg:pb-12 md:max-lg:pl-12 2xl:pb-16 2xl:pl-16 2xl:rounded-xl" data-id="n24" id="om-main-hero">
+              <div className="h-full block absolute top-0 inset-x-0 min-w-0" data-id="n25">
+                <div className="h-full flex absolute top-0 inset-x-0 z-2 pb-[3.6625rem] pl-[3.6625rem] flex-col justify-center items-start overflow-hidden max-md:pb-20 max-md:px-6 max-lg:justify-end md:max-lg:pb-12 md:max-lg:pl-12 2xl:pb-16 2xl:pl-16" data-id="n26">
+                  <div className="w-[calc(100%+3.925rem)] h-full block absolute top-0 -left-[3.925rem] min-w-0 overflow-hidden [filter:brightness(1)] max-md:w-[401.5px] max-md:-left-[1.1375rem] md:max-lg:w-[52.1125rem] md:max-lg:left-[-37.9px] 2xl:w-[130.2125rem] 2xl:left-[-94.7px]" data-id="n27">
                     <picture className="contents">
                       <source type="image/avif" sizes="100vw" srcSet="/assets/images/hero-omaya-768.avif 768w, /assets/images/hero-omaya-1440.avif 1440w, /assets/images/hero-omaya.avif 3264w" />
                       <source type="image/webp" sizes="100vw" srcSet="/assets/images/hero-omaya-768.webp 768w, /assets/images/hero-omaya-1440.webp 1440w, /assets/images/hero-omaya.webp 3264w" />
-                      <img decoding="async" fetchPriority="high" className="w-full h-[clamp(748.7px,min(calc(258.7px_+_47.8vw),calc(100dvh_-_6.5rem)),1024px)] max-h-[calc(100dvh-2.8625rem)] block max-w-full overflow-clip object-cover align-middle max-md:h-203 max-md:max-h-dvh md:max-lg:h-[51.1875rem] md:max-lg:max-h-dvh 2xl:h-254 2xl:max-h-[calc(100dvh-3.125rem)]" style={{ transform: "scaleX(-1)" }} data-cid="n28" data-component="image" alt="Hero background" src="/assets/images/hero-omaya.png" />
+                      <img decoding="async" fetchPriority="high" className="w-full h-[clamp(748.7px,min(calc(258.7px_+_47.8vw),calc(100dvh_-_6.5rem)),1024px)] max-h-[calc(100dvh-2.8625rem)] block max-w-full overflow-clip object-cover align-middle max-md:h-203 max-md:max-h-dvh md:max-lg:h-[51.1875rem] md:max-lg:max-h-dvh 2xl:h-254 2xl:max-h-[calc(100dvh-3.125rem)]" style={{ transform: "scaleX(-1)" }} data-id="n28" alt="Hero background" src="/assets/images/hero-omaya.png" />
                     </picture>
-                    <div className="h-[370.7px] block absolute bottom-0 inset-x-0 opacity-30 [mix-blend-mode:overlay] pointer-events-none max-md:h-101.5 md:max-lg:h-[25.6rem] 2xl:h-127" style={{ backgroundImage: "linear-gradient(var(--clr-3) 0%, var(--clr-2) 100%)" }} data-cid="n29" />
-                    <div className="h-[34.75rem] block absolute bottom-0 inset-x-0 opacity-50 [mix-blend-mode:darken] pointer-events-none max-md:h-[38.0625rem] md:max-lg:h-[38.4rem] 2xl:h-190.5" style={{ backgroundImage: "linear-gradient(var(--clr-3) 0%, var(--clr-2) 100%)" }} data-cid="n30" />
+                    <div className="h-[370.7px] block absolute bottom-0 inset-x-0 opacity-30 [mix-blend-mode:overlay] pointer-events-none max-md:h-101.5 md:max-lg:h-[25.6rem] 2xl:h-127" style={{ backgroundImage: "linear-gradient(var(--clr-3) 0%, var(--clr-2) 100%)" }} data-id="n29" />
+                    <div className="h-[34.75rem] block absolute bottom-0 inset-x-0 opacity-50 [mix-blend-mode:darken] pointer-events-none max-md:h-[38.0625rem] md:max-lg:h-[38.4rem] 2xl:h-190.5" style={{ backgroundImage: "linear-gradient(var(--clr-3) 0%, var(--clr-2) 100%)" }} data-id="n30" />
                     <div className="block absolute top-0 right-0 w-3/4 h-[45%] pointer-events-none" style={{ background: "linear-gradient(to bottom left, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.2) 35%, transparent 65%)" }} />
                   </div>
-                  <div className="h-[19.1375rem] flex z-10 flex-col justify-center items-start max-md:h-[20.325rem] max-lg:justify-end max-lg:items-stretch max-lg:self-stretch md:max-lg:h-[20.9rem] 2xl:h-[20.9rem]" data-cid="n31">
-                    <div className="h-full flex relative z-10 max-w-[542.3px] flex-col justify-center items-start gap-[7.3px] text-background max-md:self-stretch max-lg:gap-2 max-lg:max-w-none 2xl:max-w-148 2xl:gap-2" data-cid="n32">
+                  <div className="h-[19.1375rem] flex z-10 flex-col justify-center items-start max-md:h-[20.325rem] max-lg:justify-end max-lg:items-stretch max-lg:self-stretch md:max-lg:h-[20.9rem] 2xl:h-[20.9rem]" data-id="n31">
+                    <div className="h-full flex relative z-10 max-w-[542.3px] flex-col justify-center items-start gap-[7.3px] text-background max-md:self-stretch max-lg:gap-2 max-lg:max-w-none 2xl:max-w-148 2xl:gap-2" data-id="n32">
 
-                      <div className="flex mb-[29.3px] flex-col gap-[7.3px] max-lg:mb-8 max-lg:gap-2 2xl:mb-8 2xl:gap-2" data-cid="n35">
-                        <div className="w-full block" data-cid="n36">
+                      <div className="flex mb-[29.3px] flex-col gap-[7.3px] max-lg:mb-8 max-lg:gap-2 2xl:mb-8 2xl:gap-2" data-id="n35">
+                        <div className="w-full block" data-id="n36">
                           <Illustration cid={"n37"} />
                           {" "}
                         </div>
-                        <div className="block max-w-[29.3125rem] mt-[7.3px] flex-col gap-[7.3px] max-md:max-w-74 max-lg:mt-2 max-lg:gap-2 md:max-lg:max-w-80 2xl:max-w-128 2xl:mt-2 2xl:gap-2" data-cid="n38">
-                          <p className="h-11 block leading-[1.375rem] tracking-[-0.2px] max-md:h-18 max-lg:leading-6 md:max-lg:h-12 2xl:h-12 2xl:leading-6" data-cid="n39">
+                        <div className="block max-w-[29.3125rem] mt-[7.3px] flex-col gap-[7.3px] max-md:max-w-74 max-lg:mt-2 max-lg:gap-2 md:max-lg:max-w-80 2xl:max-w-128 2xl:mt-2 2xl:gap-2" data-id="n38">
+                          <p className="h-11 block leading-[1.375rem] tracking-[-0.2px] max-md:h-18 max-lg:leading-6 md:max-lg:h-12 2xl:h-12 2xl:leading-6" data-id="n39">
                             Omaya calls patients after discharge, listens for concerns,
-                            <br className="inline" data-cid="n40" />
+                            <br className="inline" data-id="n40" />
                             and alerts your care team the moment something needs attention.
                           </p>
                         </div>
                       </div>
-                      <div className="flex items-center gap-[14.7px] max-md:w-[19.8125rem] max-md:grid max-md:gap-2 max-md:grid-cols-[154.5px_154.5px] max-md:grid-rows-[41.2px] max-md:[grid-auto-columns:1fr] md:max-lg:gap-4 2xl:gap-4" data-cid="n41">
-                        <div className="contents min-w-0" data-cid="n42">
-                          <div className="contents" data-cid="n43">
-                            <a className="h-[46.1px] flex relative max-w-full py-[0.8rem] px-[18.3px] rounded-[999px] justify-center items-center gap-[7.3px] overflow-hidden text-foreground bg-background cursor-pointer max-md:h-[2.575rem] max-md:py-[0.675rem] max-md:px-4 max-lg:gap-2 max-md:text-sm max-md:leading-[1.25rem] md:max-lg:h-[3.15rem] md:max-lg:py-3.5 md:max-lg:px-5 2xl:h-[3.15rem] 2xl:py-3.5 2xl:px-5 2xl:gap-2 hover:bg-border" data-cid="n44" data-component="link" href="/contact?type=demo">
-                              <div className="h-[20.5px] flex relative z-1 items-center gap-1.5 max-md:h-[1.225rem] max-lg:gap-[0.4rem] md:max-lg:h-[1.4rem] 2xl:h-[1.4rem] 2xl:gap-[0.4rem]" data-cid="n45">
+                      <div className="flex items-center gap-[14.7px] max-md:w-[19.8125rem] max-md:grid max-md:gap-2 max-md:grid-cols-[154.5px_154.5px] max-md:grid-rows-[41.2px] max-md:[grid-auto-columns:1fr] md:max-lg:gap-4 2xl:gap-4" data-id="n41">
+                        <div className="contents min-w-0" data-id="n42">
+                          <div className="contents" data-id="n43">
+                            <a className="h-[46.1px] flex relative max-w-full py-[0.8rem] px-[18.3px] rounded-[999px] justify-center items-center gap-[7.3px] overflow-hidden text-foreground bg-background cursor-pointer max-md:h-[2.575rem] max-md:py-[0.675rem] max-md:px-4 max-lg:gap-2 max-md:text-sm max-md:leading-[1.25rem] md:max-lg:h-[3.15rem] md:max-lg:py-3.5 md:max-lg:px-5 2xl:h-[3.15rem] 2xl:py-3.5 2xl:px-5 2xl:gap-2 hover:bg-border" data-id="n44" href="/contact?type=demo">
+                              <div className="h-[20.5px] flex relative z-1 items-center gap-1.5 max-md:h-[1.225rem] max-lg:gap-[0.4rem] md:max-lg:h-[1.4rem] 2xl:h-[1.4rem] 2xl:gap-[0.4rem]" data-id="n45">
                                 Book a demo
                               </div>
                             </a>
                           </div>
                         </div>
-                        <a className="h-[46.1px] flex relative max-w-full py-[0.8rem] px-[18.3px] rounded-[999px] justify-center items-center gap-[7.3px] overflow-hidden bg-surface-2 [backdrop-filter:blur(32px)] cursor-pointer max-md:h-[2.575rem] max-md:py-[0.675rem] max-md:px-4 max-lg:gap-2 max-md:text-sm max-md:leading-[1.25rem] md:max-lg:h-[3.15rem] md:max-lg:py-3.5 md:max-lg:px-5 2xl:h-[3.15rem] 2xl:py-3.5 2xl:px-5 2xl:gap-2 hover:bg-clr-22" data-cid="n46" data-component="link" href="/#how-it-works">
-                          <div className="h-[20.5px] flex relative z-1 items-center gap-1.5 max-md:h-[1.225rem] max-lg:gap-[0.4rem] md:max-lg:h-[1.4rem] 2xl:h-[1.4rem] 2xl:gap-[0.4rem]" data-cid="n47">
+                        <a className="h-[46.1px] flex relative max-w-full py-[0.8rem] px-[18.3px] rounded-[999px] justify-center items-center gap-[7.3px] overflow-hidden bg-surface-2 [backdrop-filter:blur(32px)] cursor-pointer max-md:h-[2.575rem] max-md:py-[0.675rem] max-md:px-4 max-lg:gap-2 max-md:text-sm max-md:leading-[1.25rem] md:max-lg:h-[3.15rem] md:max-lg:py-3.5 md:max-lg:px-5 2xl:h-[3.15rem] 2xl:py-3.5 2xl:px-5 2xl:gap-2 hover:bg-clr-22" data-id="n46" href="/#how-it-works">
+                          <div className="h-[20.5px] flex relative z-1 items-center gap-1.5 max-md:h-[1.225rem] max-lg:gap-[0.4rem] md:max-lg:h-[1.4rem] 2xl:h-[1.4rem] 2xl:gap-[0.4rem]" data-id="n47">
                             See how it works
                           </div>
                         </a>
@@ -371,32 +371,32 @@ export default function Page() {
                   </div>
                 </div>
               </div>
-              <div className="h-[2.975rem] flex absolute right-[658.9px] bottom-11 left-[3.6625rem] z-10 min-w-0 justify-start items-center gap-[1.375rem] text-background text-center max-lg:hidden 2xl:h-13 2xl:right-313 2xl:bottom-12 2xl:left-16 2xl:gap-6" data-cid="n48">
-                <div className="h-[2.5625rem] flex flex-col text-left 2xl:h-[2.8rem]" data-cid="n49">
-                  <div className="h-[20.5px] block 2xl:h-[1.4rem]" data-cid="n50">
+              <div className="h-[2.975rem] flex absolute right-[658.9px] bottom-11 left-[3.6625rem] z-10 min-w-0 justify-start items-center gap-[1.375rem] text-background text-center max-lg:hidden 2xl:h-13 2xl:right-313 2xl:bottom-12 2xl:left-16 2xl:gap-6" data-id="n48">
+                <div className="h-[2.5625rem] flex flex-col text-left 2xl:h-[2.8rem]" data-id="n49">
+                  <div className="h-[20.5px] block 2xl:h-[1.4rem]" data-id="n50">
                     Always On
-                    <br className="inline" data-cid="n51" />
+                    <br className="inline" data-id="n51" />
                   </div>
-                  <div className="block opacity-55 whitespace-nowrap" data-cid="n52">
+                  <div className="block opacity-55 whitespace-nowrap" data-id="n52">
                     Scheduled. Automatic.
                   </div>
                 </div>
-                <div className="w-px h-full block opacity-20 bg-background" data-cid="n53" />
-                <div className="h-[2.5625rem] flex flex-col text-left 2xl:h-[2.8rem]" data-cid="n54">
-                  <div className="block" data-cid="n55">
+                <div className="w-px h-full block opacity-20 bg-background" data-id="n53" />
+                <div className="h-[2.5625rem] flex flex-col text-left 2xl:h-[2.8rem]" data-id="n54">
+                  <div className="block" data-id="n55">
                     Instant Alerts
-                    <br className="inline" data-cid="n56" />
+                    <br className="inline" data-id="n56" />
                   </div>
-                  <div className="block opacity-55 whitespace-nowrap" data-cid="n57">
+                  <div className="block opacity-55 whitespace-nowrap" data-id="n57">
                     Critical flags, instantly.
                   </div>
                 </div>
-                <div className="w-px h-full block opacity-20 bg-background" data-cid="n58" />
-                <div className="h-[2.5625rem] flex flex-col text-left 2xl:h-[2.8rem]" data-cid="n59">
-                  <div className="block" data-cid="n60">
+                <div className="w-px h-full block opacity-20 bg-background" data-id="n58" />
+                <div className="h-[2.5625rem] flex flex-col text-left 2xl:h-[2.8rem]" data-id="n59">
+                  <div className="block" data-id="n60">
                     Every Call
                   </div>
-                  <div className="block opacity-55 whitespace-nowrap" data-cid="n61">
+                  <div className="block opacity-55 whitespace-nowrap" data-id="n61">
                     Full summary, every call.
                   </div>
                 </div>
@@ -405,57 +405,57 @@ export default function Page() {
           </div>
           <LogoCloudSection />
           <FeatureGridSection />
-          <div className="block" data-cid="n370">
-            <div className="block before:content-['_'] before:table before:w-0 before:h-0 before:text-foreground before:text-[0.9375rem] before:leading-[1.3125rem] max-lg:before:text-base max-lg:before:leading-[1.375rem] 2xl:before:text-base 2xl:before:leading-[1.375rem] after:content-['_'] after:table after:w-0 after:h-0 after:text-foreground after:text-[0.9375rem] after:leading-[1.3125rem] max-lg:after:text-base max-lg:after:leading-[1.375rem] 2xl:after:text-base 2xl:after:leading-[1.375rem]" data-cid="n371" />
+          <div className="block" data-id="n370">
+            <div className="block before:content-['_'] before:table before:w-0 before:h-0 before:text-foreground before:text-[0.9375rem] before:leading-[1.3125rem] max-lg:before:text-base max-lg:before:leading-[1.375rem] 2xl:before:text-base 2xl:before:leading-[1.375rem] after:content-['_'] after:table after:w-0 after:h-0 after:text-foreground after:text-[0.9375rem] after:leading-[1.3125rem] max-lg:after:text-base max-lg:after:leading-[1.375rem] 2xl:after:text-base 2xl:after:leading-[1.375rem]" data-id="n371" />
             <GalleryShowcaseSection2 />
           </div>
-          <section className="block" data-cid="n520" id="for-mothers">
-            <div className="block pt-10 pb-10 px-[2.2875rem] max-md:pt-12 max-lg:pb-12 max-md:px-6 md:max-lg:pt-10 md:max-lg:px-10 2xl:pt-10 2xl:pb-10 2xl:px-10" data-cid="n521">
-              <div className="block max-w-[73.275rem] mx-auto justify-center max-lg:max-w-320 2xl:max-w-320" data-cid="n522">
-                <div className="grid items-center gap-[73.3px] grid-rows-[695.2px] [grid-auto-columns:1fr] grid-cols-2 max-lg:flex-col max-md:gap-8 max-md:grid-rows-[525px_509.359px] max-lg:grid-cols-1 md:max-lg:gap-12 md:max-lg:grid-rows-[525px_544.984px] 2xl:gap-20 2xl:grid-rows-[759px]" data-cid="n523">
-                  <div className="flex min-w-0 max-w-[35.725rem] flex-col shrink-0 gap-[1.375rem] max-lg:max-w-156 max-lg:gap-6 2xl:max-w-156 2xl:gap-6" data-cid="n524">
+          <section className="block" data-id="n520" id="for-mothers">
+            <div className="block pt-10 pb-10 px-[2.2875rem] max-md:pt-12 max-lg:pb-12 max-md:px-6 md:max-lg:pt-10 md:max-lg:px-10 2xl:pt-10 2xl:pb-10 2xl:px-10" data-id="n521">
+              <div className="block max-w-[73.275rem] mx-auto justify-center max-lg:max-w-320 2xl:max-w-320" data-id="n522">
+                <div className="grid items-center gap-[73.3px] grid-rows-[695.2px] [grid-auto-columns:1fr] grid-cols-2 max-lg:flex-col max-md:gap-8 max-md:grid-rows-[525px_509.359px] max-lg:grid-cols-1 md:max-lg:gap-12 md:max-lg:grid-rows-[525px_544.984px] 2xl:gap-20 2xl:grid-rows-[759px]" data-id="n523">
+                  <div className="flex min-w-0 max-w-[35.725rem] flex-col shrink-0 gap-[1.375rem] max-lg:max-w-156 max-lg:gap-6 2xl:max-w-156 2xl:gap-6" data-id="n524">
                     <MembershipCarousel data={Logo3_data.slice(0, 4)} cids={Logo3_cids} />
                   </div>
-                  <div className="flex flex-col shrink-0 gap-[18.3px] max-md:gap-4 md:max-lg:gap-5 2xl:gap-5" data-cid="n558">
-                    <div className="block -mt-4 max-md:-mt-2 md:max-lg:-mt-3 2xl:-mt-3" data-cid="n559">
-                      <h2 className="block text-[2.3125rem] leading-11 tracking-[-0.73px] max-md:text-2xl max-md:leading-[1.8125rem] max-md:tracking-[-0.54px] md:max-lg:text-[2.5rem] md:max-lg:leading-12 md:max-lg:tracking-[-0.9px] 2xl:text-5xl 2xl:leading-[3.625rem] 2xl:tracking-[-1.08px]" data-cid="n560" data-component="heading">
+                  <div className="flex flex-col shrink-0 gap-[18.3px] max-md:gap-4 md:max-lg:gap-5 2xl:gap-5" data-id="n558">
+                    <div className="block -mt-4 max-md:-mt-2 md:max-lg:-mt-3 2xl:-mt-3" data-id="n559">
+                      <h2 className="block text-[2.3125rem] leading-11 tracking-[-0.73px] max-md:text-2xl max-md:leading-[1.8125rem] max-md:tracking-[-0.54px] md:max-lg:text-[2.5rem] md:max-lg:leading-12 md:max-lg:tracking-[-0.9px] 2xl:text-5xl 2xl:leading-[3.625rem] 2xl:tracking-[-1.08px]" data-id="n560">
                         Aya Bundle for new mothers
                       </h2>
-                      <p className="block mt-2 text-muted-foreground text-[1.0625rem] leading-[1.5625rem] tracking-[-0.12px] max-md:text-base max-md:leading-6 md:max-lg:text-lg md:max-lg:leading-[1.6875rem] 2xl:text-lg 2xl:leading-[1.6875rem]" data-cid="n560b">
+                      <p className="block mt-2 text-muted-foreground text-[1.0625rem] leading-[1.5625rem] tracking-[-0.12px] max-md:text-base max-md:leading-6 md:max-lg:text-lg md:max-lg:leading-[1.6875rem] 2xl:text-lg 2xl:leading-[1.6875rem]" data-id="n560b">
                         Your Omaya membership starts here
                       </p>
                     </div>
-                    <div className="flex pl-[7.3px] flex-col gap-[7.3px] max-lg:gap-2 max-md:pl-0 md:max-lg:pl-2 2xl:pl-2 2xl:gap-2" data-cid="n561">
+                    <div className="flex pl-[7.3px] flex-col gap-[7.3px] max-lg:gap-2 max-md:pl-0 md:max-lg:pl-2 2xl:pl-2 2xl:gap-2" data-id="n561">
                       {Tile3_data.map((d, i) => <Tile3 key={d.description} d={d} cids={Tile3_cids[i]} />)}
                     </div>
-                    <div className="flex items-center gap-[0.6875rem] max-md:mt-3 max-lg:gap-3 2xl:gap-3" data-cid="n583">
-                      <div className="block text-[4rem] leading-[4.25rem] max-md:text-[2.5rem] max-md:leading-12 md:max-lg:text-[4.375rem] md:max-lg:leading-18.5 2xl:text-[4.375rem] 2xl:leading-18.5" data-cid="n584">
+                    <div className="flex items-center gap-[0.6875rem] max-md:mt-3 max-lg:gap-3 2xl:gap-3" data-id="n583">
+                      <div className="block text-[4rem] leading-[4.25rem] max-md:text-[2.5rem] max-md:leading-12 md:max-lg:text-[4.375rem] md:max-lg:leading-18.5 2xl:text-[4.375rem] 2xl:leading-18.5" data-id="n584">
                         $5
                       </div>
-                      <div className="h-[2.8625rem] flex flex-col gap-0.5 max-md:h-12 max-md:gap-[initial] md:max-lg:h-12.5 2xl:h-12.5" data-cid="n585">
-                        <p className="block leading-[1.375rem] tracking-[-0.2px] max-lg:leading-6 2xl:leading-6" data-cid="n586">
+                      <div className="h-[2.8625rem] flex flex-col gap-0.5 max-md:h-12 max-md:gap-[initial] md:max-lg:h-12.5 2xl:h-12.5" data-id="n585">
+                        <p className="block leading-[1.375rem] tracking-[-0.2px] max-lg:leading-6 2xl:leading-6" data-id="n586">
                           /month*
                         </p>
-                        <p className="block text-color-001 leading-[1.375rem] tracking-[-0.2px] whitespace-nowrap max-lg:leading-6 2xl:leading-6" data-cid="n587">
+                        <p className="block text-color-001 leading-[1.375rem] tracking-[-0.2px] whitespace-nowrap max-lg:leading-6 2xl:leading-6" data-id="n587">
                           Billed monthly
                         </p>
                       </div>
                     </div>
-                    <div className="flex flex-col justify-start items-stretch gap-[14.7px] max-md:-mt-2 max-lg:gap-4 2xl:gap-4" data-cid="n588">
-                      <div className="flex flex-col" data-cid="n589">
-                        <a className="border border-solid border-clr-3 flex relative max-w-full py-[0.8rem] px-[18.3px] rounded-[999px] justify-center items-center gap-[7.3px] overflow-hidden text-background bg-color-009 cursor-pointer max-md:py-[0.675rem] max-md:px-4 max-lg:gap-2 max-md:text-sm max-md:leading-[1.25rem] md:max-lg:py-3.5 md:max-lg:px-5 2xl:py-3.5 2xl:px-5 2xl:gap-2 hover:bg-clr-24 focus:bg-clr-28" data-cid="n590" data-component="link" href="/contact?type=waitlist">
-                          <div className="flex relative z-1 items-center gap-1.5 max-lg:gap-[0.4rem] 2xl:gap-[0.4rem]" data-cid="n591">
+                    <div className="flex flex-col justify-start items-stretch gap-[14.7px] max-md:-mt-2 max-lg:gap-4 2xl:gap-4" data-id="n588">
+                      <div className="flex flex-col" data-id="n589">
+                        <a className="border border-solid border-clr-3 flex relative max-w-full py-[0.8rem] px-[18.3px] rounded-[999px] justify-center items-center gap-[7.3px] overflow-hidden text-background bg-color-009 cursor-pointer max-md:py-[0.675rem] max-md:px-4 max-lg:gap-2 max-md:text-sm max-md:leading-[1.25rem] md:max-lg:py-3.5 md:max-lg:px-5 2xl:py-3.5 2xl:px-5 2xl:gap-2 hover:bg-clr-24 focus:bg-clr-28" data-id="n590" href="/contact?type=waitlist">
+                          <div className="flex relative z-1 items-center gap-1.5 max-lg:gap-[0.4rem] 2xl:gap-[0.4rem]" data-id="n591">
                             Join the waitlist
                           </div>
                         </a>
                       </div>
-                      <div className="block" data-cid="n592">
-                        <div className="flex max-w-[32.0625rem] flex-wrap justify-center items-center gap-[1.375rem] grid-cols-[1fr_1fr_1fr] grid-rows-[auto] [grid-auto-columns:1fr] max-lg:max-w-140 max-md:gap-4 max-md:text-xs max-md:leading-[1.0625rem] md:max-lg:gap-6 2xl:max-w-140 2xl:gap-6" data-cid="n593">
+                      <div className="block" data-id="n592">
+                        <div className="flex max-w-[32.0625rem] flex-wrap justify-center items-center gap-[1.375rem] grid-cols-[1fr_1fr_1fr] grid-rows-[auto] [grid-auto-columns:1fr] max-lg:max-w-140 max-md:gap-4 max-md:text-xs max-md:leading-[1.0625rem] md:max-lg:gap-6 2xl:max-w-140 2xl:gap-6" data-id="n593">
                           {Logo4_data.map((d, i) => <Logo4 key={d.text} d={d} cids={Logo4_cids[i]} styles={Logo4_styles[i]} />)}
                         </div>
                       </div>
                     </div>
-                    <p className="block text-clr-13 text-[0.6875rem] leading-[1.0625rem] tracking-[0.05px] text-center max-lg:text-xs max-lg:leading-4.5 max-lg:tracking-[0.06px] 2xl:text-xs 2xl:leading-4.5 2xl:tracking-[0.06px]" data-cid="n603">
+                    <p className="block text-clr-13 text-[0.6875rem] leading-[1.0625rem] tracking-[0.05px] text-center max-lg:text-xs max-lg:leading-4.5 max-lg:tracking-[0.06px] 2xl:text-xs 2xl:leading-4.5 2xl:tracking-[0.06px]" data-id="n603">
                       * Pricing is subject to change and is currently under review
                     </p>
                   </div>
@@ -465,43 +465,43 @@ export default function Page() {
           </section>
           <GalleryShowcaseSection />
         </div>
-        <div className="block relative pb-[7.3px] px-[7.3px] max-lg:pb-0 max-lg:px-0 2xl:pb-2 2xl:px-2" data-cid="n604">
-          <div className="block absolute inset-0 z-0 overflow-hidden pointer-events-none rounded-[11px] max-lg:rounded-[initial] 2xl:rounded-xl" data-cid="n604bg" aria-hidden="true">
-            <div className="block absolute top-0 inset-x-0 h-[45.8rem] overflow-hidden max-lg:h-140 2xl:h-200" data-cid="n604bg-crisp">
-              <img decoding="async" className="w-full h-full block max-w-full overflow-clip object-cover object-top align-middle" data-cid="n604bg-img" alt="Care that follows mothers home" src="/assets/images/footer-family.avif" />
-              <div className="h-[34.75rem] block absolute bottom-0 inset-x-0 opacity-50 [mix-blend-mode:darken] pointer-events-none max-md:h-[38.0625rem] md:max-lg:h-[38.4rem] 2xl:h-190.5" style={{ backgroundImage: "linear-gradient(var(--clr-3) 0%, var(--clr-2) 100%)" }} data-cid="n604bg-darken" />
-              <div className="block absolute top-0 right-0 w-3/4 h-[45%] pointer-events-none" style={{ background: "linear-gradient(to bottom left, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.2) 35%, transparent 65%)" }} data-cid="n604bg-corner" />
-              <div className="block absolute inset-y-0 left-0 w-3/4 pointer-events-none" style={{ background: "linear-gradient(to right, rgba(0,0,0,0.5) 0%, transparent 70%)" }} data-cid="n604bg-left" />
+        <div className="block relative pb-[7.3px] px-[7.3px] max-lg:pb-0 max-lg:px-0 2xl:pb-2 2xl:px-2" data-id="n604">
+          <div className="block absolute inset-0 z-0 overflow-hidden pointer-events-none rounded-[11px] max-lg:rounded-[initial] 2xl:rounded-xl" data-id="n604bg" aria-hidden="true">
+            <div className="block absolute top-0 inset-x-0 h-[45.8rem] overflow-hidden max-lg:h-140 2xl:h-200" data-id="n604bg-crisp">
+              <img decoding="async" className="w-full h-full block max-w-full overflow-clip object-cover object-top align-middle" data-id="n604bg-img" alt="Care that follows mothers home" src="/assets/images/footer-family.avif" />
+              <div className="h-[34.75rem] block absolute bottom-0 inset-x-0 opacity-50 [mix-blend-mode:darken] pointer-events-none max-md:h-[38.0625rem] md:max-lg:h-[38.4rem] 2xl:h-190.5" style={{ backgroundImage: "linear-gradient(var(--clr-3) 0%, var(--clr-2) 100%)" }} data-id="n604bg-darken" />
+              <div className="block absolute top-0 right-0 w-3/4 h-[45%] pointer-events-none" style={{ background: "linear-gradient(to bottom left, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.2) 35%, transparent 65%)" }} data-id="n604bg-corner" />
+              <div className="block absolute inset-y-0 left-0 w-3/4 pointer-events-none" style={{ background: "linear-gradient(to right, rgba(0,0,0,0.5) 0%, transparent 70%)" }} data-id="n604bg-left" />
             </div>
-            <div className="block absolute top-[45.8rem] inset-x-0 bottom-0 overflow-hidden pointer-events-none max-lg:top-140 2xl:top-200" data-cid="n604bg-reflect" aria-hidden="true">
-              <div className="block absolute inset-0 overflow-hidden" data-cid="n604bg-reflect-blur">
+            <div className="block absolute top-[45.8rem] inset-x-0 bottom-0 overflow-hidden pointer-events-none max-lg:top-140 2xl:top-200" data-id="n604bg-reflect" aria-hidden="true">
+              <div className="block absolute inset-0 overflow-hidden" data-id="n604bg-reflect-blur">
                 <img decoding="async" className="w-full h-[45.8rem] block absolute top-0 inset-x-0 max-w-full overflow-clip object-cover object-top align-middle [filter:blur(6px)] max-lg:h-140 2xl:h-200" style={{ transform: "scaleY(-1)" }} alt="" src="/assets/images/footer-family.avif" />
               </div>
-              <div className="block absolute inset-0 overflow-hidden [mask-image:linear-gradient(to_bottom,#000_0%,transparent_33%)] [-webkit-mask-image:linear-gradient(to_bottom,#000_0%,transparent_33%)]" data-cid="n604bg-reflect-sharp">
+              <div className="block absolute inset-0 overflow-hidden [mask-image:linear-gradient(to_bottom,#000_0%,transparent_33%)] [-webkit-mask-image:linear-gradient(to_bottom,#000_0%,transparent_33%)]" data-id="n604bg-reflect-sharp">
                 <img decoding="async" className="w-full h-[45.8rem] block absolute top-0 inset-x-0 max-w-full overflow-clip object-cover object-top align-middle max-lg:h-140 2xl:h-200" style={{ transform: "scaleY(-1)" }} alt="" src="/assets/images/footer-family.avif" />
               </div>
-              <div className="block absolute inset-0 pointer-events-none" style={{ background: "linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.42) 100%)" }} data-cid="n604bg-reflect-tint" />
+              <div className="block absolute inset-0 pointer-events-none" style={{ background: "linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.42) 100%)" }} data-id="n604bg-reflect-tint" />
             </div>
           </div>
-          <section className="h-[45.8rem] min-h-[45.8rem] flex relative z-1 flex-col justify-center items-start max-lg:h-140 max-lg:min-h-140 max-md:-mb-12 max-md:overflow-hidden 2xl:h-200 2xl:min-h-200" data-cid="n605">
-            <div className="block self-stretch" data-cid="n606">
-              <div className="block py-[6.4125rem] px-[2.2875rem] max-md:h-[14.075rem] max-md:py-12 max-md:px-6 max-md:overflow-hidden md:max-lg:py-24 md:max-lg:px-10 2xl:py-28 2xl:px-10" data-cid="n607">
-                <div className="h-full block relative z-2 max-w-[73.275rem] justify-center mx-auto max-lg:z-5 max-lg:max-w-320 2xl:max-w-320" data-cid="n608">
-                  <div className="h-full flex max-w-[50%] flex-col gap-[1.375rem] text-background max-lg:gap-6 max-lg:max-w-none 2xl:gap-6" data-cid="n609">
-                    <h2 className="block text-[2.75rem] leading-[3.1875rem] tracking-[-0.99px] max-md:text-[2rem] max-md:leading-8 max-md:tracking-[-0.64px] md:max-lg:text-5xl md:max-lg:leading-12 md:max-lg:tracking-[-0.96px] 2xl:text-6xl 2xl:leading-15 2xl:tracking-[-1.2px]" data-cid="n610" data-component="heading">
+          <section className="h-[45.8rem] min-h-[45.8rem] flex relative z-1 flex-col justify-center items-start max-lg:h-140 max-lg:min-h-140 max-md:-mb-12 max-md:overflow-hidden 2xl:h-200 2xl:min-h-200" data-id="n605">
+            <div className="block self-stretch" data-id="n606">
+              <div className="block py-[6.4125rem] px-[2.2875rem] max-md:h-[14.075rem] max-md:py-12 max-md:px-6 max-md:overflow-hidden md:max-lg:py-24 md:max-lg:px-10 2xl:py-28 2xl:px-10" data-id="n607">
+                <div className="h-full block relative z-2 max-w-[73.275rem] justify-center mx-auto max-lg:z-5 max-lg:max-w-320 2xl:max-w-320" data-id="n608">
+                  <div className="h-full flex max-w-[50%] flex-col gap-[1.375rem] text-background max-lg:gap-6 max-lg:max-w-none 2xl:gap-6" data-id="n609">
+                    <h2 className="block text-[2.75rem] leading-[3.1875rem] tracking-[-0.99px] max-md:text-[2rem] max-md:leading-8 max-md:tracking-[-0.64px] md:max-lg:text-5xl md:max-lg:leading-12 md:max-lg:tracking-[-0.96px] 2xl:text-6xl 2xl:leading-15 2xl:tracking-[-1.2px]" data-id="n610">
                       {"Care that follows "}
-                      <span className="block" data-cid="n611">
+                      <span className="block" data-id="n611">
                         mothers home
                       </span>
                     </h2>
-                    <div className="flex flex-wrap items-center gap-[14.7px] max-md:gap-2 md:max-lg:gap-4 2xl:gap-4" data-cid="n612">
-                      <a className="flex relative max-w-full py-[0.8rem] px-[18.3px] rounded-[999px] justify-center items-center gap-[7.3px] overflow-hidden text-foreground bg-background cursor-pointer max-md:py-[0.675rem] max-md:px-4 max-lg:gap-2 max-md:text-sm max-md:leading-[1.25rem] md:max-lg:py-3.5 md:max-lg:px-5 2xl:py-3.5 2xl:px-5 2xl:gap-2 hover:bg-border" data-cid="n613" data-component="link" href="/contact?type=general">
-                        <div className="flex relative z-1 items-center gap-1.5 whitespace-nowrap max-lg:gap-[0.4rem] 2xl:gap-[0.4rem]" data-cid="n614">
+                    <div className="flex flex-wrap items-center gap-[14.7px] max-md:gap-2 md:max-lg:gap-4 2xl:gap-4" data-id="n612">
+                      <a className="flex relative max-w-full py-[0.8rem] px-[18.3px] rounded-[999px] justify-center items-center gap-[7.3px] overflow-hidden text-foreground bg-background cursor-pointer max-md:py-[0.675rem] max-md:px-4 max-lg:gap-2 max-md:text-sm max-md:leading-[1.25rem] md:max-lg:py-3.5 md:max-lg:px-5 2xl:py-3.5 2xl:px-5 2xl:gap-2 hover:bg-border" data-id="n613" href="/contact?type=general">
+                        <div className="flex relative z-1 items-center gap-1.5 whitespace-nowrap max-lg:gap-[0.4rem] 2xl:gap-[0.4rem]" data-id="n614">
                           Contact us
                         </div>
                       </a>
-                      <a className="h-[46.1px] flex relative max-w-full py-[0.8rem] px-[18.3px] rounded-[999px] justify-center items-center gap-[7.3px] overflow-hidden bg-surface-2 [backdrop-filter:blur(32px)] cursor-pointer max-md:h-[2.575rem] max-md:py-[0.675rem] max-md:px-4 max-lg:gap-2 max-md:text-sm max-md:leading-[1.25rem] md:max-lg:h-[3.15rem] md:max-lg:py-3.5 md:max-lg:px-5 2xl:h-[3.15rem] 2xl:py-3.5 2xl:px-5 2xl:gap-2 hover:bg-clr-22" data-cid="n615" data-component="link" href="/faq">
-                        <div className="h-[20.5px] flex relative z-1 items-center gap-1.5 whitespace-nowrap max-md:h-[1.225rem] max-lg:gap-[0.4rem] md:max-lg:h-[1.4rem] 2xl:h-[1.4rem] 2xl:gap-[0.4rem]" data-cid="n616">
+                      <a className="h-[46.1px] flex relative max-w-full py-[0.8rem] px-[18.3px] rounded-[999px] justify-center items-center gap-[7.3px] overflow-hidden bg-surface-2 [backdrop-filter:blur(32px)] cursor-pointer max-md:h-[2.575rem] max-md:py-[0.675rem] max-md:px-4 max-lg:gap-2 max-md:text-sm max-md:leading-[1.25rem] md:max-lg:h-[3.15rem] md:max-lg:py-3.5 md:max-lg:px-5 2xl:h-[3.15rem] 2xl:py-3.5 2xl:px-5 2xl:gap-2 hover:bg-clr-22" data-id="n615" href="/faq">
+                        <div className="h-[20.5px] flex relative z-1 items-center gap-1.5 whitespace-nowrap max-md:h-[1.225rem] max-lg:gap-[0.4rem] md:max-lg:h-[1.4rem] 2xl:h-[1.4rem] 2xl:gap-[0.4rem]" data-id="n616">
                           FAQ
                         </div>
                       </a>
@@ -513,62 +513,62 @@ export default function Page() {
           </section>
           <Footer />
         </div>
-        <div className="block" data-cid="n797">
-          <nav className="w-[190.5px] h-[31.1125rem] flex fixed top-[16.3875rem] left-11 z-1150 opacity-0 flex-col gap-[0.6875rem] text-background text-[0.8125rem] leading-[1.1875rem] transform-[matrix(1,0,0,1,0,14.6555)] pointer-events-none max-lg:hidden" data-cid="n798">
-            <p className="block opacity-50 tracking-[-0.2px] pointer-events-none" data-cid="n799">
+        <div className="block" data-id="n797">
+          <nav className="w-[190.5px] h-[31.1125rem] flex fixed top-[16.3875rem] left-11 z-1150 opacity-0 flex-col gap-[0.6875rem] text-background text-[0.8125rem] leading-[1.1875rem] transform-[matrix(1,0,0,1,0,14.6555)] pointer-events-none max-lg:hidden" data-id="n798">
+            <p className="block opacity-50 tracking-[-0.2px] pointer-events-none" data-id="n799">
               FAQs
             </p>
-            <ul className="flex flex-col gap-[0.6875rem] text-muted-foreground [list-style-type:none] list-outside pointer-events-none 2xl:gap-3" data-cid="n800">
+            <ul className="flex flex-col gap-[0.6875rem] text-muted-foreground [list-style-type:none] list-outside pointer-events-none 2xl:gap-3" data-id="n800">
               {MediaTile6_data.map((d, i) => <MediaTile6 key={MediaTile6_cids[i][0]} d={d} cids={MediaTile6_cids[i]} styles={MediaTile6_styles[i]} />)}
             </ul>
           </nav>
-          <nav className="hidden fixed bottom-0 inset-x-0 z-1100 opacity-0 p-[14.7px] justify-between items-center gap-[0.6875rem] text-background text-[0.8125rem] leading-[1.1875rem] transform-[none] pointer-events-none" data-cid="n855">
-            <p className="block opacity-50 py-[7.3px] px-[0.6875rem] flex-1 tracking-[-0.2px] pointer-events-none max-lg:min-w-0 max-lg:py-2 max-md:pr-3 max-md:pl-5 md:max-lg:px-3" data-cid="n856">
+          <nav className="hidden fixed bottom-0 inset-x-0 z-1100 opacity-0 p-[14.7px] justify-between items-center gap-[0.6875rem] text-background text-[0.8125rem] leading-[1.1875rem] transform-[none] pointer-events-none" data-id="n855">
+            <p className="block opacity-50 py-[7.3px] px-[0.6875rem] flex-1 tracking-[-0.2px] pointer-events-none max-lg:min-w-0 max-lg:py-2 max-md:pr-3 max-md:pl-5 md:max-lg:px-3" data-id="n856">
               Frequently asked questions
             </p>
-            <div className="flex items-center shrink-0 gap-[5.5px] pointer-events-none max-lg:gap-1.5" data-cid="n857">
-              <button className="w-[29.3px] h-[29.3px] flex min-w-0 rounded-[7.3px] justify-center items-center text-center bg-clr-10 [backdrop-filter:blur(21.9832px)] cursor-pointer pointer-events-none max-lg:w-8 max-lg:h-8 max-lg:rounded-[99px] max-lg:[backdrop-filter:blur(24px)]" data-cid="n858" aria-label="Previous question" type="button">
-                <div className="w-[0.2875rem] h-[7.3px] block min-w-0 shrink-0 pointer-events-none max-lg:w-[0.3125rem] max-lg:h-2 max-lg:flex max-lg:justify-center max-lg:items-center" data-cid="n859">
+            <div className="flex items-center shrink-0 gap-[5.5px] pointer-events-none max-lg:gap-1.5" data-id="n857">
+              <button className="w-[29.3px] h-[29.3px] flex min-w-0 rounded-[7.3px] justify-center items-center text-center bg-clr-10 [backdrop-filter:blur(21.9832px)] cursor-pointer pointer-events-none max-lg:w-8 max-lg:h-8 max-lg:rounded-[99px] max-lg:[backdrop-filter:blur(24px)]" data-id="n858" aria-label="Previous question" type="button">
+                <div className="w-[0.2875rem] h-[7.3px] block min-w-0 shrink-0 pointer-events-none max-lg:w-[0.3125rem] max-lg:h-2 max-lg:flex max-lg:justify-center max-lg:items-center" data-id="n859">
                   <Icon cid={"n860"} />
                 </div>
               </button>
-              <button className="w-[29.3px] h-[29.3px] flex min-w-0 rounded-[7.3px] justify-center items-center text-center bg-clr-10 [backdrop-filter:blur(21.9832px)] cursor-pointer pointer-events-none max-lg:w-8 max-lg:h-8 max-lg:rounded-[99px] max-lg:[backdrop-filter:blur(24px)]" data-cid="n861" aria-label="Next question" type="button">
-                <div className="w-[0.2875rem] h-[7.3px] block min-w-0 shrink-0 pointer-events-none max-lg:w-[0.3125rem] max-lg:h-2 max-lg:flex max-lg:justify-center max-lg:items-center" data-cid="n862">
+              <button className="w-[29.3px] h-[29.3px] flex min-w-0 rounded-[7.3px] justify-center items-center text-center bg-clr-10 [backdrop-filter:blur(21.9832px)] cursor-pointer pointer-events-none max-lg:w-8 max-lg:h-8 max-lg:rounded-[99px] max-lg:[backdrop-filter:blur(24px)]" data-id="n861" aria-label="Next question" type="button">
+                <div className="w-[0.2875rem] h-[7.3px] block min-w-0 shrink-0 pointer-events-none max-lg:w-[0.3125rem] max-lg:h-2 max-lg:flex max-lg:justify-center max-lg:items-center" data-id="n862">
                   <Icon2 cid={"n863"} />
                 </div>
               </button>
             </div>
           </nav>
         </div>
-        <div className="block" data-cid="n864">
-          <div className="block" data-cid="n865">
-            <div className="w-317.5 h-200 flex fixed top-0 left-0 z-9999 invisible opacity-0 justify-center items-center bg-clr-15 pointer-events-none max-md:w-[22.8125rem] max-md:h-203 md:max-lg:w-189.5 md:max-lg:h-256 2xl:w-477.5 2xl:h-270" data-cid="n866" id="om2Overlay">
+        <div className="block" data-id="n864">
+          <div className="block" data-id="n865">
+            <div className="w-317.5 h-200 flex fixed top-0 left-0 z-9999 invisible opacity-0 justify-center items-center bg-clr-15 pointer-events-none max-md:w-[22.8125rem] max-md:h-203 md:max-lg:w-189.5 md:max-lg:h-256 2xl:w-477.5 2xl:h-270" data-id="n866" id="om2Overlay">
               <HeroSection />
             </div>
           </div>
-          <div className="block" data-cid="n897">
-            <div className="block" data-cid="n898" />
+          <div className="block" data-id="n897">
+            <div className="block" data-id="n898" />
           </div>
-          <div className="block" data-cid="n899">
-            <div className="block" data-cid="n900" />
+          <div className="block" data-id="n899">
+            <div className="block" data-id="n900" />
           </div>
         </div>
       </div>
-      {!cookieAccepted && <div className="block" data-cid="n901">
-        <div className="h-[156.5px] border border-solid border-color-006 flex fixed right-[46.175rem] bottom-[1.375rem] left-[18.3px] z-998 max-w-[32.0625rem] py-6 px-8 rounded-[7.3px] bg-background max-md:h-[16.05rem] max-lg:bottom-0 max-lg:inset-x-0 max-lg:mb-2 max-lg:mx-2 max-lg:p-4 max-lg:rounded-lg max-lg:max-w-none md:max-lg:h-44 2xl:h-[10.275rem] 2xl:right-332.5 2xl:bottom-6 2xl:left-5 2xl:max-w-140 2xl:rounded-lg" data-cid="n902">
-          <div className="flex max-w-250 flex-col justify-start items-start gap-[14.7px] max-lg:gap-4 2xl:gap-4" data-cid="n903">
-            <div className="h-[53.9px] block mr-[29.3px] text-[0.8125rem] leading-[1.125rem] max-md:h-[6.125rem] max-lg:text-sm max-lg:leading-[1.25rem] max-md:mr-0 md:max-lg:h-[2.45rem] md:max-lg:mr-8 2xl:h-[3.675rem] 2xl:mr-8 2xl:text-sm 2xl:leading-[1.25rem]" data-cid="n904">
+      {!cookieAccepted && <div className="block" data-id="n901">
+        <div className="h-[156.5px] border border-solid border-color-006 flex fixed right-[46.175rem] bottom-[1.375rem] left-[18.3px] z-998 max-w-[32.0625rem] py-6 px-8 rounded-[7.3px] bg-background max-md:h-[16.05rem] max-lg:bottom-0 max-lg:inset-x-0 max-lg:mb-2 max-lg:mx-2 max-lg:p-4 max-lg:rounded-lg max-lg:max-w-none md:max-lg:h-44 2xl:h-[10.275rem] 2xl:right-332.5 2xl:bottom-6 2xl:left-5 2xl:max-w-140 2xl:rounded-lg" data-id="n902">
+          <div className="flex max-w-250 flex-col justify-start items-start gap-[14.7px] max-lg:gap-4 2xl:gap-4" data-id="n903">
+            <div className="h-[53.9px] block mr-[29.3px] text-[0.8125rem] leading-[1.125rem] max-md:h-[6.125rem] max-lg:text-sm max-lg:leading-[1.25rem] max-md:mr-0 md:max-lg:h-[2.45rem] md:max-lg:mr-8 2xl:h-[3.675rem] 2xl:mr-8 2xl:text-sm 2xl:leading-[1.25rem]" data-id="n904">
               {"By clicking “Accept”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. View our "}
-              <a className="h-[1.125rem] inline-flex underline cursor-pointer max-lg:h-[1.225rem] 2xl:h-[1.225rem]" data-cid="n905" data-component="link" href="#">
+              <a className="h-[1.125rem] inline-flex underline cursor-pointer max-lg:h-[1.225rem] 2xl:h-[1.225rem]" data-id="n905" href="#">
                 Privacy Policy
               </a>
               {" for more information."}
             </div>
-            <div className="flex justify-start items-stretch shrink-0 gap-[7.3px] grid-cols-[auto_auto] grid-rows-[auto] [grid-auto-columns:1fr] text-[0.8125rem] leading-[1.125rem] max-md:mt-3 max-lg:flex-col-reverse max-lg:gap-2 max-lg:text-sm max-lg:leading-[1.25rem] max-md:text-center 2xl:gap-2 2xl:text-sm 2xl:leading-[1.25rem]" data-cid="n906">
-              <a className="w-35 block min-w-35 py-2.5 px-5 rounded-[73.3px] text-background text-center bg-color-009 cursor-pointer max-md:w-[19.6875rem] max-md:mr-2 max-md:mb-2.5 max-lg:rounded-[80px] max-md:[text-align:inherit] md:max-lg:w-177 2xl:rounded-[80px]" data-cid="n907" data-component="link" role="button" tabIndex={0} onClick={() => setCookieAccepted(true)} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setCookieAccepted(true); } }}>
+            <div className="flex justify-start items-stretch shrink-0 gap-[7.3px] grid-cols-[auto_auto] grid-rows-[auto] [grid-auto-columns:1fr] text-[0.8125rem] leading-[1.125rem] max-md:mt-3 max-lg:flex-col-reverse max-lg:gap-2 max-lg:text-sm max-lg:leading-[1.25rem] max-md:text-center 2xl:gap-2 2xl:text-sm 2xl:leading-[1.25rem]" data-id="n906">
+              <a className="w-35 block min-w-35 py-2.5 px-5 rounded-[73.3px] text-background text-center bg-color-009 cursor-pointer max-md:w-[19.6875rem] max-md:mr-2 max-md:mb-2.5 max-lg:rounded-[80px] max-md:[text-align:inherit] md:max-lg:w-177 2xl:rounded-[80px]" data-id="n907" role="button" tabIndex={0} onClick={() => setCookieAccepted(true)} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setCookieAccepted(true); } }}>
                 Accept
               </a>
-              <a className="h-[2.375rem] border border-solid border-color-007 flex py-2 px-[16.9px] rounded-[73.3px] justify-center items-center cursor-pointer max-lg:h-[2.45rem] max-md:mr-2 max-lg:py-[0.55rem] max-lg:px-[1.15rem] max-lg:rounded-[80px] 2xl:h-[2.475rem] 2xl:py-[0.55rem] 2xl:px-[1.15rem] 2xl:rounded-[80px]" data-cid="n908" data-component="button" href="#">
+              <a className="h-[2.375rem] border border-solid border-color-007 flex py-2 px-[16.9px] rounded-[73.3px] justify-center items-center cursor-pointer max-lg:h-[2.45rem] max-md:mr-2 max-lg:py-[0.55rem] max-lg:px-[1.15rem] max-lg:rounded-[80px] 2xl:h-[2.475rem] 2xl:py-[0.55rem] 2xl:px-[1.15rem] 2xl:rounded-[80px]" data-id="n908" href="#">
                 More information
               </a>
             </div>
@@ -576,8 +576,8 @@ export default function Page() {
         </div>
       </div>}
       {" "}
-      <div className="block" data-cid="n909" id="lorikeet-widget-shadow-host" />
-      <div className="w-[16.625rem] h-[3.6625rem] min-h-[3.6625rem] border border-solid border-clr-3 block fixed top-[44.8375rem] left-[56.5rem] z-149 opacity-0 py-4 px-[1.375rem] rounded-[14.7px] text-background text-[1.0625rem] leading-[1.4375rem] whitespace-nowrap text-nowrap bg-clr-18 [background-size:auto,_auto] [background-position:0%_0%,_0%_0%] [background-repeat:repeat,_repeat] [background-clip:padding-box,_border-box] [background-origin:border-box,_border-box] [background-attachment:scroll,_scroll] [background-blend-mode:normal,_normal] shadow-[var(--clr-11)_0px_4px_24px_0px] [backdrop-filter:blur(5px)] transform-[matrix(0.95,0,0,0.95,10,0)] origin-[132.969px_29.3047px] [-webkit-background-clip:padding-box,_border-box] cursor-pointer pointer-events-none" style={{ backgroundImage: "linear-gradient(var(--clr-19), var(--clr-19)), linear-gradient(135deg, var(--clr-20), var(--clr-21))" }} data-cid="n910">
+      <div className="block" data-id="n909" id="lorikeet-widget-shadow-host" />
+      <div className="w-[16.625rem] h-[3.6625rem] min-h-[3.6625rem] border border-solid border-clr-3 block fixed top-[44.8375rem] left-[56.5rem] z-149 opacity-0 py-4 px-[1.375rem] rounded-[14.7px] text-background text-[1.0625rem] leading-[1.4375rem] whitespace-nowrap text-nowrap bg-clr-18 [background-size:auto,_auto] [background-position:0%_0%,_0%_0%] [background-repeat:repeat,_repeat] [background-clip:padding-box,_border-box] [background-origin:border-box,_border-box] [background-attachment:scroll,_scroll] [background-blend-mode:normal,_normal] shadow-[var(--clr-11)_0px_4px_24px_0px] [backdrop-filter:blur(5px)] transform-[matrix(0.95,0,0,0.95,10,0)] origin-[132.969px_29.3047px] [-webkit-background-clip:padding-box,_border-box] cursor-pointer pointer-events-none" style={{ backgroundImage: "linear-gradient(var(--clr-19), var(--clr-19)), linear-gradient(135deg, var(--clr-20), var(--clr-21))" }} data-id="n910">
         Hey there! Got any questions?
       </div>
       {" "}

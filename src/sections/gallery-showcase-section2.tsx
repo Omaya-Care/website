@@ -87,23 +87,23 @@ export default function GalleryShowcaseSection2({ mediaTile5Data = MediaTile5_da
   return (
     <section
       className="h-[52rem] flex pt-[4rem] pb-8 flex-col gap-[3.6625rem] overflow-hidden leading-[1.375rem] bg-surface max-md:h-[50rem] max-md:pt-10 max-md:pb-16 max-md:gap-10 max-lg:leading-6 md:max-lg:h-[51rem] md:max-lg:pt-12 md:max-lg:pb-10 md:max-lg:gap-12 2xl:h-[1040px] 2xl:pt-12 2xl:pb-10 2xl:gap-16 2xl:leading-6"
-      data-cid="n372"
+      data-id="n372"
       id="for-hospitals"
     >
-      <div className="h-full block px-[2.2875rem] max-md:px-6 md:max-lg:px-10 2xl:px-10" data-cid="n373">
-        <div ref={contentRef} className="h-full block max-w-[73.275rem] mx-auto justify-center max-lg:max-w-320 2xl:max-w-320" data-cid="n374">
-          <div className="flex max-w-[35.725rem] flex-col gap-[14.7px] max-lg:max-w-156 max-lg:gap-4 2xl:max-w-156 2xl:gap-4" data-cid="n375">
-            <h2 className="block text-[2.3125rem] leading-11 tracking-[-0.73px] max-md:text-2xl max-md:leading-[1.8125rem] max-md:tracking-[-0.54px] md:max-lg:text-[2.5rem] md:max-lg:leading-12 md:max-lg:tracking-[-0.9px] 2xl:text-5xl 2xl:leading-[3.625rem] 2xl:tracking-[-1.08px]" data-cid="n381" data-component="heading">
+      <div className="h-full block px-[2.2875rem] max-md:px-6 md:max-lg:px-10 2xl:px-10" data-id="n373">
+        <div ref={contentRef} className="h-full block max-w-[73.275rem] mx-auto justify-center max-lg:max-w-320 2xl:max-w-320" data-id="n374">
+          <div className="flex max-w-[35.725rem] flex-col gap-[14.7px] max-lg:max-w-156 max-lg:gap-4 2xl:max-w-156 2xl:gap-4" data-id="n375">
+            <h2 className="block text-[2.3125rem] leading-11 tracking-[-0.73px] max-md:text-2xl max-md:leading-[1.8125rem] max-md:tracking-[-0.54px] md:max-lg:text-[2.5rem] md:max-lg:leading-12 md:max-lg:tracking-[-0.9px] 2xl:text-5xl 2xl:leading-[3.625rem] 2xl:tracking-[-1.08px]" data-id="n381">
               Built for every role across your hospital
             </h2>
-            <p className="block text-muted-foreground text-[1.0625rem] leading-[1.5625rem] tracking-[-0.12px] max-md:[font-size:inherit] max-md:leading-[inherit] md:max-lg:text-lg md:max-lg:leading-[1.6875rem] 2xl:text-lg 2xl:leading-[1.6875rem]" data-cid="n382">
+            <p className="block text-muted-foreground text-[1.0625rem] leading-[1.5625rem] tracking-[-0.12px] max-md:[font-size:inherit] max-md:leading-[inherit] md:max-lg:text-lg md:max-lg:leading-[1.6875rem] 2xl:text-lg 2xl:leading-[1.6875rem]" data-id="n382">
               We automate the routine so your team focuses only on the mothers who truly need them.
             </p>
           </div>
           {/* Full-bleed: break out of the content column so the carousel spans the
               whole screen and both neighbouring cards can peek in. */}
-          <div className="block mt-11 max-lg:mt-12 2xl:mt-12" data-cid="n383">
-            <div ref={viewportRef} className="relative overflow-hidden w-screen left-1/2 -ml-[50vw]" data-cid="n384">
+          <div className="block mt-11 max-lg:mt-12 2xl:mt-12" data-id="n383">
+            <div ref={viewportRef} className="relative overflow-hidden w-screen left-1/2 -ml-[50vw]" data-id="n384">
               <div
                 ref={trackRef}
                 className="w-max flex relative z-1 will-change-transform"
@@ -112,7 +112,7 @@ export default function GalleryShowcaseSection2({ mediaTile5Data = MediaTile5_da
                   transition: snapping || !ready ? "none" : `transform ${SLIDE_TRANSITION}ms ease-out`,
                 }}
                 onTransitionEnd={handleTransitionEnd}
-                data-cid="n385"
+                data-id="n385"
               >
                 {/* key={i}: tripled infinite-loop track — position index IS the stable identity; any data-derived id collides across the 3 duplicated copies and breaks snap reconciliation. */}
                 {tiles.map((d, i) => (
@@ -133,8 +133,8 @@ export default function GalleryShowcaseSection2({ mediaTile5Data = MediaTile5_da
               </div>
             </div>
           </div>
-          <div className="flex max-w-[42.1375rem] mt-[3.6625rem] items-center gap-[1.375rem] max-lg:mt-6 max-md:pr-5 max-lg:gap-6 max-md:max-w-none md:max-lg:max-w-184 md:max-lg:pr-10 2xl:max-w-184 2xl:mt-16 2xl:gap-6" data-cid="n418">
-            <div className="flex min-w-0 items-center flex-1 gap-2" data-cid="n419">
+          <div className="flex max-w-[42.1375rem] mt-[3.6625rem] items-center gap-[1.375rem] max-lg:mt-6 max-md:pr-5 max-lg:gap-6 max-md:max-w-none md:max-lg:max-w-184 md:max-lg:pr-10 2xl:max-w-184 2xl:mt-16 2xl:gap-6" data-id="n418">
+            <div className="flex min-w-0 items-center flex-1 gap-2" data-id="n419">
               <button
                 type="button"
                 onClick={() => setPaused((p) => !p)}
@@ -182,8 +182,8 @@ export default function GalleryShowcaseSection2({ mediaTile5Data = MediaTile5_da
                 </button>
               ))}
             </div>
-            <p className="block shrink-0 overflow-hidden text-color-001 text-[0.8125rem] leading-[1.1875rem] tracking-[-0.2px] whitespace-nowrap text-nowrap max-lg:text-sm max-lg:leading-[1.3125rem] 2xl:text-sm 2xl:leading-[1.3125rem]" data-cid="n430">
-              <span className="inline-block" data-cid="n431">
+            <p className="block shrink-0 overflow-hidden text-color-001 text-[0.8125rem] leading-[1.1875rem] tracking-[-0.2px] whitespace-nowrap text-nowrap max-lg:text-sm max-lg:leading-[1.3125rem] 2xl:text-sm 2xl:leading-[1.3125rem]" data-id="n430">
+              <span className="inline-block" data-id="n431">
                 {active + 1}
               </span>
               {` / ${count}`}

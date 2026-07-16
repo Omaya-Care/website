@@ -9,14 +9,14 @@ export default function Page() {
   return (
     <>
       <Navbar light showBanner={false} />
-      <div className="block relative" data-cid="n30">
+      <div className="block relative" data-id="n30">
         <HeroSection />
         <ChangesToThisSection />
       </div>
       <Footer />
       {" "}
-      <div className="block" data-cid="n472" id="lorikeet-widget-shadow-host" />
-      <div className="w-[16.625rem] h-[3.6625rem] min-h-[3.6625rem] border border-solid border-clr-8 block fixed top-[44.8375rem] left-[57.125rem] z-150 opacity-0 py-4 px-[1.375rem] rounded-[14.7px] text-background text-[1.0625rem] leading-[1.4375rem] whitespace-nowrap text-nowrap bg-clr-10 [background-size:auto,_auto] [background-position:0%_0%,_0%_0%] [background-repeat:repeat,_repeat] [background-clip:padding-box,_border-box] [background-origin:border-box,_border-box] [background-attachment:scroll,_scroll] [background-blend-mode:normal,_normal] shadow-[var(--clr-11)_0px_4px_24px_0px] [backdrop-filter:blur(5px)] transform-[matrix(0.95,0,0,0.95,10,0)] origin-[132.969px_29.3047px] [-webkit-background-clip:padding-box,_border-box] cursor-pointer pointer-events-none" style={{ backgroundImage: "linear-gradient(var(--clr-12), var(--clr-12)), linear-gradient(135deg, var(--clr-13), var(--clr-14))" }} data-cid="n473">
+      <div className="block" data-id="n472" id="lorikeet-widget-shadow-host" />
+      <div className="w-[16.625rem] h-[3.6625rem] min-h-[3.6625rem] border border-solid border-clr-8 block fixed top-[44.8375rem] left-[57.125rem] z-150 opacity-0 py-4 px-[1.375rem] rounded-[14.7px] text-background text-[1.0625rem] leading-[1.4375rem] whitespace-nowrap text-nowrap bg-clr-10 [background-size:auto,_auto] [background-position:0%_0%,_0%_0%] [background-repeat:repeat,_repeat] [background-clip:padding-box,_border-box] [background-origin:border-box,_border-box] [background-attachment:scroll,_scroll] [background-blend-mode:normal,_normal] shadow-[var(--clr-11)_0px_4px_24px_0px] [backdrop-filter:blur(5px)] transform-[matrix(0.95,0,0,0.95,10,0)] origin-[132.969px_29.3047px] [-webkit-background-clip:padding-box,_border-box] cursor-pointer pointer-events-none" style={{ backgroundImage: "linear-gradient(var(--clr-12), var(--clr-12)), linear-gradient(135deg, var(--clr-13), var(--clr-14))" }} data-id="n473">
         Hey there! Got any questions?
       </div>
       {" "}

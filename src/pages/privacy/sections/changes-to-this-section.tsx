@@ -1,13 +1,13 @@
 /** Changes To This section. */
 export default function ChangesToThisSection() {
   return (
-    <div className="block" data-cid="n38">
-      <div className="block px-16 flex-1 max-md:px-[1.175rem] md:max-lg:px-[2.4rem] 2xl:px-24" data-cid="n39">
-        <div className="flex max-w-[73.275rem] justify-center items-start mx-auto max-lg:max-w-320 2xl:max-w-320" data-cid="n40">
-          <div className="block max-w-[703.5px] pt-[73.3px] pb-[18rem] max-lg:max-w-192 max-md:pt-12 max-md:pb-32 md:max-lg:pt-16 md:max-lg:pb-32 2xl:max-w-192 2xl:pt-20 2xl:pb-[20rem]" data-cid="n41">
-            <div className="block text-muted-foreground before:content-['_'] before:table before:w-0 before:h-0 before:text-muted-foreground before:text-[0.9375rem] before:leading-[1.3125rem] max-lg:before:text-base max-lg:before:leading-[1.375rem] 2xl:before:text-base 2xl:before:leading-[1.375rem] after:content-['_'] after:table after:w-0 after:h-0 after:text-muted-foreground after:text-[0.9375rem] after:leading-[1.3125rem] max-lg:after:text-base max-lg:after:leading-[1.375rem] 2xl:after:text-base 2xl:after:leading-[1.375rem]" data-cid="n42">
+    <div className="block" data-id="n38">
+      <div className="block px-16 flex-1 max-md:px-[1.175rem] md:max-lg:px-[2.4rem] 2xl:px-24" data-id="n39">
+        <div className="flex max-w-[73.275rem] justify-center items-start mx-auto max-lg:max-w-320 2xl:max-w-320" data-id="n40">
+          <div className="block max-w-[703.5px] pt-[73.3px] pb-[18rem] max-lg:max-w-192 max-md:pt-12 max-md:pb-32 md:max-lg:pt-16 md:max-lg:pb-32 2xl:max-w-192 2xl:pt-20 2xl:pb-[20rem]" data-id="n41">
+            <div className="block text-muted-foreground before:content-['_'] before:table before:w-0 before:h-0 before:text-muted-foreground before:text-[0.9375rem] before:leading-[1.3125rem] max-lg:before:text-base max-lg:before:leading-[1.375rem] 2xl:before:text-base 2xl:before:leading-[1.375rem] after:content-['_'] after:table after:w-0 after:h-0 after:text-muted-foreground after:text-[0.9375rem] after:leading-[1.3125rem] max-lg:after:text-base max-lg:after:leading-[1.375rem] 2xl:after:text-base 2xl:after:leading-[1.375rem]" data-id="n42">
 
-              <h3 className="h-[2.2875rem] block mt-10 mb-4 text-[1.8125rem] leading-[2.3125rem] tracking-[-0.59px] max-md:h-[1.5625rem] max-md:text-xl max-md:leading-[1.5625rem] max-md:tracking-[-0.4px] md:max-lg:h-10 md:max-lg:text-[2rem] md:max-lg:leading-10 md:max-lg:tracking-[-0.64px] 2xl:h-10 2xl:text-[2rem] 2xl:leading-10 2xl:tracking-[-0.64px]" data-component="heading">
+              <h3 className="h-[2.2875rem] block mt-10 mb-4 text-[1.8125rem] leading-[2.3125rem] tracking-[-0.59px] max-md:h-[1.5625rem] max-md:text-xl max-md:leading-[1.5625rem] max-md:tracking-[-0.4px] md:max-lg:h-10 md:max-lg:text-[2rem] md:max-lg:leading-10 md:max-lg:tracking-[-0.64px] 2xl:h-10 2xl:text-[2rem] 2xl:leading-10 2xl:tracking-[-0.64px]">
                 <strong className="inline text-foreground">1. Introduction</strong>
               </h3>
               <p className="block mb-5 leading-[1.375rem] max-lg:leading-6 2xl:leading-6">
@@ -20,18 +20,18 @@ export default function ChangesToThisSection() {
                 We process personal data in accordance with Ghana's Data Protection Act 2012 (Act 843).
               </p>
 
-              <h3 className="h-[2.2875rem] block mt-10 mb-4 text-[1.8125rem] leading-[2.3125rem] tracking-[-0.59px] max-md:h-[1.5625rem] max-md:text-xl max-md:leading-[1.5625rem] max-md:tracking-[-0.4px] md:max-lg:h-10 md:max-lg:text-[2rem] md:max-lg:leading-10 md:max-lg:tracking-[-0.64px] 2xl:h-10 2xl:text-[2rem] 2xl:leading-10 2xl:tracking-[-0.64px]" data-component="heading">
+              <h3 className="h-[2.2875rem] block mt-10 mb-4 text-[1.8125rem] leading-[2.3125rem] tracking-[-0.59px] max-md:h-[1.5625rem] max-md:text-xl max-md:leading-[1.5625rem] max-md:tracking-[-0.4px] md:max-lg:h-10 md:max-lg:text-[2rem] md:max-lg:leading-10 md:max-lg:tracking-[-0.64px] 2xl:h-10 2xl:text-[2rem] 2xl:leading-10 2xl:tracking-[-0.64px]">
                 <strong className="inline text-foreground">2. Who We Are</strong>
               </h3>
               <p className="block mb-5 leading-[1.375rem] max-lg:leading-6 2xl:leading-6">
                 Omaya Care is currently in the process of formal registration in Ghana. For any questions or concerns, contact us directly at{" "}
-                <a className="h-[1.375rem] inline-flex text-primary cursor-pointer max-lg:h-6 2xl:h-6 hover:underline" data-component="link" href="mailto:admin@omayacare.com">
+                <a className="h-[1.375rem] inline-flex text-primary cursor-pointer max-lg:h-6 2xl:h-6 hover:underline" href="mailto:admin@omayacare.com">
                   admin@omayacare.com
                 </a>
                 . When we refer to "Omaya Care," "we," "us," or "our" in this policy, we mean this entity.
               </p>
 
-              <h3 className="h-[2.2875rem] block mt-10 mb-4 text-[1.8125rem] leading-[2.3125rem] tracking-[-0.59px] max-md:h-[1.5625rem] max-md:text-xl max-md:leading-[1.5625rem] max-md:tracking-[-0.4px] md:max-lg:h-10 md:max-lg:text-[2rem] md:max-lg:leading-10 md:max-lg:tracking-[-0.64px] 2xl:h-10 2xl:text-[2rem] 2xl:leading-10 2xl:tracking-[-0.64px]" data-component="heading">
+              <h3 className="h-[2.2875rem] block mt-10 mb-4 text-[1.8125rem] leading-[2.3125rem] tracking-[-0.59px] max-md:h-[1.5625rem] max-md:text-xl max-md:leading-[1.5625rem] max-md:tracking-[-0.4px] md:max-lg:h-10 md:max-lg:text-[2rem] md:max-lg:leading-10 md:max-lg:tracking-[-0.64px] 2xl:h-10 2xl:text-[2rem] 2xl:leading-10 2xl:tracking-[-0.64px]">
                 <strong className="inline text-foreground">3. What Data We Collect</strong>
               </h3>
               <p className="block mb-5 leading-[1.375rem] max-lg:leading-6 2xl:leading-6">
@@ -63,7 +63,7 @@ export default function ChangesToThisSection() {
                 When a hospital or clinic enrolls you in Omaya Care, they share basic information with us including your name, phone number, delivery date, and preferred language. This is done with your knowledge and consent at the point of enrollment.
               </p>
 
-              <h3 className="h-[2.2875rem] block mt-10 mb-4 text-[1.8125rem] leading-[2.3125rem] tracking-[-0.59px] max-md:h-[1.5625rem] max-md:text-xl max-md:leading-[1.5625rem] max-md:tracking-[-0.4px] md:max-lg:h-10 md:max-lg:text-[2rem] md:max-lg:leading-10 md:max-lg:tracking-[-0.64px] 2xl:h-10 2xl:text-[2rem] 2xl:leading-10 2xl:tracking-[-0.64px]" data-component="heading">
+              <h3 className="h-[2.2875rem] block mt-10 mb-4 text-[1.8125rem] leading-[2.3125rem] tracking-[-0.59px] max-md:h-[1.5625rem] max-md:text-xl max-md:leading-[1.5625rem] max-md:tracking-[-0.4px] md:max-lg:h-10 md:max-lg:text-[2rem] md:max-lg:leading-10 md:max-lg:tracking-[-0.64px] 2xl:h-10 2xl:text-[2rem] 2xl:leading-10 2xl:tracking-[-0.64px]">
                 <strong className="inline text-foreground">4. How We Collect Your Data</strong>
               </h3>
               <p className="block mb-5 leading-[1.375rem] max-lg:leading-6 2xl:leading-6">
@@ -75,7 +75,7 @@ export default function ChangesToThisSection() {
                 <li className="block leading-[1.375rem] max-lg:leading-6 2xl:leading-6">Through our website if you visit it or submit a form</li>
               </ul>
 
-              <h3 className="h-[2.2875rem] block mt-10 mb-4 text-[1.8125rem] leading-[2.3125rem] tracking-[-0.59px] max-md:h-[1.5625rem] max-md:text-xl max-md:leading-[1.5625rem] max-md:tracking-[-0.4px] md:max-lg:h-10 md:max-lg:text-[2rem] md:max-lg:leading-10 md:max-lg:tracking-[-0.64px] 2xl:h-10 2xl:text-[2rem] 2xl:leading-10 2xl:tracking-[-0.64px]" data-component="heading">
+              <h3 className="h-[2.2875rem] block mt-10 mb-4 text-[1.8125rem] leading-[2.3125rem] tracking-[-0.59px] max-md:h-[1.5625rem] max-md:text-xl max-md:leading-[1.5625rem] max-md:tracking-[-0.4px] md:max-lg:h-10 md:max-lg:text-[2rem] md:max-lg:leading-10 md:max-lg:tracking-[-0.64px] 2xl:h-10 2xl:text-[2rem] 2xl:leading-10 2xl:tracking-[-0.64px]">
                 <strong className="inline text-foreground">5. Why We Collect Your Data and How We Use It</strong>
               </h3>
               <p className="block mb-5 leading-[1.375rem] max-lg:leading-6 2xl:leading-6">
@@ -105,7 +105,7 @@ export default function ChangesToThisSection() {
                 We do not use your data for advertising. We do not sell your data. We do not use your data for any purpose not listed here without your explicit consent.
               </p>
 
-              <h3 className="h-[2.2875rem] block mt-10 mb-4 text-[1.8125rem] leading-[2.3125rem] tracking-[-0.59px] max-md:h-[1.5625rem] max-md:text-xl max-md:leading-[1.5625rem] max-md:tracking-[-0.4px] md:max-lg:h-10 md:max-lg:text-[2rem] md:max-lg:leading-10 md:max-lg:tracking-[-0.64px] 2xl:h-10 2xl:text-[2rem] 2xl:leading-10 2xl:tracking-[-0.64px]" data-component="heading">
+              <h3 className="h-[2.2875rem] block mt-10 mb-4 text-[1.8125rem] leading-[2.3125rem] tracking-[-0.59px] max-md:h-[1.5625rem] max-md:text-xl max-md:leading-[1.5625rem] max-md:tracking-[-0.4px] md:max-lg:h-10 md:max-lg:text-[2rem] md:max-lg:leading-10 md:max-lg:tracking-[-0.64px] 2xl:h-10 2xl:text-[2rem] 2xl:leading-10 2xl:tracking-[-0.64px]">
                 <strong className="inline text-foreground">6. Legal Basis for Processing</strong>
               </h3>
               <p className="block mb-5 leading-[1.375rem] max-lg:leading-6 2xl:leading-6">
@@ -121,7 +121,7 @@ export default function ChangesToThisSection() {
                 For health data specifically, which is a sensitive category under the Act, we rely on your explicit consent and the necessity of processing for healthcare purposes.
               </p>
 
-              <h3 className="h-[2.2875rem] block mt-10 mb-4 text-[1.8125rem] leading-[2.3125rem] tracking-[-0.59px] max-md:h-[1.5625rem] max-md:text-xl max-md:leading-[1.5625rem] max-md:tracking-[-0.4px] md:max-lg:h-10 md:max-lg:text-[2rem] md:max-lg:leading-10 md:max-lg:tracking-[-0.64px] 2xl:h-10 2xl:text-[2rem] 2xl:leading-10 2xl:tracking-[-0.64px]" data-component="heading">
+              <h3 className="h-[2.2875rem] block mt-10 mb-4 text-[1.8125rem] leading-[2.3125rem] tracking-[-0.59px] max-md:h-[1.5625rem] max-md:text-xl max-md:leading-[1.5625rem] max-md:tracking-[-0.4px] md:max-lg:h-10 md:max-lg:text-[2rem] md:max-lg:leading-10 md:max-lg:tracking-[-0.64px] 2xl:h-10 2xl:text-[2rem] 2xl:leading-10 2xl:tracking-[-0.64px]">
                 <strong className="inline text-foreground">7. Who We Share Your Data With</strong>
               </h3>
               <p className="block mb-5 leading-[1.375rem] max-lg:leading-6 2xl:leading-6">
@@ -148,7 +148,7 @@ export default function ChangesToThisSection() {
                 We do not share your data with any other third parties.
               </p>
 
-              <h3 className="h-[2.2875rem] block mt-10 mb-4 text-[1.8125rem] leading-[2.3125rem] tracking-[-0.59px] max-md:h-[1.5625rem] max-md:text-xl max-md:leading-[1.5625rem] max-md:tracking-[-0.4px] md:max-lg:h-10 md:max-lg:text-[2rem] md:max-lg:leading-10 md:max-lg:tracking-[-0.64px] 2xl:h-10 2xl:text-[2rem] 2xl:leading-10 2xl:tracking-[-0.64px]" data-component="heading">
+              <h3 className="h-[2.2875rem] block mt-10 mb-4 text-[1.8125rem] leading-[2.3125rem] tracking-[-0.59px] max-md:h-[1.5625rem] max-md:text-xl max-md:leading-[1.5625rem] max-md:tracking-[-0.4px] md:max-lg:h-10 md:max-lg:text-[2rem] md:max-lg:leading-10 md:max-lg:tracking-[-0.64px] 2xl:h-10 2xl:text-[2rem] 2xl:leading-10 2xl:tracking-[-0.64px]">
                 <strong className="inline text-foreground">8. How Long We Keep Your Data</strong>
               </h3>
               <p className="block mb-5 leading-[1.375rem] max-lg:leading-6 2xl:leading-6">
@@ -158,7 +158,7 @@ export default function ChangesToThisSection() {
                 You may request deletion of your data at any time. See Section 10 for how to do this.
               </p>
 
-              <h3 className="h-[2.2875rem] block mt-10 mb-4 text-[1.8125rem] leading-[2.3125rem] tracking-[-0.59px] max-md:h-[1.5625rem] max-md:text-xl max-md:leading-[1.5625rem] max-md:tracking-[-0.4px] md:max-lg:h-10 md:max-lg:text-[2rem] md:max-lg:leading-10 md:max-lg:tracking-[-0.64px] 2xl:h-10 2xl:text-[2rem] 2xl:leading-10 2xl:tracking-[-0.64px]" data-component="heading">
+              <h3 className="h-[2.2875rem] block mt-10 mb-4 text-[1.8125rem] leading-[2.3125rem] tracking-[-0.59px] max-md:h-[1.5625rem] max-md:text-xl max-md:leading-[1.5625rem] max-md:tracking-[-0.4px] md:max-lg:h-10 md:max-lg:text-[2rem] md:max-lg:leading-10 md:max-lg:tracking-[-0.64px] 2xl:h-10 2xl:text-[2rem] 2xl:leading-10 2xl:tracking-[-0.64px]">
                 <strong className="inline text-foreground">9. How We Protect Your Data</strong>
               </h3>
               <p className="block mb-5 leading-[1.375rem] max-lg:leading-6 2xl:leading-6">
@@ -174,7 +174,7 @@ export default function ChangesToThisSection() {
                 No system is completely secure. If a data breach occurs that affects your rights and freedoms, we will notify you and the relevant authorities as required by law.
               </p>
 
-              <h3 className="h-[2.2875rem] block mt-10 mb-4 text-[1.8125rem] leading-[2.3125rem] tracking-[-0.59px] max-md:h-[1.5625rem] max-md:text-xl max-md:leading-[1.5625rem] max-md:tracking-[-0.4px] md:max-lg:h-10 md:max-lg:text-[2rem] md:max-lg:leading-10 md:max-lg:tracking-[-0.64px] 2xl:h-10 2xl:text-[2rem] 2xl:leading-10 2xl:tracking-[-0.64px]" data-component="heading">
+              <h3 className="h-[2.2875rem] block mt-10 mb-4 text-[1.8125rem] leading-[2.3125rem] tracking-[-0.59px] max-md:h-[1.5625rem] max-md:text-xl max-md:leading-[1.5625rem] max-md:tracking-[-0.4px] md:max-lg:h-10 md:max-lg:text-[2rem] md:max-lg:leading-10 md:max-lg:tracking-[-0.64px] 2xl:h-10 2xl:text-[2rem] 2xl:leading-10 2xl:tracking-[-0.64px]">
                 <strong className="inline text-foreground">10. Your Rights</strong>
               </h3>
               <p className="block mb-5 leading-[1.375rem] max-lg:leading-6 2xl:leading-6">
@@ -207,31 +207,31 @@ export default function ChangesToThisSection() {
               </p>
               <p className="block mb-5 leading-[1.375rem] max-lg:leading-6 2xl:leading-6">
                 To exercise any of these rights, contact us at{" "}
-                <a className="h-[1.375rem] inline-flex text-primary cursor-pointer max-lg:h-6 2xl:h-6 hover:underline" data-component="link" href="mailto:admin@omayacare.com">
+                <a className="h-[1.375rem] inline-flex text-primary cursor-pointer max-lg:h-6 2xl:h-6 hover:underline" href="mailto:admin@omayacare.com">
                   admin@omayacare.com
                 </a>
                 . We will respond within 30 days.
               </p>
 
-              <h3 className="h-[2.2875rem] block mt-10 mb-4 text-[1.8125rem] leading-[2.3125rem] tracking-[-0.59px] max-md:h-[1.5625rem] max-md:text-xl max-md:leading-[1.5625rem] max-md:tracking-[-0.4px] md:max-lg:h-10 md:max-lg:text-[2rem] md:max-lg:leading-10 md:max-lg:tracking-[-0.64px] 2xl:h-10 2xl:text-[2rem] 2xl:leading-10 2xl:tracking-[-0.64px]" data-component="heading">
+              <h3 className="h-[2.2875rem] block mt-10 mb-4 text-[1.8125rem] leading-[2.3125rem] tracking-[-0.59px] max-md:h-[1.5625rem] max-md:text-xl max-md:leading-[1.5625rem] max-md:tracking-[-0.4px] md:max-lg:h-10 md:max-lg:text-[2rem] md:max-lg:leading-10 md:max-lg:tracking-[-0.64px] 2xl:h-10 2xl:text-[2rem] 2xl:leading-10 2xl:tracking-[-0.64px]">
                 <strong className="inline text-foreground">11. Children's Data</strong>
               </h3>
               <p className="block mb-5 leading-[1.375rem] max-lg:leading-6 2xl:leading-6">
                 Omaya Care is a service for mothers aged 18 and above. We do not knowingly collect data from anyone under 18. If you believe a minor's data has been collected in error, contact us immediately at{" "}
-                <a className="h-[1.375rem] inline-flex text-primary cursor-pointer max-lg:h-6 2xl:h-6 hover:underline" data-component="link" href="mailto:admin@omayacare.com">
+                <a className="h-[1.375rem] inline-flex text-primary cursor-pointer max-lg:h-6 2xl:h-6 hover:underline" href="mailto:admin@omayacare.com">
                   admin@omayacare.com
                 </a>
                 .
               </p>
 
-              <h3 className="h-[2.2875rem] block mt-10 mb-4 text-[1.8125rem] leading-[2.3125rem] tracking-[-0.59px] max-md:h-[1.5625rem] max-md:text-xl max-md:leading-[1.5625rem] max-md:tracking-[-0.4px] md:max-lg:h-10 md:max-lg:text-[2rem] md:max-lg:leading-10 md:max-lg:tracking-[-0.64px] 2xl:h-10 2xl:text-[2rem] 2xl:leading-10 2xl:tracking-[-0.64px]" data-component="heading">
+              <h3 className="h-[2.2875rem] block mt-10 mb-4 text-[1.8125rem] leading-[2.3125rem] tracking-[-0.59px] max-md:h-[1.5625rem] max-md:text-xl max-md:leading-[1.5625rem] max-md:tracking-[-0.4px] md:max-lg:h-10 md:max-lg:text-[2rem] md:max-lg:leading-10 md:max-lg:tracking-[-0.64px] 2xl:h-10 2xl:text-[2rem] 2xl:leading-10 2xl:tracking-[-0.64px]">
                 <strong className="inline text-foreground">12. Changes to This Policy</strong>
               </h3>
               <p className="block mb-5 leading-[1.375rem] max-lg:leading-6 2xl:leading-6">
                 We may update this policy from time to time. If we make significant changes, we will notify you through the channel we normally use to reach you, either by WhatsApp or voice. The date at the top of this policy will always reflect when it was last updated.
               </p>
 
-              <h3 className="h-[2.2875rem] block mt-10 mb-4 text-[1.8125rem] leading-[2.3125rem] tracking-[-0.59px] max-md:h-[1.5625rem] max-md:text-xl max-md:leading-[1.5625rem] max-md:tracking-[-0.4px] md:max-lg:h-10 md:max-lg:text-[2rem] md:max-lg:leading-10 md:max-lg:tracking-[-0.64px] 2xl:h-10 2xl:text-[2rem] 2xl:leading-10 2xl:tracking-[-0.64px]" data-component="heading">
+              <h3 className="h-[2.2875rem] block mt-10 mb-4 text-[1.8125rem] leading-[2.3125rem] tracking-[-0.59px] max-md:h-[1.5625rem] max-md:text-xl max-md:leading-[1.5625rem] max-md:tracking-[-0.4px] md:max-lg:h-10 md:max-lg:text-[2rem] md:max-lg:leading-10 md:max-lg:tracking-[-0.64px] 2xl:h-10 2xl:text-[2rem] 2xl:leading-10 2xl:tracking-[-0.64px]">
                 <strong className="inline text-foreground">13. Contact Us</strong>
               </h3>
               <p className="block mb-5 leading-[1.375rem] max-lg:leading-6 2xl:leading-6">
@@ -239,7 +239,7 @@ export default function ChangesToThisSection() {
               </p>
               <p className="block mb-5 leading-[1.375rem] max-lg:leading-6 2xl:leading-6">
                 Email:{" "}
-                <a className="h-[1.375rem] inline-flex text-primary cursor-pointer max-lg:h-6 2xl:h-6 hover:underline" data-component="link" href="mailto:admin@omayacare.com">
+                <a className="h-[1.375rem] inline-flex text-primary cursor-pointer max-lg:h-6 2xl:h-6 hover:underline" href="mailto:admin@omayacare.com">
                   admin@omayacare.com
                 </a>
               </p>

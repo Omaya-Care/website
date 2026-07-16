@@ -106,37 +106,37 @@ export default function Page() {
 
   return (
     <>
-      <main className="min-h-screen block pb-20 px-16 bg-clr-0 max-md:px-4 md:max-lg:px-8" data-cid="n1">
-        <div className="block mx-auto max-w-[64rem] max-md:max-w-[30rem]" data-cid="n2">
+      <main className="min-h-screen block pb-20 px-16 bg-clr-0 max-md:px-4 md:max-lg:px-8" data-id="n1">
+        <div className="block mx-auto max-w-[64rem] max-md:max-w-[30rem]" data-id="n2">
           {/* Navbar */}
-          <div className="flex pt-10 pb-6 justify-between items-center" data-cid="n3">
-            <a className="block cursor-pointer" data-cid="n4" data-component="link" href="/">
+          <div className="flex pt-10 pb-6 justify-between items-center" data-id="n3">
+            <a className="block cursor-pointer" data-id="n4" href="/">
               <img decoding="async" src="/assets/images/omaya-care-wordmark-black.svg" alt="Omaya Care" className="h-5 w-auto block max-w-full" />
             </a>
           </div>
 
-          <div className="w-full grid gap-16 max-md:block max-md:gap-[initial] md:max-lg:gap-8 grid-cols-1 md:grid-cols-2" data-cid="n6">
+          <div className="w-full grid gap-16 max-md:block max-md:gap-[initial] md:max-lg:gap-8 grid-cols-1 md:grid-cols-2" data-id="n6">
             {/* Left column */}
-            <div className="block" data-cid="n7">
-              <div className="border-b border-solid border-b-border flex mb-6 pb-6 flex-col" data-cid="n8">
+            <div className="block" data-id="n7">
+              <div className="border-b border-solid border-b-border flex mb-6 pb-6 flex-col" data-id="n8">
                 {/* Badge — only shown when a concern is selected */}
                 {concern && (
-                  <span className="inline-flex self-start mb-4 py-0.5 px-2.5 rounded-full text-xs font-medium text-accent bg-clr-1 whitespace-nowrap" data-cid="n9">
+                  <span className="inline-flex self-start mb-4 py-0.5 px-2.5 rounded-full text-xs font-medium text-accent bg-clr-1 whitespace-nowrap" data-id="n9">
                     {BADGE_TEXT[concern]}
                   </span>
                 )}
 
-                <h1 className="block mb-2 text-[1.75rem] leading-8 tracking-[-0.63px] max-md:text-2xl max-md:leading-7 max-md:tracking-[-0.54px]" data-cid="n10" data-component="heading">
+                <h1 className="block mb-2 text-[1.75rem] leading-8 tracking-[-0.63px] max-md:text-2xl max-md:leading-7 max-md:tracking-[-0.54px]" data-id="n10">
                   {heading}
                 </h1>
 
-                <div className="block mb-6 text-color-001 leading-5 max-md:text-base max-md:tracking-[-0.16px] max-md:leading-[inherit] 2xl:text-[0.875rem]" data-cid="n11">
+                <div className="block mb-6 text-color-001 leading-5 max-md:text-base max-md:tracking-[-0.16px] max-md:leading-[inherit] 2xl:text-[0.875rem]" data-id="n11">
                   {description}
                 </div>
 
                 {/* Concern chips — hidden on waitlist path */}
                 {!isWaitlist && (
-                  <div className="flex flex-wrap gap-2 mb-6" data-cid="n11b">
+                  <div className="flex flex-wrap gap-2 mb-6" data-id="n11b">
                     {CONCERN_OPTIONS.map((opt) => (
                       <button
                         key={opt.value}
@@ -155,35 +155,35 @@ export default function Page() {
                 )}
 
                 {/* "Built in collaboration with top professionals" */}
-                <div className="h-8 flex items-center gap-2" data-cid="n12">
-                  <div className="flex" data-cid="n13">
+                <div className="h-8 flex items-center gap-2" data-id="n12">
+                  <div className="flex" data-id="n13">
                     {Logo_data.map((d, i) => <Logo key={Logo_cids[i][0]} d={d} cids={Logo_cids[i]} styles={Logo_styles[i]} />)}
                   </div>
-                  <span className="block text-color-001 max-md:text-xs max-md:leading-4.5 2xl:text-sm 2xl:leading-[1.3125rem]" data-cid="n26">
+                  <span className="block text-color-001 max-md:text-xs max-md:leading-4.5 2xl:text-sm 2xl:leading-[1.3125rem]" data-id="n26">
                     Built in collaboration with top professionals
                   </span>
                 </div>
               </div>
 
               {/* Form steps */}
-              <div className="flex flex-col gap-6" data-cid="n42">
+              <div className="flex flex-col gap-6" data-id="n42">
                 {/* Step 1 */}
-                <div className="flex flex-col gap-6" data-cid="n43">
+                <div className="flex flex-col gap-6" data-id="n43">
                   {!isWaitlist && (
-                    <div className="h-6 flex items-center gap-2 max-md:h-[1.5625rem]" data-cid="n44">
-                      <div className="w-6 h-6 flex rounded-md justify-center items-center bg-accent" data-cid="n45">
-                        <span className="block mt-0.5 text-background leading-3.5 max-md:text-base max-md:leading-4 max-md:tracking-[-0.16px] 2xl:text-[0.875rem]" data-cid="n46">
+                    <div className="h-6 flex items-center gap-2 max-md:h-[1.5625rem]" data-id="n44">
+                      <div className="w-6 h-6 flex rounded-md justify-center items-center bg-accent" data-id="n45">
+                        <span className="block mt-0.5 text-background leading-3.5 max-md:text-base max-md:leading-4 max-md:tracking-[-0.16px] 2xl:text-[0.875rem]" data-id="n46">
                           1
                         </span>
                       </div>
-                      <div className="block mt-0.5 text-base leading-5.5 tracking-[-0.16px] max-md:text-lg max-md:leading-[1.4375rem] 2xl:[font-size:inherit]" data-cid="n47">
+                      <div className="block mt-0.5 text-base leading-5.5 tracking-[-0.16px] max-md:text-lg max-md:leading-[1.4375rem] 2xl:[font-size:inherit]" data-id="n47">
                         Your information
                       </div>
                     </div>
                   )}
 
-                  <form className="grid gap-4 grid-cols-2 max-md:grid-cols-1" data-cid="n48" onSubmit={handleStep1Submit}>
-                    <div className="block col-start-[span_2] col-end-[span_2] max-md:[grid-column-start:initial] max-md:[grid-column-end:initial]" data-cid="n49a">
+                  <form className="grid gap-4 grid-cols-2 max-md:grid-cols-1" data-id="n48" onSubmit={handleStep1Submit}>
+                    <div className="block col-start-[span_2] col-end-[span_2] max-md:[grid-column-start:initial] max-md:[grid-column-end:initial]" data-id="n49a">
                       <label className="flex mb-2 items-center gap-2 leading-5 cursor-default max-md:text-base max-md:tracking-[-0.16px] max-md:leading-[inherit] 2xl:text-[0.875rem]" htmlFor="name">
                         Name
                       </label>
@@ -196,13 +196,13 @@ export default function Page() {
                         onChange={(e) => setName(e.target.value)}
                       />
                     </div>
-                    <div className="block col-start-[span_2] col-end-[span_2] max-md:[grid-column-start:initial] max-md:[grid-column-end:initial]" data-cid="n49">
+                    <div className="block col-start-[span_2] col-end-[span_2] max-md:[grid-column-start:initial] max-md:[grid-column-end:initial]" data-id="n49">
                       <label className="flex mb-2 items-center gap-2 leading-5 cursor-default max-md:text-base max-md:tracking-[-0.16px] max-md:leading-[inherit] 2xl:text-[0.875rem]" htmlFor="email">
                         Email
                       </label>
                       <input
                         className={INPUT_CLASS}
-                        data-cid="n51"
+                        data-id="n51"
                         id="email"
                         placeholder="Your email"
                         type="email"
@@ -210,7 +210,7 @@ export default function Page() {
                         onChange={(e) => setEmail(e.target.value)}
                       />
                     </div>
-                    <button className={BTN_PRIMARY_CLASS} data-cid="n52" type="submit">
+                    <button className={BTN_PRIMARY_CLASS} data-id="n52" type="submit">
                       {isWaitlist ? "Join the waitlist" : "Continue"}
                     </button>
                   </form>
@@ -218,20 +218,20 @@ export default function Page() {
 
                 {/* Step 2 — hidden entirely for waitlist */}
                 {!isWaitlist && (
-                  <div className={`flex flex-col gap-6 ${step2Locked ? "opacity-50 pointer-events-none" : ""}`} data-cid="n53">
-                    <div className="flex items-center gap-2" data-cid="n54">
-                      <div className="w-6 h-6 flex rounded-md justify-center items-center bg-accent" data-cid="n55">
-                        <span className="block mt-0.5 text-background leading-3.5 max-md:text-base max-md:leading-4 max-md:tracking-[-0.16px] 2xl:text-[0.875rem]" data-cid="n56">
+                  <div className={`flex flex-col gap-6 ${step2Locked ? "opacity-50 pointer-events-none" : ""}`} data-id="n53">
+                    <div className="flex items-center gap-2" data-id="n54">
+                      <div className="w-6 h-6 flex rounded-md justify-center items-center bg-accent" data-id="n55">
+                        <span className="block mt-0.5 text-background leading-3.5 max-md:text-base max-md:leading-4 max-md:tracking-[-0.16px] 2xl:text-[0.875rem]" data-id="n56">
                           2
                         </span>
                       </div>
-                      <div className="block mt-0.5 text-base leading-5.5 tracking-[-0.16px] max-md:text-lg max-md:leading-[1.4375rem] 2xl:[font-size:inherit]" data-cid="n57">
+                      <div className="block mt-0.5 text-base leading-5.5 tracking-[-0.16px] max-md:text-lg max-md:leading-[1.4375rem] 2xl:[font-size:inherit]" data-id="n57">
                         {step2Label}
                       </div>
                     </div>
 
                     {step2Locked ? (
-                      <div className="h-13.5 border border-solid border-border flex p-4 rounded-xl items-center gap-2 leading-5 max-md:h-[3.4375rem] max-md:text-base max-md:tracking-[-0.16px] max-md:leading-[inherit] 2xl:text-[0.875rem]" data-cid="n58">
+                      <div className="h-13.5 border border-solid border-border flex p-4 rounded-xl items-center gap-2 leading-5 max-md:h-[3.4375rem] max-md:text-base max-md:tracking-[-0.16px] max-md:leading-[inherit] 2xl:text-[0.875rem]" data-id="n58">
                         <Icon2 cid={"n59"} />
                         Complete step 1 to continue.
                       </div>
@@ -298,17 +298,17 @@ export default function Page() {
             </div>
 
             {/* Right column — desktop only */}
-            <div className="block max-md:hidden" data-cid="n60">
-              <div className="border border-solid border-border flex sticky top-8 p-5 rounded-3xl flex-col gap-4 bg-background" data-cid="n61">
-                <div className="block text-color-001 text-base leading-5.5 tracking-[-0.16px] 2xl:[font-size:inherit]" data-cid="n62">
+            <div className="block max-md:hidden" data-id="n60">
+              <div className="border border-solid border-border flex sticky top-8 p-5 rounded-3xl flex-col gap-4 bg-background" data-id="n61">
+                <div className="block text-color-001 text-base leading-5.5 tracking-[-0.16px] 2xl:[font-size:inherit]" data-id="n62">
                   You're in good hands
                 </div>
 
                 {/* Carousel */}
-                <div className="border border-solid border-border block rounded-3xl overflow-hidden bg-clr-0 w-full" data-cid="n63">
-                  <section className="block relative overflow-hidden" data-cid="n64">
+                <div className="border border-solid border-border block rounded-3xl overflow-hidden bg-clr-0 w-full" data-id="n63">
+                  <section className="block relative overflow-hidden" data-id="n64">
                     {/* Fade slides */}
-                    <div className="relative h-64 md:max-lg:h-[10.6875rem]" data-cid="n66">
+                    <div className="relative h-64 md:max-lg:h-[10.6875rem]" data-id="n66">
                       {CAROUSEL_IMAGES.map((src, i) => {
                         return (
                           <img decoding="async"
@@ -322,8 +322,8 @@ export default function Page() {
                       })}
                     </div>
                     {/* Dot navigation */}
-                    <div className="h-10 flex absolute bottom-4 inset-x-4 z-10 justify-end" data-cid="n74">
-                      <div className="flex py-2 px-4 rounded-full items-center bg-clr-6 [backdrop-filter:blur(8px)]" data-cid="n75">
+                    <div className="h-10 flex absolute bottom-4 inset-x-4 z-10 justify-end" data-id="n74">
+                      <div className="flex py-2 px-4 rounded-full items-center bg-clr-6 [backdrop-filter:blur(8px)]" data-id="n75">
                         {CAROUSEL_IMAGES.map((src, i) => (
                           <button
                             key={src}
@@ -348,12 +348,12 @@ export default function Page() {
                 </div>
 
                 {/* Panel description */}
-                <div className="block" data-cid="n84">
-                  <div className="block pb-4" data-cid="n85">
-                    <h3 className="block mb-2 text-xl leading-[1.4375rem] tracking-[-0.45px]" data-cid="n86" data-component="heading">
+                <div className="block" data-id="n84">
+                  <div className="block pb-4" data-id="n85">
+                    <h3 className="block mb-2 text-xl leading-[1.4375rem] tracking-[-0.45px]" data-id="n86">
                       Omaya Care
                     </h3>
-                    <p className="block text-color-001 leading-5 2xl:text-[0.875rem]" data-cid="n87">
+                    <p className="block text-color-001 leading-5 2xl:text-[0.875rem]" data-id="n87">
                       Omaya Care supports mothers through every step of their post-discharge journey — and we're here for your questions too.
                     </p>
                   </div>

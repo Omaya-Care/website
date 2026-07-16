@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 
 type RTMenu = { trigger: string; hoverOpen: boolean; gap: number; align: "left" | "right"; html: string };
-const byCid = (cid: string): HTMLElement | null => document.querySelector('[data-cid="' + cid + '"]');
+const byCid = (cid: string): HTMLElement | null => document.querySelector('[data-id="' + cid + '"]');
 
 /** Reproduces mount-on-open dropdown/nav menus: renders nothing and applies NOTHING on mount; only on
  *  user interaction does it inject the captured panel fragment under its trigger. The base

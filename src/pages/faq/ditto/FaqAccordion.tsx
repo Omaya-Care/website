@@ -85,7 +85,7 @@ export default function FaqAccordion() {
     document.head.appendChild(style);
 
     const buttons = Array.from(
-      document.querySelectorAll<HTMLButtonElement>('button[data-component="button"][aria-expanded]')
+      document.querySelectorAll<HTMLButtonElement>('button[aria-expanded]')
     );
 
     const cleanups: (() => void)[] = [];

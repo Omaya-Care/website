@@ -8,8 +8,8 @@ export type Logo3Data = {
 /** A logo. */
 export default function Logo3({ d, cids }: { d: Logo3Data; cids: string[] }) {
   return (
-    <div data-cid={cids[0]} className="basis-full shrink-0 block relative min-w-137.5 max-w-137.5 overflow-hidden bg-surface max-md:min-w-[19.8125rem] max-md:max-w-[19.8125rem] md:max-lg:min-w-156 md:max-lg:max-w-156 2xl:min-w-150 2xl:max-w-150">
-      <img loading="lazy" decoding="async" data-cid={cids[1]} className="w-full h-full block absolute top-0 left-0 max-w-full overflow-clip object-cover align-middle pointer-events-none" alt={d.alt} sizes="(max-width: 1872px) 100vw, 1872px" src={d.imgSrc} srcSet={d.srcSet} data-component={d.kind} />
+    <div data-id={cids[0]} className="basis-full shrink-0 block relative min-w-137.5 max-w-137.5 overflow-hidden bg-surface max-md:min-w-[19.8125rem] max-md:max-w-[19.8125rem] md:max-lg:min-w-156 md:max-lg:max-w-156 2xl:min-w-150 2xl:max-w-150">
+      <img loading="lazy" decoding="async" data-id={cids[1]} className="w-full h-full block absolute top-0 left-0 max-w-full overflow-clip object-cover align-middle pointer-events-none" alt={d.alt} sizes="(max-width: 1872px) 100vw, 1872px" src={d.imgSrc} srcSet={d.srcSet} />
       {d.overlay && (
         <div className="flex absolute left-1/2 bottom-16 -translate-x-1/2 w-max max-w-[calc(100%-2rem)] rounded-2xl items-center gap-3.5 px-4 py-3.5 bg-color-008 [backdrop-filter:blur(16px)] max-lg:bottom-12 max-lg:gap-3 max-lg:px-3.5 max-lg:py-3">
           <div className="w-12 h-12 flex-shrink-0 rounded-xl bg-white flex items-center justify-center max-lg:w-11 max-lg:h-11">

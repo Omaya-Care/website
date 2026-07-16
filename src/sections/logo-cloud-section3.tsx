@@ -14,8 +14,8 @@ const Logo6_data: Logo6Data[] = [
 /** Logo Cloud section. */
 export default function LogoCloudSection3({ logos = Logo6_data } = {}) {
   return (
-    <div className="flex flex-col gap-[0.8rem] max-lg:hidden 2xl:gap-3.5" data-cid="n703">
-      <div className="block text-muted" data-cid="n704">
+    <div className="flex flex-col gap-[0.8rem] max-lg:hidden 2xl:gap-3.5" data-id="n703">
+      <div className="block text-muted" data-id="n704">
         Connect
       </div>
       {logos.map((d, i) => <Logo6 key={i} d={d} cids={Logo6_cids[i]} />)}

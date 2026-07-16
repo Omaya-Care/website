@@ -175,40 +175,40 @@ export default function Page() {
   const activeSection = useSectionSpy();
   return (
     <>
-      <div className="block relative" data-cid="n1">
+      <div className="block relative" data-id="n1">
         <Navbar light showBanner={false} />
-        <div className="block max-lg:relative" data-cid="n15">
-          <section className="border-b border-solid border-b-surface hidden sticky top-0 z-99 bg-background max-md:h-64 max-lg:block max-lg:pt-8 md:max-lg:h-[21.0625rem]" data-cid="n80">
-            <div className="block sticky top-0 z-4 pt-[5.5rem] max-md:h-[13.95rem] max-md:pt-12 md:max-lg:h-[19rem] md:max-lg:pt-24" data-cid="n81">
-              <div className="h-full block max-w-[73.275rem] justify-center max-lg:max-w-320" data-cid="n82">
-                <div className="h-full block" data-cid="n83">
-                  <div className="flex max-w-[32.0625rem] flex-col justify-center items-start gap-[1.375rem] max-md:h-[5.725rem] max-lg:mb-12 max-md:pt-12 max-md:px-5 max-md:justify-between max-lg:items-center max-lg:gap-6 max-md:max-w-none max-md:[flex-direction:initial] md:max-lg:h-[7.775rem] md:max-lg:max-w-140 md:max-lg:mx-[96.5px]" data-cid="n84">
-                    <h1 className="block min-w-0 text-[2.75rem] leading-[3.1875rem] tracking-[-0.99px] max-md:text-[2rem] max-md:leading-8 max-md:tracking-[-0.64px] md:max-lg:text-5xl md:max-lg:leading-12 md:max-lg:tracking-[-0.96px]" data-cid="n85">
+        <div className="block max-lg:relative" data-id="n15">
+          <section className="border-b border-solid border-b-surface hidden sticky top-0 z-99 bg-background max-md:h-64 max-lg:block max-lg:pt-8 md:max-lg:h-[21.0625rem]" data-id="n80">
+            <div className="block sticky top-0 z-4 pt-[5.5rem] max-md:h-[13.95rem] max-md:pt-12 md:max-lg:h-[19rem] md:max-lg:pt-24" data-id="n81">
+              <div className="h-full block max-w-[73.275rem] justify-center max-lg:max-w-320" data-id="n82">
+                <div className="h-full block" data-id="n83">
+                  <div className="flex max-w-[32.0625rem] flex-col justify-center items-start gap-[1.375rem] max-md:h-[5.725rem] max-lg:mb-12 max-md:pt-12 max-md:px-5 max-md:justify-between max-lg:items-center max-lg:gap-6 max-md:max-w-none max-md:[flex-direction:initial] md:max-lg:h-[7.775rem] md:max-lg:max-w-140 md:max-lg:mx-[96.5px]" data-id="n84">
+                    <h1 className="block min-w-0 text-[2.75rem] leading-[3.1875rem] tracking-[-0.99px] max-md:text-[2rem] max-md:leading-8 max-md:tracking-[-0.64px] md:max-lg:text-5xl md:max-lg:leading-12 md:max-lg:tracking-[-0.96px]" data-id="n85">
                       FAQs
                     </h1>
                   </div>
-                  <div className="block max-lg:h-[2.225rem] max-lg:overflow-hidden" data-cid="n91">
-                    <div className="block before:content-['_'] before:table before:text-foreground before:text-[0.9375rem] before:leading-[1.3125rem] max-lg:before:w-0 max-lg:before:h-0 max-lg:before:text-base max-lg:before:leading-[1.375rem] 2xl:before:text-base 2xl:before:leading-[1.375rem] after:content-['_'] after:table after:text-foreground after:text-[0.9375rem] after:leading-[1.3125rem] max-lg:after:w-0 max-lg:after:h-0 max-lg:after:text-base max-lg:after:leading-[1.375rem] 2xl:after:text-base 2xl:after:leading-[1.375rem]" data-cid="n92" />
-                    <div className="flex relative overflow-x-auto overflow-y-hidden max-lg:h-[2.225rem] max-lg:py-2 max-md:px-5 max-md:justify-start max-lg:items-center max-lg:gap-4 max-lg:text-muted-foreground max-lg:text-sm max-lg:leading-[1.25rem] md:max-lg:justify-center" data-cid="n93">
+                  <div className="block max-lg:h-[2.225rem] max-lg:overflow-hidden" data-id="n91">
+                    <div className="block before:content-['_'] before:table before:text-foreground before:text-[0.9375rem] before:leading-[1.3125rem] max-lg:before:w-0 max-lg:before:h-0 max-lg:before:text-base max-lg:before:leading-[1.375rem] 2xl:before:text-base 2xl:before:leading-[1.375rem] after:content-['_'] after:table after:text-foreground after:text-[0.9375rem] after:leading-[1.3125rem] max-lg:after:w-0 max-lg:after:h-0 max-lg:after:text-base max-lg:after:leading-[1.375rem] 2xl:after:text-base 2xl:after:leading-[1.375rem]" data-id="n92" />
+                    <div className="flex relative overflow-x-auto overflow-y-hidden max-lg:h-[2.225rem] max-lg:py-2 max-md:px-5 max-md:justify-start max-lg:items-center max-lg:gap-4 max-lg:text-muted-foreground max-lg:text-sm max-lg:leading-[1.25rem] md:max-lg:justify-center" data-id="n93">
                       {TextLink2_data.map((d, i) => <TextLink2 key={TextLink2_cids[i][0]} d={d} cids={TextLink2_cids[i]} styles={TextLink2_styles[i]} />)}
-                      <div className="w-0 h-px block absolute bottom-0 left-0 min-w-0 bg-color-002 transform-[none] pointer-events-none max-lg:w-[4.9375rem] max-md:transform-[matrix(1,0,0,1,20,0)] md:max-lg:transform-[matrix(1,0,0,1,92,0)]" data-cid="n100" />
+                      <div className="w-0 h-px block absolute bottom-0 left-0 min-w-0 bg-color-002 transform-[none] pointer-events-none max-lg:w-[4.9375rem] max-md:transform-[matrix(1,0,0,1,20,0)] md:max-lg:transform-[matrix(1,0,0,1,92,0)]" data-id="n100" />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-          <section className="block relative pt-[9.1625rem] pb-[18rem] max-lg:pb-32 max-lg:pt-0 2xl:pt-40 2xl:pb-[20rem]" data-cid="n101">
-            <div className="block px-[2.2875rem] max-md:px-6 md:max-lg:px-10 2xl:px-10" data-cid="n102">
-              <div className="block relative z-1 max-w-[73.275rem] mx-auto justify-center max-lg:max-w-320 2xl:max-w-320" data-cid="n103">
-                <div className="flex justify-between items-start gap-4 grid-cols-[1fr_1fr] grid-rows-[auto_auto] [grid-auto-columns:1fr]" data-cid="n104">
-                  <div className="h-[431.3px] flex sticky top-[9.1625rem] max-w-[271.1px] pt-11 flex-col justify-start items-start gap-11 max-lg:hidden 2xl:h-[474.7px] 2xl:top-40 2xl:max-w-74 2xl:pt-12 2xl:gap-12" data-cid="n105">
-                    <div className="h-[7.5875rem] flex max-w-[32.0625rem] flex-col justify-center items-start gap-[1.375rem] 2xl:h-[8.525rem] 2xl:max-w-140 2xl:gap-6" data-cid="n106">
-                      <h1 className="block text-[2.75rem] leading-[3.1875rem] tracking-[-0.99px] 2xl:text-6xl 2xl:leading-15 2xl:tracking-[-1.2px]" data-cid="n107" data-component="heading">
+          <section className="block relative pt-[9.1625rem] pb-[18rem] max-lg:pb-32 max-lg:pt-0 2xl:pt-40 2xl:pb-[20rem]" data-id="n101">
+            <div className="block px-[2.2875rem] max-md:px-6 md:max-lg:px-10 2xl:px-10" data-id="n102">
+              <div className="block relative z-1 max-w-[73.275rem] mx-auto justify-center max-lg:max-w-320 2xl:max-w-320" data-id="n103">
+                <div className="flex justify-between items-start gap-4 grid-cols-[1fr_1fr] grid-rows-[auto_auto] [grid-auto-columns:1fr]" data-id="n104">
+                  <div className="h-[431.3px] flex sticky top-[9.1625rem] max-w-[271.1px] pt-11 flex-col justify-start items-start gap-11 max-lg:hidden 2xl:h-[474.7px] 2xl:top-40 2xl:max-w-74 2xl:pt-12 2xl:gap-12" data-id="n105">
+                    <div className="h-[7.5875rem] flex max-w-[32.0625rem] flex-col justify-center items-start gap-[1.375rem] 2xl:h-[8.525rem] 2xl:max-w-140 2xl:gap-6" data-id="n106">
+                      <h1 className="block text-[2.75rem] leading-[3.1875rem] tracking-[-0.99px] 2xl:text-6xl 2xl:leading-15 2xl:tracking-[-1.2px]" data-id="n107">
                         FAQs
                       </h1>
                     </div>
-                    <div className="flex flex-col gap-[0.6875rem] 2xl:gap-3" data-cid="n113">
+                    <div className="flex flex-col gap-[0.6875rem] 2xl:gap-3" data-id="n113">
                       {TextLink3_data.map((d, i) => {
                         const isActive = SECTION_IDS[i] === activeSection;
                         return (
@@ -228,11 +228,11 @@ export default function Page() {
                       })}
                     </div>
                   </div>
-                  <div className="block" data-cid="n132">
+                  <div className="block" data-id="n132">
                     <div className="flex relative pt-11 pb-[3.6625rem] flex-col justify-start items-start gap-[1.375rem] grid-cols-[1fr] grid-rows-[auto_auto] [grid-auto-columns:1fr] max-lg:pt-12 max-md:pb-8 max-lg:gap-6 md:max-lg:pb-16 2xl:pt-12 2xl:pb-16 2xl:gap-6" id="about">
                       <section className="w-full block max-w-[293.1px] max-lg:max-w-80 2xl:max-w-80">
                         <div className="flex items-center gap-3">
-                          <h3 className="block text-[1.625rem] leading-[2.125rem] font-bold tracking-[-0.4px] max-md:text-xl max-md:leading-[1.75rem] max-md:tracking-[-0.2px] md:max-lg:text-2xl md:max-lg:leading-[2rem] md:max-lg:tracking-[-0.4px] 2xl:text-3xl 2xl:leading-9 2xl:tracking-[-0.5px]" data-component="heading">
+                          <h3 className="block text-[1.625rem] leading-[2.125rem] font-bold tracking-[-0.4px] max-md:text-xl max-md:leading-[1.75rem] max-md:tracking-[-0.2px] md:max-lg:text-2xl md:max-lg:leading-[2rem] md:max-lg:tracking-[-0.4px] 2xl:text-3xl 2xl:leading-9 2xl:tracking-[-0.5px]">
                             About Omaya Care
                           </h3>
                           <span className="inline-flex items-center justify-center min-w-[1.375rem] h-[1.375rem] px-1 rounded-full text-[0.6875rem] font-semibold leading-none text-[#7a2850] bg-[rgba(122,40,80,0.12)] shrink-0">4</span>
@@ -240,7 +240,7 @@ export default function Page() {
                       </section>
                       <div className="border-t border-solid border-t-surface flex max-w-[45.8rem] flex-col max-lg:max-w-200 2xl:max-w-200">
                         <article className="h-[3.7875rem] border border-solid border-t-clr-3 border-r-clr-3 border-b-border border-l-clr-3 block overflow-hidden bg-background max-lg:h-16.5 2xl:h-16.5">
-                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" data-component="button" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
+                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
                             <span className="block text-[1.0625rem] leading-[1.4375rem] text-left max-md:[font-size:inherit] max-md:leading-[inherit] md:max-lg:text-lg md:max-lg:leading-[1.5625rem] 2xl:text-lg 2xl:leading-[1.5625rem]">
                               What is Omaya Care?
                             </span>
@@ -257,7 +257,7 @@ export default function Page() {
                           </div>
                         </article>
                         <article className="h-[3.7875rem] border border-solid border-t-clr-3 border-r-clr-3 border-b-border border-l-clr-3 block overflow-hidden bg-background max-lg:h-16.5 2xl:h-16.5">
-                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" data-component="button" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
+                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
                             <span className="block text-[1.0625rem] leading-[1.4375rem] text-left max-md:[font-size:inherit] max-md:leading-[inherit] md:max-lg:text-lg md:max-lg:leading-[1.5625rem] 2xl:text-lg 2xl:leading-[1.5625rem]">
                               Who is behind Omaya Care?
                             </span>
@@ -274,7 +274,7 @@ export default function Page() {
                           </div>
                         </article>
                         <article className="h-[3.7875rem] border border-solid border-t-clr-3 border-r-clr-3 border-b-border border-l-clr-3 block overflow-hidden bg-background max-lg:h-16.5 2xl:h-16.5">
-                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" data-component="button" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
+                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
                             <span className="block text-[1.0625rem] leading-[1.4375rem] text-left max-md:[font-size:inherit] max-md:leading-[inherit] md:max-lg:text-lg md:max-lg:leading-[1.5625rem] 2xl:text-lg 2xl:leading-[1.5625rem]">
                               Is Omaya Care a hospital?
                             </span>
@@ -291,7 +291,7 @@ export default function Page() {
                           </div>
                         </article>
                         <article className="h-[3.7875rem] border border-solid border-t-clr-3 border-r-clr-3 border-b-border border-l-clr-3 block overflow-hidden bg-background max-lg:h-16.5 2xl:h-16.5">
-                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" data-component="button" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
+                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
                             <span className="block text-[1.0625rem] leading-[1.4375rem] text-left max-md:[font-size:inherit] max-md:leading-[inherit] md:max-lg:text-lg md:max-lg:leading-[1.5625rem] 2xl:text-lg 2xl:leading-[1.5625rem]">
                               Is Omaya Care free for me?
                             </span>
@@ -312,7 +312,7 @@ export default function Page() {
                     <div className="flex relative pt-11 pb-[3.6625rem] flex-col justify-start items-start gap-[1.375rem] grid-cols-[1fr] grid-rows-[auto_auto] [grid-auto-columns:1fr] max-lg:pt-12 max-md:pb-8 max-lg:gap-6 md:max-lg:pb-16 2xl:pt-12 2xl:pb-16 2xl:gap-6" id="getting-started">
                       <section className="w-full block max-w-[293.1px] max-lg:max-w-80 2xl:max-w-80">
                         <div className="flex items-center gap-3">
-                          <h3 className="block text-[1.625rem] leading-[2.125rem] font-bold tracking-[-0.4px] max-md:text-xl max-md:leading-[1.75rem] max-md:tracking-[-0.2px] md:max-lg:text-2xl md:max-lg:leading-[2rem] md:max-lg:tracking-[-0.4px] 2xl:text-3xl 2xl:leading-9 2xl:tracking-[-0.5px]" data-component="heading">
+                          <h3 className="block text-[1.625rem] leading-[2.125rem] font-bold tracking-[-0.4px] max-md:text-xl max-md:leading-[1.75rem] max-md:tracking-[-0.2px] md:max-lg:text-2xl md:max-lg:leading-[2rem] md:max-lg:tracking-[-0.4px] 2xl:text-3xl 2xl:leading-9 2xl:tracking-[-0.5px]">
                             Getting Started
                           </h3>
                           <span className="inline-flex items-center justify-center min-w-[1.375rem] h-[1.375rem] px-1 rounded-full text-[0.6875rem] font-semibold leading-none text-[#7a2850] bg-[rgba(122,40,80,0.12)] shrink-0">4</span>
@@ -320,7 +320,7 @@ export default function Page() {
                       </section>
                       <div className="border-t border-solid border-t-surface flex max-w-[45.8rem] flex-col max-lg:max-w-200 2xl:max-w-200">
                         <article className="h-[3.7875rem] border border-solid border-t-clr-3 border-r-clr-3 border-b-border border-l-clr-3 block overflow-hidden bg-background max-lg:h-16.5 2xl:h-16.5">
-                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" data-component="button" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
+                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
                             <span className="block text-[1.0625rem] leading-[1.4375rem] text-left max-md:[font-size:inherit] max-md:leading-[inherit] md:max-lg:text-lg md:max-lg:leading-[1.5625rem] 2xl:text-lg 2xl:leading-[1.5625rem]">
                               How do I get enrolled in Omaya Care?
                             </span>
@@ -337,7 +337,7 @@ export default function Page() {
                           </div>
                         </article>
                         <article className="h-[3.7875rem] border border-solid border-t-clr-3 border-r-clr-3 border-b-border border-l-clr-3 block overflow-hidden bg-background max-lg:h-16.5 2xl:h-16.5">
-                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" data-component="button" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
+                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
                             <span className="block text-[1.0625rem] leading-[1.4375rem] text-left max-md:[font-size:inherit] max-md:leading-[inherit] md:max-lg:text-lg md:max-lg:leading-[1.5625rem] 2xl:text-lg 2xl:leading-[1.5625rem]">
                               What information does my hospital share with Omaya Care?
                             </span>
@@ -354,7 +354,7 @@ export default function Page() {
                           </div>
                         </article>
                         <article className="h-[3.7875rem] border border-solid border-t-clr-3 border-r-clr-3 border-b-border border-l-clr-3 block overflow-hidden bg-background max-lg:h-16.5 2xl:h-16.5">
-                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" data-component="button" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
+                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
                             <span className="block text-[1.0625rem] leading-[1.4375rem] text-left max-md:[font-size:inherit] max-md:leading-[inherit] md:max-lg:text-lg md:max-lg:leading-[1.5625rem] 2xl:text-lg 2xl:leading-[1.5625rem]">
                               Can I opt out?
                             </span>
@@ -371,7 +371,7 @@ export default function Page() {
                           </div>
                         </article>
                         <article className="h-[3.7875rem] border border-solid border-t-clr-3 border-r-clr-3 border-b-border border-l-clr-3 block overflow-hidden bg-background max-lg:h-16.5 2xl:h-16.5">
-                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" data-component="button" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
+                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
                             <span className="block text-[1.0625rem] leading-[1.4375rem] text-left max-md:[font-size:inherit] max-md:leading-[inherit] md:max-lg:text-lg md:max-lg:leading-[1.5625rem] 2xl:text-lg 2xl:leading-[1.5625rem]">
                               What if I change my phone number?
                             </span>
@@ -392,7 +392,7 @@ export default function Page() {
                     <div className="flex relative pt-11 pb-[3.6625rem] flex-col justify-start items-start gap-[1.375rem] grid-cols-[1fr] grid-rows-[auto_auto] [grid-auto-columns:1fr] max-lg:pt-12 max-md:pb-8 max-lg:gap-6 md:max-lg:pb-16 2xl:pt-12 2xl:pb-16 2xl:gap-6" id="check-ins">
                       <section className="w-full block max-w-[293.1px] max-lg:max-w-80 2xl:max-w-80">
                         <div className="flex items-center gap-3">
-                          <h3 className="block text-[1.625rem] leading-[2.125rem] font-bold tracking-[-0.4px] max-md:text-xl max-md:leading-[1.75rem] max-md:tracking-[-0.2px] md:max-lg:text-2xl md:max-lg:leading-[2rem] md:max-lg:tracking-[-0.4px] 2xl:text-3xl 2xl:leading-9 2xl:tracking-[-0.5px]" data-component="heading">
+                          <h3 className="block text-[1.625rem] leading-[2.125rem] font-bold tracking-[-0.4px] max-md:text-xl max-md:leading-[1.75rem] max-md:tracking-[-0.2px] md:max-lg:text-2xl md:max-lg:leading-[2rem] md:max-lg:tracking-[-0.4px] 2xl:text-3xl 2xl:leading-9 2xl:tracking-[-0.5px]">
                             The Check-ins
                           </h3>
                           <span className="inline-flex items-center justify-center min-w-[1.375rem] h-[1.375rem] px-1 rounded-full text-[0.6875rem] font-semibold leading-none text-[#7a2850] bg-[rgba(122,40,80,0.12)] shrink-0">6</span>
@@ -400,7 +400,7 @@ export default function Page() {
                       </section>
                       <div className="border-t border-solid border-t-surface flex max-w-[45.8rem] flex-col max-lg:max-w-200 2xl:max-w-200">
                         <article className="h-[3.7875rem] border border-solid border-t-clr-3 border-r-clr-3 border-b-border border-l-clr-3 block overflow-hidden bg-background max-lg:h-16.5 2xl:h-16.5">
-                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" data-component="button" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
+                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
                             <span className="block text-[1.0625rem] leading-[1.4375rem] text-left max-md:[font-size:inherit] max-md:leading-[inherit] md:max-lg:text-lg md:max-lg:leading-[1.5625rem] 2xl:text-lg 2xl:leading-[1.5625rem]">
                               When will Omaya Care contact me?
                             </span>
@@ -417,7 +417,7 @@ export default function Page() {
                           </div>
                         </article>
                         <article className="h-[3.7875rem] border border-solid border-t-clr-3 border-r-clr-3 border-b-border border-l-clr-3 block overflow-hidden bg-background max-lg:h-16.5 2xl:h-16.5">
-                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" data-component="button" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
+                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
                             <span className="block text-[1.0625rem] leading-[1.4375rem] text-left max-md:[font-size:inherit] max-md:leading-[inherit] md:max-lg:text-lg md:max-lg:leading-[1.5625rem] 2xl:text-lg 2xl:leading-[1.5625rem]">
                               How will Omaya Care contact me?
                             </span>
@@ -434,7 +434,7 @@ export default function Page() {
                           </div>
                         </article>
                         <article className="h-[3.7875rem] border border-solid border-t-clr-3 border-r-clr-3 border-b-border border-l-clr-3 block overflow-hidden bg-background max-lg:h-16.5 2xl:h-16.5">
-                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" data-component="button" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
+                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
                             <span className="block text-[1.0625rem] leading-[1.4375rem] text-left max-md:[font-size:inherit] max-md:leading-[inherit] md:max-lg:text-lg md:max-lg:leading-[1.5625rem] 2xl:text-lg 2xl:leading-[1.5625rem]">
                               What language will the check-in be in?
                             </span>
@@ -451,7 +451,7 @@ export default function Page() {
                           </div>
                         </article>
                         <article className="h-[3.7875rem] border border-solid border-t-clr-3 border-r-clr-3 border-b-border border-l-clr-3 block overflow-hidden bg-background max-lg:h-16.5 2xl:h-16.5">
-                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" data-component="button" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
+                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
                             <span className="block text-[1.0625rem] leading-[1.4375rem] text-left max-md:[font-size:inherit] max-md:leading-[inherit] md:max-lg:text-lg md:max-lg:leading-[1.5625rem] 2xl:text-lg 2xl:leading-[1.5625rem]">
                               What if my baby is asleep and I cannot talk?
                             </span>
@@ -468,7 +468,7 @@ export default function Page() {
                           </div>
                         </article>
                         <article className="h-[3.7875rem] border border-solid border-t-clr-3 border-r-clr-3 border-b-border border-l-clr-3 block overflow-hidden bg-background max-lg:h-16.5 2xl:h-16.5">
-                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" data-component="button" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
+                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
                             <span className="block text-[1.0625rem] leading-[1.4375rem] text-left max-md:[font-size:inherit] max-md:leading-[inherit] md:max-lg:text-lg md:max-lg:leading-[1.5625rem] 2xl:text-lg 2xl:leading-[1.5625rem]">
                               What kind of questions will I be asked?
                             </span>
@@ -485,7 +485,7 @@ export default function Page() {
                           </div>
                         </article>
                         <article className="h-[3.7875rem] border border-solid border-t-clr-3 border-r-clr-3 border-b-border border-l-clr-3 block overflow-hidden bg-background max-lg:h-16.5 2xl:h-16.5">
-                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" data-component="button" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
+                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
                             <span className="block text-[1.0625rem] leading-[1.4375rem] text-left max-md:[font-size:inherit] max-md:leading-[inherit] md:max-lg:text-lg md:max-lg:leading-[1.5625rem] 2xl:text-lg 2xl:leading-[1.5625rem]">
                               What happens with my answers?
                             </span>
@@ -506,7 +506,7 @@ export default function Page() {
                     <div className="flex relative pt-11 pb-[3.6625rem] flex-col justify-start items-start gap-[1.375rem] grid-cols-[1fr] grid-rows-[auto_auto] [grid-auto-columns:1fr] max-lg:pt-12 max-md:pb-8 max-lg:gap-6 md:max-lg:pb-16 2xl:pt-12 2xl:pb-16 2xl:gap-6" id="emergencies">
                       <section className="w-full block max-w-[293.1px] max-lg:max-w-80 2xl:max-w-80">
                         <div className="flex items-center gap-3">
-                          <h3 className="block text-[1.625rem] leading-[2.125rem] font-bold tracking-[-0.4px] whitespace-nowrap max-md:text-xl max-md:leading-[1.75rem] max-md:tracking-[-0.2px] md:max-lg:text-2xl md:max-lg:leading-[2rem] md:max-lg:tracking-[-0.4px] 2xl:text-3xl 2xl:leading-9 2xl:tracking-[-0.5px]" data-component="heading">
+                          <h3 className="block text-[1.625rem] leading-[2.125rem] font-bold tracking-[-0.4px] whitespace-nowrap max-md:text-xl max-md:leading-[1.75rem] max-md:tracking-[-0.2px] md:max-lg:text-2xl md:max-lg:leading-[2rem] md:max-lg:tracking-[-0.4px] 2xl:text-3xl 2xl:leading-9 2xl:tracking-[-0.5px]">
                             Concerns and Emergencies
                           </h3>
                           <span className="inline-flex items-center justify-center min-w-[1.375rem] h-[1.375rem] px-1 rounded-full text-[0.6875rem] font-semibold leading-none text-[#7a2850] bg-[rgba(122,40,80,0.12)] shrink-0">4</span>
@@ -514,7 +514,7 @@ export default function Page() {
                       </section>
                       <div className="border-t border-solid border-t-surface flex max-w-[45.8rem] flex-col max-lg:max-w-200 2xl:max-w-200">
                         <article className="h-[3.7875rem] border border-solid border-t-clr-3 border-r-clr-3 border-b-border border-l-clr-3 block overflow-hidden bg-background max-lg:h-16.5 2xl:h-16.5">
-                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" data-component="button" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
+                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
                             <span className="block text-[1.0625rem] leading-[1.4375rem] text-left max-md:[font-size:inherit] max-md:leading-[inherit] md:max-lg:text-lg md:max-lg:leading-[1.5625rem] 2xl:text-lg 2xl:leading-[1.5625rem]">
                               What happens if I report a serious symptom?
                             </span>
@@ -531,7 +531,7 @@ export default function Page() {
                           </div>
                         </article>
                         <article className="h-[3.7875rem] border border-solid border-t-clr-3 border-r-clr-3 border-b-border border-l-clr-3 block overflow-hidden bg-background max-lg:h-16.5 2xl:h-16.5">
-                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" data-component="button" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
+                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
                             <span className="block text-[1.0625rem] leading-[1.4375rem] text-left max-md:[font-size:inherit] max-md:leading-[inherit] md:max-lg:text-lg md:max-lg:leading-[1.5625rem] 2xl:text-lg 2xl:leading-[1.5625rem]">
                               What if nobody from the hospital calls me back?
                             </span>
@@ -548,7 +548,7 @@ export default function Page() {
                           </div>
                         </article>
                         <article className="h-[3.7875rem] border border-solid border-t-clr-3 border-r-clr-3 border-b-border border-l-clr-3 block overflow-hidden bg-background max-lg:h-16.5 2xl:h-16.5">
-                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" data-component="button" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
+                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
                             <span className="block text-[1.0625rem] leading-[1.4375rem] text-left max-md:[font-size:inherit] max-md:leading-[inherit] md:max-lg:text-lg md:max-lg:leading-[1.5625rem] 2xl:text-lg 2xl:leading-[1.5625rem]">
                               Is Omaya Care available at night and on weekends?
                             </span>
@@ -565,7 +565,7 @@ export default function Page() {
                           </div>
                         </article>
                         <article className="h-[3.7875rem] border border-solid border-t-clr-3 border-r-clr-3 border-b-border border-l-clr-3 block overflow-hidden bg-background max-lg:h-16.5 2xl:h-16.5">
-                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" data-component="button" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
+                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
                             <span className="block text-[1.0625rem] leading-[1.4375rem] text-left max-md:[font-size:inherit] max-md:leading-[inherit] md:max-lg:text-lg md:max-lg:leading-[1.5625rem] 2xl:text-lg 2xl:leading-[1.5625rem]">
                               Can I contact Omaya Care between scheduled check-ins if I have a concern?
                             </span>
@@ -586,7 +586,7 @@ export default function Page() {
                     <div className="flex relative pt-11 pb-[3.6625rem] flex-col justify-start items-start gap-[1.375rem] grid-cols-[1fr] grid-rows-[auto_auto] [grid-auto-columns:1fr] max-lg:pt-12 max-md:pb-8 max-lg:gap-6 md:max-lg:pb-16 2xl:pt-12 2xl:pb-16 2xl:gap-6" id="data-privacy">
                       <section className="w-full block max-w-[293.1px] max-lg:max-w-80 2xl:max-w-80">
                         <div className="flex items-center gap-3">
-                          <h3 className="block text-[1.625rem] leading-[2.125rem] font-bold tracking-[-0.4px] max-md:text-xl max-md:leading-[1.75rem] max-md:tracking-[-0.2px] md:max-lg:text-2xl md:max-lg:leading-[2rem] md:max-lg:tracking-[-0.4px] 2xl:text-3xl 2xl:leading-9 2xl:tracking-[-0.5px]" data-component="heading">
+                          <h3 className="block text-[1.625rem] leading-[2.125rem] font-bold tracking-[-0.4px] max-md:text-xl max-md:leading-[1.75rem] max-md:tracking-[-0.2px] md:max-lg:text-2xl md:max-lg:leading-[2rem] md:max-lg:tracking-[-0.4px] 2xl:text-3xl 2xl:leading-9 2xl:tracking-[-0.5px]">
                             Data and Privacy
                           </h3>
                           <span className="inline-flex items-center justify-center min-w-[1.375rem] h-[1.375rem] px-1 rounded-full text-[0.6875rem] font-semibold leading-none text-[#7a2850] bg-[rgba(122,40,80,0.12)] shrink-0">4</span>
@@ -594,7 +594,7 @@ export default function Page() {
                       </section>
                       <div className="border-t border-solid border-t-surface flex max-w-[45.8rem] flex-col max-lg:max-w-200 2xl:max-w-200">
                         <article className="h-[3.7875rem] border border-solid border-t-clr-3 border-r-clr-3 border-b-border border-l-clr-3 block overflow-hidden bg-background max-lg:h-16.5 2xl:h-16.5">
-                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" data-component="button" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
+                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
                             <span className="block text-[1.0625rem] leading-[1.4375rem] text-left max-md:[font-size:inherit] max-md:leading-[inherit] md:max-lg:text-lg md:max-lg:leading-[1.5625rem] 2xl:text-lg 2xl:leading-[1.5625rem]">
                               Is my information kept private?
                             </span>
@@ -611,7 +611,7 @@ export default function Page() {
                           </div>
                         </article>
                         <article className="h-[3.7875rem] border border-solid border-t-clr-3 border-r-clr-3 border-b-border border-l-clr-3 block overflow-hidden bg-background max-lg:h-16.5 2xl:h-16.5">
-                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" data-component="button" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
+                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
                             <span className="block text-[1.0625rem] leading-[1.4375rem] text-left max-md:[font-size:inherit] max-md:leading-[inherit] md:max-lg:text-lg md:max-lg:leading-[1.5625rem] 2xl:text-lg 2xl:leading-[1.5625rem]">
                               Who can see my check-in responses?
                             </span>
@@ -628,7 +628,7 @@ export default function Page() {
                           </div>
                         </article>
                         <article className="h-[3.7875rem] border border-solid border-t-clr-3 border-r-clr-3 border-b-border border-l-clr-3 block overflow-hidden bg-background max-lg:h-16.5 2xl:h-16.5">
-                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" data-component="button" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
+                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
                             <span className="block text-[1.0625rem] leading-[1.4375rem] text-left max-md:[font-size:inherit] max-md:leading-[inherit] md:max-lg:text-lg md:max-lg:leading-[1.5625rem] 2xl:text-lg 2xl:leading-[1.5625rem]">
                               Can I request my data?
                             </span>
@@ -645,7 +645,7 @@ export default function Page() {
                           </div>
                         </article>
                         <article className="h-[3.7875rem] border border-solid border-t-clr-3 border-r-clr-3 border-b-border border-l-clr-3 block overflow-hidden bg-background max-lg:h-16.5 2xl:h-16.5">
-                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" data-component="button" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
+                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
                             <span className="block text-[1.0625rem] leading-[1.4375rem] text-left max-md:[font-size:inherit] max-md:leading-[inherit] md:max-lg:text-lg md:max-lg:leading-[1.5625rem] 2xl:text-lg 2xl:leading-[1.5625rem]">
                               Can I ask you to delete my data?
                             </span>
@@ -666,7 +666,7 @@ export default function Page() {
                     <div className="flex relative pt-11 pb-[3.6625rem] flex-col justify-start items-start gap-[1.375rem] grid-cols-[1fr] grid-rows-[auto_auto] [grid-auto-columns:1fr] max-lg:pt-12 max-md:pb-8 max-lg:gap-6 md:max-lg:pb-16 2xl:pt-12 2xl:pb-16 2xl:gap-6" id="hospitals">
                       <section className="w-full block max-w-[293.1px] max-lg:max-w-80 2xl:max-w-80">
                         <div className="flex items-center gap-3">
-                          <h3 className="block text-[1.625rem] leading-[2.125rem] font-bold tracking-[-0.4px] max-md:text-xl max-md:leading-[1.75rem] max-md:tracking-[-0.2px] md:max-lg:text-2xl md:max-lg:leading-[2rem] md:max-lg:tracking-[-0.4px] 2xl:text-3xl 2xl:leading-9 2xl:tracking-[-0.5px]" data-component="heading">
+                          <h3 className="block text-[1.625rem] leading-[2.125rem] font-bold tracking-[-0.4px] max-md:text-xl max-md:leading-[1.75rem] max-md:tracking-[-0.2px] md:max-lg:text-2xl md:max-lg:leading-[2rem] md:max-lg:tracking-[-0.4px] 2xl:text-3xl 2xl:leading-9 2xl:tracking-[-0.5px]">
                             For Hospitals and Partners
                           </h3>
                           <span className="inline-flex items-center justify-center min-w-[1.375rem] h-[1.375rem] px-1 rounded-full text-[0.6875rem] font-semibold leading-none text-[#7a2850] bg-[rgba(122,40,80,0.12)] shrink-0">4</span>
@@ -674,7 +674,7 @@ export default function Page() {
                       </section>
                       <div className="border-t border-solid border-t-surface flex max-w-[45.8rem] flex-col max-lg:max-w-200 2xl:max-w-200">
                         <article className="h-[3.7875rem] border border-solid border-t-clr-3 border-r-clr-3 border-b-border border-l-clr-3 block overflow-hidden bg-background max-lg:h-16.5 2xl:h-16.5">
-                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" data-component="button" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
+                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
                             <span className="block text-[1.0625rem] leading-[1.4375rem] text-left max-md:[font-size:inherit] max-md:leading-[inherit] md:max-lg:text-lg md:max-lg:leading-[1.5625rem] 2xl:text-lg 2xl:leading-[1.5625rem]">
                               How does my hospital use Omaya Care?
                             </span>
@@ -691,7 +691,7 @@ export default function Page() {
                           </div>
                         </article>
                         <article className="h-[3.7875rem] border border-solid border-t-clr-3 border-r-clr-3 border-b-border border-l-clr-3 block overflow-hidden bg-background max-lg:h-16.5 2xl:h-16.5">
-                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" data-component="button" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
+                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
                             <span className="block text-[1.0625rem] leading-[1.4375rem] text-left max-md:[font-size:inherit] max-md:leading-[inherit] md:max-lg:text-lg md:max-lg:leading-[1.5625rem] 2xl:text-lg 2xl:leading-[1.5625rem]">
                               Who reviews the check-in content?
                             </span>
@@ -708,7 +708,7 @@ export default function Page() {
                           </div>
                         </article>
                         <article className="h-[3.7875rem] border border-solid border-t-clr-3 border-r-clr-3 border-b-border border-l-clr-3 block overflow-hidden bg-background max-lg:h-16.5 2xl:h-16.5">
-                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" data-component="button" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
+                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
                             <span className="block text-[1.0625rem] leading-[1.4375rem] text-left max-md:[font-size:inherit] max-md:leading-[inherit] md:max-lg:text-lg md:max-lg:leading-[1.5625rem] 2xl:text-lg 2xl:leading-[1.5625rem]">
                               How does escalation work?
                             </span>
@@ -725,7 +725,7 @@ export default function Page() {
                           </div>
                         </article>
                         <article className="h-[3.7875rem] border border-solid border-t-clr-3 border-r-clr-3 border-b-border border-l-clr-3 block overflow-hidden bg-background max-lg:h-16.5 2xl:h-16.5">
-                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" data-component="button" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
+                          <button className="w-full h-full flex py-[14.7px] justify-between items-center gap-[1.375rem] text-center cursor-pointer max-lg:py-4 max-lg:gap-6 2xl:py-4 2xl:gap-6" aria-controls="accordion-panel-1" aria-expanded="false" type="button">
                             <span className="block text-[1.0625rem] leading-[1.4375rem] text-left max-md:[font-size:inherit] max-md:leading-[inherit] md:max-lg:text-lg md:max-lg:leading-[1.5625rem] 2xl:text-lg 2xl:leading-[1.5625rem]">
                               How do we get started?
                             </span>
@@ -752,8 +752,8 @@ export default function Page() {
         </div>
       </div>
       {" "}
-      <div className="block" data-cid="n662" id="lorikeet-widget-shadow-host" />
-      <div className="w-[16.625rem] h-[3.6625rem] min-h-[3.6625rem] border border-solid border-clr-3 block fixed top-[44.8375rem] left-[56.1875rem] z-149 opacity-0 py-4 px-[1.375rem] rounded-[14.7px] text-background text-[1.0625rem] leading-[1.4375rem] whitespace-nowrap text-nowrap bg-clr-4 [background-size:auto,_auto] [background-position:0%_0%,_0%_0%] [background-repeat:repeat,_repeat] [background-clip:padding-box,_border-box] [background-origin:border-box,_border-box] [background-attachment:scroll,_scroll] [background-blend-mode:normal,_normal] shadow-[var(--clr-13)_0px_4px_24px_0px] [backdrop-filter:blur(5px)] transform-[matrix(0.95,0,0,0.95,10,0)] origin-[132.969px_29.3047px] [-webkit-background-clip:padding-box,_border-box] cursor-pointer pointer-events-none" style={{ backgroundImage: "linear-gradient(var(--clr-14), var(--clr-14)), linear-gradient(135deg, var(--clr-15), var(--clr-16))" }} data-cid="n663">
+      <div className="block" data-id="n662" id="lorikeet-widget-shadow-host" />
+      <div className="w-[16.625rem] h-[3.6625rem] min-h-[3.6625rem] border border-solid border-clr-3 block fixed top-[44.8375rem] left-[56.1875rem] z-149 opacity-0 py-4 px-[1.375rem] rounded-[14.7px] text-background text-[1.0625rem] leading-[1.4375rem] whitespace-nowrap text-nowrap bg-clr-4 [background-size:auto,_auto] [background-position:0%_0%,_0%_0%] [background-repeat:repeat,_repeat] [background-clip:padding-box,_border-box] [background-origin:border-box,_border-box] [background-attachment:scroll,_scroll] [background-blend-mode:normal,_normal] shadow-[var(--clr-13)_0px_4px_24px_0px] [backdrop-filter:blur(5px)] transform-[matrix(0.95,0,0,0.95,10,0)] origin-[132.969px_29.3047px] [-webkit-background-clip:padding-box,_border-box] cursor-pointer pointer-events-none" style={{ backgroundImage: "linear-gradient(var(--clr-14), var(--clr-14)), linear-gradient(135deg, var(--clr-15), var(--clr-16))" }} data-id="n663">
         Hey there! Got any questions?
       </div>
       {" "}

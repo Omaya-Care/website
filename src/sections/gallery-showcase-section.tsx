@@ -49,25 +49,25 @@ export default function GalleryShowcaseSection({ mediaTile3Data = MediaTile3_dat
   const canScrollForward = offset < maxOffset;
 
   return (
-    <section className="block relative overflow-clip bg-background" data-cid="n278">
-      <div className="h-full block pt-12 pb-14 px-[2.2875rem] max-md:pt-8 max-md:pb-12 max-md:px-6 max-md:overflow-hidden md:max-lg:pt-12 md:max-lg:pb-14 md:max-lg:px-10 2xl:pt-14 2xl:pb-16 2xl:px-10" data-cid="n279">
-        <div ref={viewportRef} className="h-full block max-w-[73.275rem] mx-auto justify-center max-lg:max-w-320 2xl:max-w-320" data-cid="n280">
-          <div className="h-full flex flex-col" data-cid="n281">
-            <div className="flex flex-col gap-3" data-cid="n282">
-              <h2 className="block text-[2.3125rem] leading-11 tracking-[-0.73px] max-md:text-2xl max-md:leading-[1.8125rem] max-md:tracking-[-0.54px] md:max-lg:text-[2.5rem] md:max-lg:leading-12 md:max-lg:tracking-[-0.9px] 2xl:text-5xl 2xl:leading-[3.625rem] 2xl:tracking-[-1.08px]" data-cid="n283" data-component="heading">
+    <section className="block relative overflow-clip bg-background" data-id="n278">
+      <div className="h-full block pt-12 pb-14 px-[2.2875rem] max-md:pt-8 max-md:pb-12 max-md:px-6 max-md:overflow-hidden md:max-lg:pt-12 md:max-lg:pb-14 md:max-lg:px-10 2xl:pt-14 2xl:pb-16 2xl:px-10" data-id="n279">
+        <div ref={viewportRef} className="h-full block max-w-[73.275rem] mx-auto justify-center max-lg:max-w-320 2xl:max-w-320" data-id="n280">
+          <div className="h-full flex flex-col" data-id="n281">
+            <div className="flex flex-col gap-3" data-id="n282">
+              <h2 className="block text-[2.3125rem] leading-11 tracking-[-0.73px] max-md:text-2xl max-md:leading-[1.8125rem] max-md:tracking-[-0.54px] md:max-lg:text-[2.5rem] md:max-lg:leading-12 md:max-lg:tracking-[-0.9px] 2xl:text-5xl 2xl:leading-[3.625rem] 2xl:tracking-[-1.08px]" data-id="n283">
                 Guided by experts.<br />Built for mothers.
               </h2>
               <p className="text-muted-foreground text-[1.0625rem] leading-[1.5625rem] tracking-[-0.12px] max-w-[32rem] max-md:text-base max-md:leading-6 md:max-lg:text-lg 2xl:text-lg 2xl:leading-[1.6875rem]">
                 Doctors and legal professionals with firsthand knowledge of maternal health in Ghana.
               </p>
             </div>
-            <div className="w-[38.3rem] block relative mt-[3.6625rem] max-md:w-86.5 max-md:mt-12 md:max-lg:w-[22.5rem] md:max-lg:mt-16 2xl:w-[50rem] 2xl:mt-16" data-cid="n289">
-              <div className="flex relative" data-cid="n290">
+            <div className="w-[38.3rem] block relative mt-[3.6625rem] max-md:w-86.5 max-md:mt-12 md:max-lg:w-[22.5rem] md:max-lg:mt-16 2xl:w-[50rem] 2xl:mt-16" data-id="n289">
+              <div className="flex relative" data-id="n290">
                 <div
                   ref={trackRef}
                   className="h-[242.7px] flex gap-[29.3px] [&>div:last-child]:border-r-0 max-md:h-54 max-lg:flex-col max-lg:flex-wrap max-md:justify-start max-md:items-stretch max-md:gap-4 md:max-lg:h-65 md:max-lg:gap-8 2xl:h-[16.5625rem] 2xl:gap-8"
                   style={{ transform: `translateX(${-offset}px)`, transition: "transform 500ms ease-out" }}
-                  data-cid="n291"
+                  data-id="n291"
                 >
                   {mediaTile3Data.map((d, i) => <MediaTile3 key={i} d={d} cids={MediaTile3_cids[i]} styles={MediaTile3_styles[i]} />)}
                 </div>
@@ -100,26 +100,26 @@ export default function GalleryShowcaseSection({ mediaTile3Data = MediaTile3_dat
           </div>
         </div>
       </div>
-      <nav className="w-[190.5px] h-200 flex fixed top-0 left-11 z-1150 opacity-0 flex-col justify-center items-start gap-[0.6875rem] text-background text-[0.8125rem] leading-[1.1875rem] transform-[matrix(1,0,0,1,0,14.6555)] pointer-events-none max-lg:hidden" data-cid="n334">
-        <p className="block opacity-50 tracking-[-0.2px] pointer-events-none" data-cid="n335">
+      <nav className="w-[190.5px] h-200 flex fixed top-0 left-11 z-1150 opacity-0 flex-col justify-center items-start gap-[0.6875rem] text-background text-[0.8125rem] leading-[1.1875rem] transform-[matrix(1,0,0,1,0,14.6555)] pointer-events-none max-lg:hidden" data-id="n334">
+        <p className="block opacity-50 tracking-[-0.2px] pointer-events-none" data-id="n335">
           Our Advisors
         </p>
-        <ul className="flex flex-col gap-[0.6875rem] text-muted-foreground [list-style-type:none] list-outside pointer-events-none 2xl:gap-3" data-cid="n336">
+        <ul className="flex flex-col gap-[0.6875rem] text-muted-foreground [list-style-type:none] list-outside pointer-events-none 2xl:gap-3" data-id="n336">
           {mediaTile4Data.map((d, i) => <MediaTile4 key={MediaTile4_cids[i][0]} d={d} cids={MediaTile4_cids[i]} styles={MediaTile4_styles[i]} />)}
         </ul>
       </nav>
-      <nav className="hidden fixed bottom-0 inset-x-0 z-1100 opacity-0 p-[14.7px] justify-between items-center gap-[0.6875rem] text-background text-[0.8125rem] leading-[1.1875rem] transform-[none] pointer-events-none" data-cid="n361">
-        <p className="block opacity-50 py-[7.3px] px-[0.6875rem] flex-1 tracking-[-0.2px] pointer-events-none max-lg:min-w-0 max-lg:py-2 max-md:pr-3 max-md:pl-5 md:max-lg:px-3" data-cid="n362">
+      <nav className="hidden fixed bottom-0 inset-x-0 z-1100 opacity-0 p-[14.7px] justify-between items-center gap-[0.6875rem] text-background text-[0.8125rem] leading-[1.1875rem] transform-[none] pointer-events-none" data-id="n361">
+        <p className="block opacity-50 py-[7.3px] px-[0.6875rem] flex-1 tracking-[-0.2px] pointer-events-none max-lg:min-w-0 max-lg:py-2 max-md:pr-3 max-md:pl-5 md:max-lg:px-3" data-id="n362">
           Our Advisors
         </p>
-        <div className="flex items-center shrink-0 gap-[5.5px] pointer-events-none max-lg:gap-1.5" data-cid="n363">
-          <button className="w-[29.3px] h-[29.3px] flex min-w-0 rounded-[7.3px] justify-center items-center text-center bg-clr-10 [backdrop-filter:blur(21.9832px)] cursor-pointer pointer-events-none max-lg:w-8 max-lg:h-8 max-lg:rounded-[99px] max-lg:[backdrop-filter:blur(24px)]" data-cid="n364" aria-label="Previous" type="button">
-            <div className="w-[0.2875rem] h-[7.3px] block min-w-0 shrink-0 pointer-events-none max-lg:w-[0.3125rem] max-lg:h-2 max-lg:flex max-lg:justify-center max-lg:items-center" data-cid="n365">
+        <div className="flex items-center shrink-0 gap-[5.5px] pointer-events-none max-lg:gap-1.5" data-id="n363">
+          <button className="w-[29.3px] h-[29.3px] flex min-w-0 rounded-[7.3px] justify-center items-center text-center bg-clr-10 [backdrop-filter:blur(21.9832px)] cursor-pointer pointer-events-none max-lg:w-8 max-lg:h-8 max-lg:rounded-[99px] max-lg:[backdrop-filter:blur(24px)]" data-id="n364" aria-label="Previous" type="button">
+            <div className="w-[0.2875rem] h-[7.3px] block min-w-0 shrink-0 pointer-events-none max-lg:w-[0.3125rem] max-lg:h-2 max-lg:flex max-lg:justify-center max-lg:items-center" data-id="n365">
               <Icon cid={"n366"} />
             </div>
           </button>
-          <button className="w-[29.3px] h-[29.3px] flex min-w-0 rounded-[7.3px] justify-center items-center text-center bg-clr-10 [backdrop-filter:blur(21.9832px)] cursor-pointer pointer-events-none max-lg:w-8 max-lg:h-8 max-lg:rounded-[99px] max-lg:[backdrop-filter:blur(24px)]" data-cid="n367" aria-label="Next" type="button">
-            <div className="w-[0.2875rem] h-[7.3px] block min-w-0 shrink-0 pointer-events-none max-lg:w-[0.3125rem] max-lg:h-2 max-lg:flex max-lg:justify-center max-lg:items-center" data-cid="n368">
+          <button className="w-[29.3px] h-[29.3px] flex min-w-0 rounded-[7.3px] justify-center items-center text-center bg-clr-10 [backdrop-filter:blur(21.9832px)] cursor-pointer pointer-events-none max-lg:w-8 max-lg:h-8 max-lg:rounded-[99px] max-lg:[backdrop-filter:blur(24px)]" data-id="n367" aria-label="Next" type="button">
+            <div className="w-[0.2875rem] h-[7.3px] block min-w-0 shrink-0 pointer-events-none max-lg:w-[0.3125rem] max-lg:h-2 max-lg:flex max-lg:justify-center max-lg:items-center" data-id="n368">
               <Icon2 cid={"n369"} />
             </div>
           </button>

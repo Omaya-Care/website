@@ -10,7 +10,7 @@ type RTReveal = {
 type RTMarquee = { cid: string; pxPerSec: number; periodPx: number };
 export type MotionSpec = { waapi: RTWaapi[]; rotators: RTRotator[]; reveals: RTReveal[]; marquees: RTMarquee[] };
 
-const byCid = (cid: string): HTMLElement | null => document.querySelector('[data-cid="' + cid + '"]');
+const byCid = (cid: string): HTMLElement | null => document.querySelector('[data-id="' + cid + '"]');
 
 // Reveal-replay pacing caps. On the live site an entrance stagger plays ONCE, on first load,
 // while the whole group is already in view. Our replay re-hides each element and replays its

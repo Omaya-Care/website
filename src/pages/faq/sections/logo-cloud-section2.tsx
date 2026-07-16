@@ -14,8 +14,8 @@ const Logo2_data: Logo2Data[] = [
 /** Logo Cloud section. */
 export default function LogoCloudSection2({ logos = Logo2_data } = {}) {
   return (
-    <div className="flex flex-col gap-[0.8rem] max-lg:hidden 2xl:gap-3.5" data-cid="n518">
-      <div className="block text-color-001" data-cid="n519">
+    <div className="flex flex-col gap-[0.8rem] max-lg:hidden 2xl:gap-3.5" data-id="n518">
+      <div className="block text-color-001" data-id="n519">
         Connect
       </div>
       {logos.map((d, i) => <Logo2 key={i} d={d} cids={Logo2_cids[i]} />)}
