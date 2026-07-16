@@ -370,7 +370,7 @@ fieldset, legend { min-width: 0; }
 }
 
 @font-face {
-  font-family: "webflow-icons";
+  font-family: "icon-font";
   font-style: normal;
   font-weight: 400;
   font-display: swap;

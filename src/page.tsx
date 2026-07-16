@@ -322,7 +322,7 @@ export default function Page() {
         <Navbar />
         <div className="block max-lg:relative" data-cid="n22">
           <div className="h-[clamp(748.7px,min(calc(258.7px_+_47.8vw),calc(100dvh_-_6.5rem)),1024px)] max-h-[calc(100dvh-2.8625rem)] flex relative max-w-full mt-[2.8625rem] pb-[7.3px] px-[7.3px] flex-col justify-between items-center overflow-hidden max-md:h-203 max-md:max-h-dvh max-lg:justify-end max-md:gap-12 max-lg:mt-0 max-lg:pb-0 max-lg:px-0 md:max-lg:h-[51.2rem] md:max-lg:max-h-dvh md:max-lg:gap-20 2xl:h-256 2xl:max-h-[calc(100dvh-3.125rem)] 2xl:mt-12.5 2xl:pb-2 2xl:px-2" data-cid="n23">
-            <div className="h-full flex relative pb-[3.6625rem] pl-[3.6625rem] rounded-[11px] flex-col justify-center items-start self-stretch overflow-hidden bg-clr-2 max-lg:min-h-180 max-md:pb-6 max-lg:justify-end max-md:pl-0 max-lg:rounded-[initial] md:max-lg:pb-12 md:max-lg:pl-12 2xl:pb-16 2xl:pl-16 2xl:rounded-xl" data-cid="n24" id="sp-main-hero">
+            <div className="h-full flex relative pb-[3.6625rem] pl-[3.6625rem] rounded-[11px] flex-col justify-center items-start self-stretch overflow-hidden bg-clr-2 max-lg:min-h-180 max-md:pb-6 max-lg:justify-end max-md:pl-0 max-lg:rounded-[initial] md:max-lg:pb-12 md:max-lg:pl-12 2xl:pb-16 2xl:pl-16 2xl:rounded-xl" data-cid="n24" id="om-main-hero">
               <div className="h-full block absolute top-0 inset-x-0 min-w-0" data-cid="n25">
                 <div className="h-full flex absolute top-0 inset-x-0 z-2 pb-[3.6625rem] pl-[3.6625rem] flex-col justify-center items-start overflow-hidden max-md:pb-20 max-md:px-6 max-lg:justify-end md:max-lg:pb-12 md:max-lg:pl-12 2xl:pb-16 2xl:pl-16" data-cid="n26">
                   <div className="w-[calc(100%+3.925rem)] h-full block absolute top-0 -left-[3.925rem] min-w-0 overflow-hidden [filter:brightness(1)] max-md:w-[401.5px] max-md:-left-[1.1375rem] md:max-lg:w-[52.1125rem] md:max-lg:left-[-37.9px] 2xl:w-[130.2125rem] 2xl:left-[-94.7px]" data-cid="n27">
@@ -542,7 +542,7 @@ export default function Page() {
         </div>
         <div className="block" data-cid="n864">
           <div className="block" data-cid="n865">
-            <div className="w-317.5 h-200 flex fixed top-0 left-0 z-9999 invisible opacity-0 justify-center items-center bg-clr-15 pointer-events-none max-md:w-[22.8125rem] max-md:h-203 md:max-lg:w-189.5 md:max-lg:h-256 2xl:w-477.5 2xl:h-270" data-cid="n866" id="sp2Overlay">
+            <div className="w-317.5 h-200 flex fixed top-0 left-0 z-9999 invisible opacity-0 justify-center items-center bg-clr-15 pointer-events-none max-md:w-[22.8125rem] max-md:h-203 md:max-lg:w-189.5 md:max-lg:h-256 2xl:w-477.5 2xl:h-270" data-cid="n866" id="om2Overlay">
               <HeroSection />
             </div>
           </div>
