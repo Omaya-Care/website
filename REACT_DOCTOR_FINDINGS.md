@@ -16,7 +16,7 @@
 >
 > **Kept as index-key ON PURPOSE (documented in code):** the two tripled infinite-loop carousels (`page.tsx:245`, `gallery-showcase-section2:120`) — a data-derived key collides across the 3 duplicated copies and would remount/flash tiles on snap. The index IS the stable identity.
 >
-> **Not done (intentional):** `<div/a role="button">`→`<button>` (3× `prefer-tag-over-role`) would risk carousel-tile sizing + tab-order — the pixel-safe keyboard-accessible `role` version is correct; `no-giant-component`/`rerender-state`/`no-layout-transition`/`js-flatmap-filter` (pure maintainability, no UI/perf/a11y value); `effect-needs-cleanup` ×5 + `unused-file` ×8 (verified false positives); `dangerous-html-sink` ×2 (trusted static). Method: `scripts/svg-round.mjs`.
+> **Not done (intentional):** `<div/a role="button">`→`<button>` (3× `prefer-tag-over-role`) would risk carousel-tile sizing + tab-order — the pixel-safe keyboard-accessible `role` version is correct; `no-giant-component`/`rerender-state`/`no-layout-transition`/`js-flatmap-filter` (pure maintainability, no UI/perf/a11y value); `effect-needs-cleanup` ×5 + `unused-file` ×8 (verified false positives); `dangerous-html-sink` ×2 (trusted static). SVG coords were rounded to 2 decimals via a one-shot codemod (since removed).
 
 ---
 
@@ -27,7 +27,7 @@
 >
 > - **Harness** — `playwright.config.ts` + `visual/visual.spec.ts` + `npm run test:visual[:update]`. Baselines in `visual/*-snapshots/`.
 > - **Batch 1 (safe fixes)** — `type="button"` on modal Close buttons; `rel="noreferrer"` + `aria-label` on LegitScript links; `aria-label` on hamburger/menu controls; faq tile `<label>`→`<div>`; trusted-static rationale on the `dangerousSetInnerHTML` sinks.
-> - **Batch 2 (performance, delivery-only)** — vendor `manualChunks` (React shared across all 6 entries); `decoding="async"` on all 105 imgs + `loading="lazy"` on 40 below-fold imgs (never heroes/navbars); `fetchpriority="high"` + `<link rel=preload>` on the LCP hero; primary-font preload on all 6 pages. Skipped `preconnect` (no third-party render-critical origin) and a higher `build.target` (kept broad browser support for the Ghana audience). Scripts: `scripts/img-perf.mjs`, `scripts/img-perf-fix.mjs`.
+> - **Batch 2 (performance, delivery-only)** — vendor `manualChunks` (React shared across all 6 entries); `decoding="async"` on all 105 imgs + `loading="lazy"` on 40 below-fold imgs (never heroes/navbars); `fetchpriority="high"` + `<link rel=preload>` on the LCP hero; primary-font preload on all 6 pages. Skipped `preconnect` (no third-party render-critical origin) and a higher `build.target` (kept broad browser support for the Ghana audience). Image attributes were applied via a one-shot codemod (since removed).
 > - **Batch 3 (dead code)** — 77 true orphans deleted, found via MPA-aware reachability walk (`scripts/find-orphans.mjs`) from all 6 entries — NOT react-doctor's single-root list. Build output byte-identical (they were already tree-shaken), so zero perf/UI change; pure hygiene.
 > - **Batch 4 (unused exports)** — 21 unused `export` keywords dropped across 6 data files; build unchanged.
 > - **Deliberately NOT done** (would break pixel-identity or are false positives): array-index keys (remount-flash risk), SVG-precision rounding (geometry shift), component splitting (moves code), `effect-needs-cleanup` (cleanup already present — false positive), html-sink sanitizing (strips inline styles), role/caption/anchor swaps (default-UA-styling change).
