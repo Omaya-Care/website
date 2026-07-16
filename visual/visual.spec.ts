@@ -88,7 +88,7 @@ test.describe("visual parity", () => {
       test(`${route.name} @ ${vp.name}`, async ({ page }) => {
         // Restore the fully-settled/revealed base (skip DittoMotion) before any app script runs.
         await page.addInitScript(() => {
-          (window as any).__dittoMotionStopped = true;
+          (window as any).__omMotionStopped = true;
         });
         await page.setViewportSize({ width: vp.width, height: vp.height });
         await page.goto(route.path, { waitUntil: "load" });

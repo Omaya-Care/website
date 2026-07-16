@@ -19,7 +19,7 @@ const byCid = (cid: string): HTMLElement | null => document.querySelector('[data
 // (e.g. 1.25s) entrance as it scrolls in — so a fast scroll / full-page screenshot catches most
 // tiles mid-entrance, unpainted. Cap the replayed delay AND duration so each tile paints promptly
 // after it enters the viewport, keeping relative order. (The validator settles via
-// __dittoMotionStop and is unaffected — this only bounds the live, un-stopped replay.)
+// __omMotionStop and is unaffected — this only bounds the live, un-stopped replay.)
 const REVEAL_MAX_DELAY_MS = 300;
 const REVEAL_MAX_DURATION_MS = 600;
 const parseTimeMs = (raw: string | undefined): number => {
@@ -45,13 +45,13 @@ const clampDuration = (raw: string | undefined): string => {
 /** Replays captured motion the stylesheet can't express: WAAPI animations (re-issued via
  *  element.animate), rotating text (interval-cycled), and scroll-triggered reveals (start
  *  hidden, transition in when scrolled into view). Starts on mount. Installs
- *  window.__dittoMotionStop, and honors window.__dittoMotionStopped, so the validator can
+ *  window.__omMotionStop, and honors window.__omMotionStopped, so the validator can
  *  restore the fully-settled/revealed base for grading — gates 0–6 measure the static frame.
  *  The stopped FLAG (set by the validator even before this mounts) makes a late mount skip
  *  applying any motion, closing the hydration race that could otherwise leave content hidden. */
 export default function DittoMotion({ spec }: { spec: MotionSpec }) {
   useEffect(() => {
-    if ((window as any).__dittoMotionStopped) return; // measurement mode — apply nothing
+    if ((window as any).__omMotionStopped) return; // measurement mode — apply nothing
     const intervals: ReturnType<typeof setInterval>[] = [];
     const rotators: Array<{ el: HTMLElement; original: Node[] }> = [];
     const anims: Animation[] = [];
@@ -175,7 +175,7 @@ export default function DittoMotion({ spec }: { spec: MotionSpec }) {
     }
 
     const stopAll = () => {
-      (window as any).__dittoMotionStopped = true;
+      (window as any).__omMotionStopped = true;
       for (const id of intervals) clearInterval(id);
       for (const r of rotators) r.el.replaceChildren(...r.original.map((n) => n.cloneNode(true)));
       for (const a of anims) { try { a.cancel(); } catch { /* ignore */ } }
@@ -185,13 +185,13 @@ export default function DittoMotion({ spec }: { spec: MotionSpec }) {
       for (const f of revealed) f(false); // reveal everything, settled → base CSS graded frame
     };
     // Measurement hook: restore the fully-settled/revealed base for grading.
-    (window as any).__dittoMotionStop = stopAll;
+    (window as any).__omMotionStop = stopAll;
     return () => {
       for (const id of intervals) clearInterval(id);
       if (io) io.disconnect();
       if (forceTimer) clearTimeout(forceTimer);
       for (const t of settleTimers) clearTimeout(t);
-      try { delete (window as any).__dittoMotionStop; } catch { /* ignore */ }
+      try { delete (window as any).__omMotionStop; } catch { /* ignore */ }
     };
   }, [spec]);
   return null;
