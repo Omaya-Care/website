@@ -11,7 +11,7 @@ export default function MediaTile4({ d, cids, styles }: { d: MediaTile4Data; cid
         <div data-cid={cids[2]} className="w-0 h-[1.2rem] flex opacity-0 items-center shrink-0 overflow-hidden pointer-events-none">
           <div data-cid={cids[3]} className="w-[0.4rem] block shrink-0 pointer-events-none 2xl:w-[0.4375rem] before:content-['_'] before:table before:w-0 before:h-0 before:text-background before:text-[0.8125rem] before:leading-[1.1875rem] before:text-left max-lg:before:text-sm max-lg:before:leading-[1.3125rem] max-lg:before:w-auto max-lg:before:h-auto 2xl:before:text-sm 2xl:before:leading-[1.3125rem] after:content-['_'] after:table after:w-0 after:h-0 after:text-background after:text-[0.8125rem] after:leading-[1.1875rem] after:text-left max-lg:after:text-sm max-lg:after:leading-[1.3125rem] max-lg:after:w-auto max-lg:after:h-auto 2xl:after:text-sm 2xl:after:leading-[1.3125rem]">
             <svg data-cid={cids[4]} className="w-auto h-2 inline overflow-hidden pointer-events-none focus:outline-color-009 focus:[outline-style:auto] focus:outline-[5px]" data-component="icon" fill="none" height="8" viewBox="0 0 5 8" width="5" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4.35815 3.07615C4.70663 3.41898 4.70663 3.98084 4.35815 4.32366L1.48834 7.14694C0.935084 7.69122 -0.000304151 7.29928 -0.000304117 6.52318L-0.00030387 0.876635C-0.000303836 0.100537 0.935085 -0.2914 1.48834 0.252879L4.35815 3.07615Z" fill="white" />
+              <path d="M4.36 3.08C4.71 3.42 4.71 3.98 4.36 4.32L1.49 7.15C0.94 7.69 0 7.3 0 6.52L0 0.88C0 0.1 0.94 -0.29 1.49 0.25L4.36 3.08Z" fill="white" />
             </svg>
           </div>
         </div>
