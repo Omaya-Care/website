@@ -240,6 +240,7 @@ function MembershipCarousel({ data, cids }: { data: Logo3Data[]; cids: string[][
           onTransitionEnd={handleTransitionEnd}
           data-cid="n526"
         >
+          {/* key={i}: tripled infinite-loop track — position index IS the stable identity; a data-derived id (imgSrc) collides across the 3 duplicated copies and would remount/flash tiles on snap. */}
           {tiles.map((d, i) => (
             <Logo3 key={i} d={d} cids={cids[i % count]} />
           ))}
@@ -265,9 +266,9 @@ function MembershipCarousel({ data, cids }: { data: Logo3Data[]; cids: string[][
               </svg>
             )}
           </button>
-          {data.map((_, i) => (
+          {data.map((d, i) => (
             <button
-              key={i}
+              key={d.imgSrc}
               type="button"
               onClick={() => setIndex(count + i)}
               aria-label={`Show slide ${i + 1} of ${count}`}
@@ -421,7 +422,7 @@ export default function Page() {
                       </p>
                     </div>
                     <div className="flex pl-[7.3px] flex-col gap-[7.3px] max-lg:gap-2 max-md:pl-0 md:max-lg:pl-2 2xl:pl-2 2xl:gap-2" data-cid="n561">
-                      {Tile3_data.map((d, i) => <Tile3 key={i} d={d} cids={Tile3_cids[i]} />)}
+                      {Tile3_data.map((d, i) => <Tile3 key={d.description} d={d} cids={Tile3_cids[i]} />)}
                     </div>
                     <div className="flex items-center gap-[0.6875rem] max-md:mt-3 max-lg:gap-3 2xl:gap-3" data-cid="n583">
                       <div className="block text-[4rem] leading-[4.25rem] max-md:text-[2.5rem] max-md:leading-12 md:max-lg:text-[4.375rem] md:max-lg:leading-18.5 2xl:text-[4.375rem] 2xl:leading-18.5" data-cid="n584">
@@ -446,7 +447,7 @@ export default function Page() {
                       </div>
                       <div className="block" data-cid="n592">
                         <div className="flex max-w-[32.0625rem] flex-wrap justify-center items-center gap-[1.375rem] grid-cols-[1fr_1fr_1fr] grid-rows-[auto] [grid-auto-columns:1fr] max-lg:max-w-140 max-md:gap-4 max-md:text-xs max-md:leading-[1.0625rem] md:max-lg:gap-6 2xl:max-w-140 2xl:gap-6" data-cid="n593">
-                          {Logo4_data.map((d, i) => <Logo4 key={i} d={d} cids={Logo4_cids[i]} styles={Logo4_styles[i]} />)}
+                          {Logo4_data.map((d, i) => <Logo4 key={d.text} d={d} cids={Logo4_cids[i]} styles={Logo4_styles[i]} />)}
                         </div>
                       </div>
                     </div>
@@ -514,7 +515,7 @@ export default function Page() {
               FAQs
             </p>
             <ul className="flex flex-col gap-[0.6875rem] text-muted-foreground [list-style-type:none] list-outside pointer-events-none 2xl:gap-3" data-cid="n800">
-              {MediaTile6_data.map((d, i) => <MediaTile6 key={i} d={d} cids={MediaTile6_cids[i]} styles={MediaTile6_styles[i]} />)}
+              {MediaTile6_data.map((d, i) => <MediaTile6 key={MediaTile6_cids[i][0]} d={d} cids={MediaTile6_cids[i]} styles={MediaTile6_styles[i]} />)}
             </ul>
           </nav>
           <nav className="hidden fixed bottom-0 inset-x-0 z-1100 opacity-0 p-[14.7px] justify-between items-center gap-[0.6875rem] text-background text-[0.8125rem] leading-[1.1875rem] transform-[none] pointer-events-none" data-cid="n855">
@@ -560,7 +561,7 @@ export default function Page() {
               {" for more information."}
             </div>
             <div className="flex justify-start items-stretch shrink-0 gap-[7.3px] grid-cols-[auto_auto] grid-rows-[auto] [grid-auto-columns:1fr] text-[0.8125rem] leading-[1.125rem] max-md:mt-3 max-lg:flex-col-reverse max-lg:gap-2 max-lg:text-sm max-lg:leading-[1.25rem] max-md:text-center 2xl:gap-2 2xl:text-sm 2xl:leading-[1.25rem]" data-cid="n906">
-              <a className="w-35 block min-w-35 py-2.5 px-5 rounded-[73.3px] text-background text-center bg-color-009 cursor-pointer max-md:w-[19.6875rem] max-md:mr-2 max-md:mb-2.5 max-lg:rounded-[80px] max-md:[text-align:inherit] md:max-lg:w-177 2xl:rounded-[80px]" data-cid="n907" data-component="link" href="#" onClick={(e) => { e.preventDefault(); setCookieAccepted(true); }}>
+              <a className="w-35 block min-w-35 py-2.5 px-5 rounded-[73.3px] text-background text-center bg-color-009 cursor-pointer max-md:w-[19.6875rem] max-md:mr-2 max-md:mb-2.5 max-lg:rounded-[80px] max-md:[text-align:inherit] md:max-lg:w-177 2xl:rounded-[80px]" data-cid="n907" data-component="link" role="button" tabIndex={0} onClick={() => setCookieAccepted(true)} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setCookieAccepted(true); } }}>
                 Accept
               </a>
               <a className="h-[2.375rem] border border-solid border-color-007 flex py-2 px-[16.9px] rounded-[73.3px] justify-center items-center cursor-pointer max-lg:h-[2.45rem] max-md:mr-2 max-lg:py-[0.55rem] max-lg:px-[1.15rem] max-lg:rounded-[80px] 2xl:h-[2.475rem] 2xl:py-[0.55rem] 2xl:px-[1.15rem] 2xl:rounded-[80px]" data-cid="n908" data-component="button" href="#">
