@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useScrolled } from "../hooks/useScrolled";
 import { cn } from "../lib/utils";
 
@@ -21,10 +21,57 @@ const DRAWER_LINKS = [
   { href: "/contact", label: "Contact" },
 ];
 
-export default function Navbar({ light = false, showBanner = true }: { light?: boolean; showBanner?: boolean }) {
+export default function Navbar({ light = false, showBanner = true }: { light?: boolean | "lg"; showBanner?: boolean }) {
   const scrolled = useScrolled(50);
-  const dotGrid = light ? DOT_GRID_DARK : DOT_GRID;
+  // `light` is true/false (uniform) OR "lg" — apply the light look only at lg+
+  // (desktop) while keeping the dark translucent pill below lg (mobile/tablet).
+  const lightBelowLg = light === true;
+  const lightAtLg = Boolean(light);
+  const logoInvert = light === true ? "invert" : light === "lg" ? "lg:invert" : "";
+  const demoBtn = light === true ? "bg-foreground text-background" : light === "lg" ? "bg-background lg:bg-foreground lg:text-background" : "bg-background";
+  // Hamburger dots: white on the dark pill (below lg), dark on white (lg+).
+  // Applied via CSS vars + arbitrary classes so the lg override can win (an inline
+  // background-image would always beat a class).
+  const dotsBelowLg = light === true ? DOT_GRID_DARK : DOT_GRID;
+  const dotsAtLg = light ? DOT_GRID_DARK : DOT_GRID;
   const [drawerOpen, setDrawerOpen] = useState(false);
+
+  // Swipe-to-dismiss for the side drawer (touch screens): drag the panel to the
+  // right to close it, following the finger, with a snap-back / snap-shut on release.
+  const panelRef = useRef<HTMLDivElement>(null);
+  const dragStart = useRef<{ x: number; y: number } | null>(null);
+  const dragAxis = useRef<"h" | "v" | null>(null);
+  const [dragX, setDragX] = useState(0);
+  const [dragging, setDragging] = useState(false);
+
+  const onDrawerTouchStart = (e: React.TouchEvent) => {
+    const t = e.touches[0];
+    dragStart.current = { x: t.clientX, y: t.clientY };
+    dragAxis.current = null;
+  };
+  const onDrawerTouchMove = (e: React.TouchEvent) => {
+    if (!dragStart.current) return;
+    const t = e.touches[0];
+    const dx = t.clientX - dragStart.current.x;
+    const dy = t.clientY - dragStart.current.y;
+    if (dragAxis.current === null) {
+      if (Math.abs(dx) < 6 && Math.abs(dy) < 6) return; // wait for a clear intent
+      dragAxis.current = Math.abs(dx) > Math.abs(dy) ? "h" : "v";
+      if (dragAxis.current === "h") setDragging(true);
+    }
+    if (dragAxis.current !== "h") return; // vertical → let it be (scroll)
+    setDragX(Math.max(0, dx)); // only rightward (closing) drag
+  };
+  const onDrawerTouchEnd = () => {
+    if (dragAxis.current === "h") {
+      const w = panelRef.current?.offsetWidth ?? 320;
+      if (dragX > w * 0.3) setDrawerOpen(false); // past a third → dismiss
+      setDragging(false);
+      setDragX(0); // snap back (open) or animate the rest of the way shut
+    }
+    dragStart.current = null;
+    dragAxis.current = null;
+  };
 
   useEffect(() => {
     document.body.style.overflow = drawerOpen ? "hidden" : "";
@@ -56,40 +103,41 @@ export default function Navbar({ light = false, showBanner = true }: { light?: b
           </div>
         </a>
       )}
-      <div className={cn("flex relative z-9999 py-[1.375rem] px-[4.125rem] justify-center items-center gap-[7.3px] max-lg:gap-2 max-lg:mx-4 max-lg:mt-2 max-lg:rounded-full max-lg:[backdrop-filter:blur(24px)] max-md:py-2 max-md:px-3 md:max-lg:py-2.5 md:max-lg:px-4 2xl:py-6 2xl:px-18 2xl:gap-2", light ? "max-lg:bg-background" : "max-lg:bg-clr-0")}>
+      <div className={cn("flex relative z-9999 py-[1.375rem] px-[4.125rem] justify-center items-center gap-[7.3px] max-lg:gap-2 max-lg:mx-4 max-lg:mt-2 max-lg:rounded-full max-lg:[backdrop-filter:blur(24px)] max-md:py-2 max-md:px-3 md:max-lg:py-2.5 md:max-lg:px-4 2xl:py-6 2xl:px-18 2xl:gap-2", lightBelowLg ? "max-lg:bg-background" : "max-lg:bg-clr-0")}>
         <a
           className={cn("w-[153.9px] h-[1.3125rem] flex absolute top-[40.7px] left-1/2 z-1 min-w-0 max-w-full justify-center items-center shrink-0 transform-[translate(-50%,-10.4688px)] cursor-pointer transition-opacity duration-500 ease-in-out max-md:w-28 max-md:h-4 max-lg:transform-[none] max-lg:static max-lg:top-auto max-lg:left-auto max-lg:z-[initial] md:max-lg:w-36 md:max-lg:h-5 2xl:w-42 2xl:h-[22.9px] 2xl:top-[44.5px] 2xl:left-1/2 2xl:transform-[translate(-50%,-11.4297px)]", scrolled && "lg:opacity-0 lg:pointer-events-none")}
           href="/"
         >
-          <img decoding="async" className={cn("w-auto h-[1.3125rem] block relative top-[0.1875rem] -bottom-[0.1875rem] max-w-full overflow-clip align-middle max-md:h-3.5 max-md:top-[0.15rem] max-md:-bottom-[0.15rem] max-lg:top-[0.2rem] max-lg:-bottom-[0.2rem] md:max-lg:h-[1.125rem] 2xl:h-[1.4375rem] 2xl:top-[0.2rem] 2xl:-bottom-[0.2rem]", light && "invert")} alt="Omaya Care" src="/assets/images/omaya-care-wordmark.svg" />
+          <img decoding="async" className={cn("w-auto h-[1.3125rem] block relative top-[0.1875rem] -bottom-[0.1875rem] max-w-full overflow-clip align-middle max-md:h-3.5 max-md:top-[0.15rem] max-md:-bottom-[0.15rem] max-lg:top-[0.2rem] max-lg:-bottom-[0.2rem] md:max-lg:h-[1.125rem] 2xl:h-[1.4375rem] 2xl:top-[0.2rem] 2xl:-bottom-[0.2rem]", logoInvert)} alt="Omaya Care" src="/assets/images/omaya-care-wordmark.svg" />
         </a>
         <div className={cn("w-full h-[37.5px] flex max-w-full rounded-full justify-between items-center [backdrop-filter:blur(0px)] transition-opacity duration-500 ease-in-out max-md:h-8 md:max-lg:h-9 max-lg:justify-end max-lg:rounded-[initial] max-lg:[backdrop-filter:initial] 2xl:h-[2.5625rem]", scrolled && "lg:opacity-0 lg:pointer-events-none")}>
           <div className="flex flex-1 items-center gap-[1.375rem] max-lg:hidden 2xl:gap-6">
             {NAV_LINKS.map((link) => (
-              <a key={link.href} className={cn("flex text-[0.8125rem] leading-[1.1875rem] whitespace-nowrap text-nowrap cursor-pointer 2xl:text-sm 2xl:leading-[1.3125rem]", light ? "text-foreground" : "text-background")} href={link.href}>
+              <a key={link.href} className={cn("flex text-[0.8125rem] leading-[1.1875rem] whitespace-nowrap text-nowrap cursor-pointer 2xl:text-sm 2xl:leading-[1.3125rem]", lightAtLg ? "text-foreground" : "text-background")} href={link.href}>
                 {link.label}
               </a>
             ))}
           </div>
           <div className="flex-1 h-[37.5px] flex justify-end items-center gap-[14.7px] max-md:h-8 max-md:gap-2.5 md:max-lg:h-9 md:max-lg:gap-3 2xl:h-[2.5625rem] 2xl:gap-4">
-            <a className={cn("flex text-[0.8125rem] leading-[1.1875rem] whitespace-nowrap text-nowrap cursor-pointer max-lg:hidden 2xl:text-sm 2xl:leading-[1.3125rem]", light ? "text-foreground" : "text-background")} href="https://app.omayacare.com/" target="_blank" rel="noopener noreferrer">
+            <a className={cn("flex text-[0.8125rem] leading-[1.1875rem] whitespace-nowrap text-nowrap cursor-pointer max-lg:hidden 2xl:text-sm 2xl:leading-[1.3125rem]", lightAtLg ? "text-foreground" : "text-background")} href="https://app.omayacare.com/" target="_blank" rel="noopener noreferrer">
               Log in
             </a>
-            <a className={cn("h-[37.5px] flex py-[0.575rem] px-[18.3px] rounded-full justify-center items-center text-[0.8125rem] leading-[1.1875rem] whitespace-nowrap text-nowrap cursor-pointer max-md:h-8 max-md:py-0 max-md:px-3.5 max-md:text-xs max-md:leading-none md:max-lg:h-9 md:max-lg:py-0 md:max-lg:px-4 md:max-lg:text-sm md:max-lg:leading-none 2xl:h-[2.5625rem] 2xl:py-2.5 2xl:px-5 2xl:text-sm 2xl:leading-[1.3125rem]", light ? "bg-foreground text-background" : "bg-background")} href="/contact?type=demo">
+            <a className={cn("h-[37.5px] flex py-[0.575rem] px-[18.3px] rounded-full justify-center items-center text-[0.8125rem] leading-[1.1875rem] whitespace-nowrap text-nowrap cursor-pointer max-md:h-8 max-md:py-0 max-md:px-3.5 max-md:text-xs max-md:leading-none md:max-lg:h-9 md:max-lg:py-0 md:max-lg:px-4 md:max-lg:text-sm md:max-lg:leading-none 2xl:h-[2.5625rem] 2xl:py-2.5 2xl:px-5 2xl:text-sm 2xl:leading-[1.3125rem]", demoBtn)} href="/contact?type=demo">
               Book a demo
             </a>
           </div>
         </div>
         <button
           type="button"
-          className={cn("w-[29.3px] h-[29.3px] flex justify-center items-center shrink-0 [background-size:18.3193px_20.1513px] [background-position:50%_50%] bg-no-repeat cursor-pointer transition-opacity duration-500 ease-in-out max-md:w-6 max-md:h-6 max-md:[background-size:16px_18px] md:max-lg:w-8 md:max-lg:h-8 md:max-lg:[background-size:20px_22px] 2xl:w-8 2xl:h-8 2xl:[background-size:20px_22px] hover:opacity-80", scrolled && "lg:opacity-0 lg:pointer-events-none")}
-          style={{ backgroundImage: dotGrid }}
+          className={cn("w-[29.3px] h-[29.3px] flex justify-center items-center shrink-0 [background-image:var(--dots)] lg:[background-image:var(--dots-lg)] [background-size:18.3193px_20.1513px] [background-position:50%_50%] bg-no-repeat cursor-pointer transition-opacity duration-500 ease-in-out max-md:w-6 max-md:h-6 max-md:[background-size:16px_18px] md:max-lg:w-8 md:max-lg:h-8 md:max-lg:[background-size:20px_22px] 2xl:w-8 2xl:h-8 2xl:[background-size:20px_22px] hover:opacity-80", scrolled && "lg:opacity-0 lg:pointer-events-none")}
+          style={{ ["--dots" as string]: dotsBelowLg, ["--dots-lg" as string]: dotsAtLg }}
           onClick={() => setDrawerOpen(true)}
           aria-label="Open menu"
         />
         <div className={cn("absolute inset-x-0 top-0 bottom-0 flex justify-center items-center gap-3 transition-opacity duration-500 ease-in-out max-lg:hidden", scrolled ? "opacity-100" : "opacity-0 pointer-events-none")}>
-          <div className="flex items-center h-12 gap-15 pl-16 pr-2 rounded-full bg-clr-0 [backdrop-filter:blur(24px)] text-background text-xs leading-[1.125rem]">
-            <a href="/" className="h-full flex items-center shrink-0 hover:opacity-80">
+          <div className="flex items-center h-12 gap-15 pl-4 pr-2 rounded-full bg-clr-0 [backdrop-filter:blur(24px)] text-background text-xs leading-[1.125rem]">
+            <a href="/" className="h-full flex items-center gap-2 shrink-0 hover:opacity-80">
+              <img decoding="async" src="/assets/images/omaya-logo-mark-white.svg" alt="" aria-hidden="true" className="w-auto h-6 block shrink-0" />
               <img decoding="async" src="/assets/images/omaya-care-wordmark.svg" alt="Omaya Care" className="w-auto h-4 block max-w-full relative top-[3px]" />
             </a>
             {NAV_LINKS.map((link) => (
@@ -112,11 +160,19 @@ export default function Navbar({ light = false, showBanner = true }: { light?: b
           tabIndex={drawerOpen ? 0 : -1}
           aria-label="Close menu"
           className={cn("absolute inset-0 bg-black transition-opacity duration-300", drawerOpen ? "opacity-50" : "opacity-0")}
+          style={dragging ? { opacity: 0.5 * Math.max(0, 1 - dragX / (panelRef.current?.offsetWidth ?? 320)), transition: "none" } : undefined}
           onClick={() => setDrawerOpen(false)}
           onKeyDown={(e) => { if (e.key === "Enter" || e.key === " " || e.key === "Escape") { e.preventDefault(); setDrawerOpen(false); } }}
         />
         {/* Drawer panel */}
-        <div className={cn("absolute right-0 top-0 bottom-0 w-[min(380px,90vw)] bg-background rounded-l-3xl flex flex-col transition-transform duration-300 ease-in-out overflow-hidden", drawerOpen ? "translate-x-0" : "translate-x-full")}>
+        <div
+          ref={panelRef}
+          onTouchStart={onDrawerTouchStart}
+          onTouchMove={onDrawerTouchMove}
+          onTouchEnd={onDrawerTouchEnd}
+          style={dragging ? { transform: `translateX(${dragX}px)`, transition: "none" } : undefined}
+          className={cn("absolute right-0 top-0 bottom-0 w-[min(380px,90vw)] bg-background rounded-l-3xl flex flex-col transition-transform duration-300 ease-in-out overflow-hidden touch-pan-y", drawerOpen ? "translate-x-0" : "translate-x-full")}
+        >
           {/* Header */}
           <div className="flex items-center justify-between px-6 pt-6 pb-4 shrink-0">
             <span className="text-[2rem] font-medium leading-snug text-foreground">Menu</span>

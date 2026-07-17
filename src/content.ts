@@ -59,7 +59,7 @@ export type MediaTile4DataItem = {
 export const mediaTile4Data: MediaTile4DataItem[] = [
     { label: "Dr. Erica Ntiamoah Mensah" },
     { label: "Duke Aaron Sasu, Esq." },
-    { label: "Nana Afrah Korankye" }
+    { label: "Dr. Nana Afrah Korankye" }
 ];
 
 export type Tile3DataItem = {

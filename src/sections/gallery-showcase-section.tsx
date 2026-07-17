@@ -9,7 +9,7 @@ import { mediaTile4Data as mediaTile4DataContent } from "../content";
 const MediaTile3_data: MediaTile3Data[] = [
     { imgSrc: "/assets/images/team-1.jpeg", srcSet: "/assets/images/team-1.jpeg 669w", kind: "image", imgSrc2: "/assets/images/logo-ridge.avif", description: "Dr. Erica Ntiamoah Mensah, MBChB", description2: "OB/GYN Resident, Ridge Hospital, Accra", description3: "OB/GYN resident at Ridge Hospital and Ghana's youngest female medical doctor at 21. A nationally recognized advocate for women's health and maternal empowerment.", kind2: "link", href: "https://www.linkedin.com/in/dr-erica-ntiamoah-mensah-6a17a8122/" },
     { imgSrc: "/assets/images/team-2.jpeg", srcSet: "/assets/images/team-2.jpeg 669w", kind: "image", imgSrc2: "/assets/images/logo-chromium.avif", description: "Duke Aaron Sasu, Esq.", description2: "Attorney, Chromium Law", description3: "Leads litigation at Chromium Law across Technology, IP, Energy and Corporate Law. Dual KNUST and Ghana School of Law degrees, with a practice spanning cross-border disputes across Africa, Asia and the Middle East.", kind2: "link", href: "#" },
-    { imgSrc: "/assets/images/team-3.jpeg", srcSet: "/assets/images/team-3.jpeg 669w", kind: "image", imgSrc2: "/assets/images/logo-korle-bu.avif", description: "Nana Afrah Korankye", description2: "Co-founder, Omaya Care", description3: "Bio coming soon.", kind2: "link", href: "#" }
+    { imgSrc: "/assets/images/team-3.jpeg", srcSet: "/assets/images/team-3.jpeg 669w", kind: "image", imgSrc2: "/assets/images/logo-korle-bu.avif", description: "Dr. Nana Afrah Korankye", description2: "Doctor, Korle Bu Teaching Hospital, Accra", description3: "A young doctor at Korle Bu Teaching Hospital, passionate about maternal and child health. Focused on improving care and outcomes for mothers and newborns across Ghana.", kind2: "link", href: "https://www.instagram.com/readsbyafrah/" }
 ];
 /** Gallery Showcase section. */
 export default function GalleryShowcaseSection({ mediaTile3Data = MediaTile3_data, mediaTile4Data = mediaTile4DataContent } = {}) {
@@ -62,10 +62,10 @@ export default function GalleryShowcaseSection({ mediaTile3Data = MediaTile3_dat
               </p>
             </div>
             <div className="w-[clamp(22.5rem,4.442857rem_+_37.619048vw,50rem)] block relative mt-[3.6625rem] max-md:w-86.5 max-md:mt-12 md:max-lg:mt-16 2xl:mt-16" data-id="n289">
-              <div className="flex relative" data-id="n290">
+              <div className="flex relative max-md:overflow-x-auto max-md:snap-x max-md:snap-mandatory max-md:[scrollbar-width:none] max-md:[&::-webkit-scrollbar]:hidden" data-id="n290">
                 <div
                   ref={trackRef}
-                  className="h-[242.7px] flex gap-[29.3px] [&>div:last-child]:border-r-0 max-md:h-54 max-lg:flex-col max-lg:flex-wrap max-md:justify-start max-md:items-stretch max-md:gap-4 md:max-lg:h-65 md:max-lg:gap-8 2xl:h-[16.5625rem] 2xl:gap-8"
+                  className="h-[242.7px] flex gap-[29.3px] [&>div:last-child]:border-r-0 max-md:h-auto max-md:flex-row max-md:flex-nowrap max-md:justify-start max-md:items-stretch max-md:gap-4 max-lg:flex-col max-lg:flex-wrap md:max-lg:h-65 md:max-lg:gap-8 2xl:h-[16.5625rem] 2xl:gap-8"
                   style={{ transform: `translateX(${-offset}px)`, transition: "transform 500ms ease-out" }}
                   data-id="n291"
                 >

@@ -1,0 +1,24 @@
+# Omaya Care
+
+> Omaya Care delivers scheduled postnatal (postpartum) check-ins to new mothers after discharge, by voice call and WhatsApp, for hospitals and mothers across Ghana. Never alone after birth.
+
+Omaya Care closes the postnatal gap in Ghana. After a mother is discharged, our AI agent "Oma" contacts her on the WHO-recommended postnatal contact schedule (Day 1, Day 3, Days 7-14, Week 6) by voice call or WhatsApp, in her preferred language. Oma asks about her physical recovery and her emotional wellbeing. When a response crosses a clinical threshold, she is routed to the right specialist right away — her midwife or hospital for physical concerns, a psychologist or counselor for mental health, a lactation consultant for breastfeeding, a doula for exhaustion, a paediatrician for the baby. All clinical content is reviewed and signed off by a licensed senior midwife before it reaches a single patient.
+
+For hospitals, Omaya delivers 24/7 postnatal coverage without new headcount, plus a clinical dashboard with a full escalation trail, exportable for audit and review.
+
+The name Omaya combines "Oma" (woman, in several languages) and "Aya" (the Adinkra symbol of the fern, meaning endurance) — a mother that endures with you. Omaya Care is part of the MEST Africa AI Startup Program, Class of 2026.
+
+## Key facts
+- Service area: Ghana
+- Channels: voice call and WhatsApp
+- Schedule: WHO-recommended postnatal contact schedule (Day 1, Day 3, Days 7-14, Week 6)
+- For mothers: postpartum check-ins covering physical health, mental health, breastfeeding, sleep and recovery, with specialist routing
+- For hospitals: automated postnatal follow-up, full escalation trail, clinical dashboard, no new hires
+- Clinical safety: every question reviewed and approved by a licensed senior midwife
+
+## Pages
+- [Home](https://omayacare.com/): Postpartum care for mothers in Ghana
+- [Contact / Book a demo](https://omayacare.com/contact): Reach the Omaya Care team
+
+## Topics
+postpartum care Ghana, postnatal support Ghana, new mother support Ghana, maternal health Ghana, postpartum check-in, AI postnatal care, after birth care Ghana, postpartum monitoring Ghana, postpartum depression support Ghana, breastfeeding support Ghana, maternal mental health Ghana, WHO postnatal schedule, fourth trimester Ghana

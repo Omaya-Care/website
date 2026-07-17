@@ -7,7 +7,6 @@ import GalleryShowcaseSection from "./sections/gallery-showcase-section";
 import GalleryShowcaseSection2 from "./sections/gallery-showcase-section2";
 import LogoCloudSection2 from "./sections/logo-cloud-section2";
 import LogoCloudSection3 from "./sections/logo-cloud-section3";
-import HeroSection from "./sections/hero-section";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import Illustration from "./svgs/svg-illustration";
@@ -81,10 +80,7 @@ const Logo3_data: Logo3Data[] = [
     { alt: "New mother holding her baby while speaking on the phone", imgSrc: "/assets/media/images/aya-mother-baby-phone.avif", srcSet: "/assets/media/images/aya-mother-baby-phone.avif 1872w" },
     { alt: "Mother baby care essentials", imgSrc: "/assets/media/images/aya-baby-essentials.avif", srcSet: "/assets/media/images/aya-baby-essentials.avif 1872w", overlay: { icon: "/assets/media/images/omaya-logo-mark.png", title: "Omaya Care Pack", subtitle: "Order #0987654 · Delivered" } },
     { alt: "New parents using emergency contact support on their phone", imgSrc: "/assets/media/images/aya-emergency-contact.avif", srcSet: "/assets/media/images/aya-emergency-contact.avif 1872w" },
-    { alt: "Membership slide 2", imgSrc: "/assets/media/images/78621ada786b.avif", srcSet: "/assets/media/images/e60205091f24.avif 500w, /assets/media/images/b68af40c0a8b.avif 800w, /assets/media/images/dd201e11c8ad.avif 1080w, /assets/media/images/44f85a74dfe9.avif 1600w, /assets/media/images/78621ada786b.avif 1872w", kind: "image" },
-    { alt: "Membership slide 3", imgSrc: "/assets/media/images/2b3f3a879ef1.avif", srcSet: "/assets/media/images/4b128f994b40.avif 500w, /assets/media/images/7f83d844aba2.avif 800w, /assets/media/images/fa8d148e4aa8.avif 1080w, /assets/media/images/763e12a441c8.avif 1600w, /assets/media/images/2b3f3a879ef1.avif 1872w", kind: "image" },
-    { alt: "Membership slide 1", imgSrc: "/assets/media/images/2625a03874cc.avif", srcSet: "/assets/media/images/37467bd7b060.avif 500w, /assets/media/images/6bb3447c978c.avif 800w, /assets/media/images/6ef60097c290.avif 1080w, /assets/media/images/f41d7a863f64.avif 1600w, /assets/media/images/2625a03874cc.avif 1872w", kind: "image" },
-    { alt: "Membership slide 1", imgSrc: "/assets/media/images/b28b4949b3fb.avif", srcSet: "/assets/media/images/9535d630a93b.avif 500w, /assets/media/images/da43de3427ba.avif 800w, /assets/media/images/f552f8b2b10c.avif 1080w, /assets/media/images/42bd9f32f1be.avif 1600w, /assets/media/images/b28b4949b3fb.avif 1872w", kind: "image" }
+    { alt: "A new mother holding her newborn while talking on the phone during a postnatal check-in", imgSrc: "/assets/media/images/drawer-mother.avif", srcSet: "/assets/media/images/drawer-mother.avif 584w", kind: "image" }
 ];
 const Tile3_data: Tile3Data[] = [
     { description: "Professional health monitoring for you and your baby" },
@@ -158,14 +154,14 @@ const TextLink5_data: TextLink5Data[] = [
     { href: "#", label: "Cookie preferences" }
 ];
 const MediaTile6_data: MediaTile6Data[] = [
-    { label: "How is Omaya better than a standard physical?" },
-    { label: "What biomarkers do you test?" },
-    { label: "What locations do you test at?" },
-    { label: "How does Omaya use my data?" },
-    { label: "How safe and secure is my data?" },
-    { label: "How do we turn labs into a personalized protocol?" },
-    { label: "How is Omaya’s action plan better than others?" },
-    { label: "Who do I speak to when I have questions?" },
+    { label: "What is Omaya Care?" },
+    { label: "Is Omaya Care free for me?" },
+    { label: "How do I get enrolled?" },
+    { label: "When and how will Omaya contact me?" },
+    { label: "What kind of questions will I be asked?" },
+    { label: "What happens if I report a serious symptom?" },
+    { label: "Is my information kept private?" },
+    { label: "Is Omaya available at night and on weekends?" },
     { label: "Isn’t this just another AI chatbot?" }
 ];
 
@@ -331,7 +327,7 @@ export default function Page() {
                       <source media="(max-width: 571px)" type="image/webp" srcSet="/assets/images/hero-omaya-mobile.webp" />
                       <source type="image/avif" sizes="100vw" srcSet="/assets/images/hero-omaya-768.avif 768w, /assets/images/hero-omaya-1440.avif 1440w, /assets/images/hero-omaya.avif 3264w" />
                       <source type="image/webp" sizes="100vw" srcSet="/assets/images/hero-omaya-768.webp 768w, /assets/images/hero-omaya-1440.webp 1440w, /assets/images/hero-omaya.webp 3264w" />
-                      <img decoding="async" fetchPriority="high" className="w-full h-[clamp(748.7px,min(calc(258.7px_+_47.8vw),calc(100dvh_-_6.5rem)),1024px)] min-h-full max-h-[calc(100dvh-2.8625rem)] block max-w-full overflow-clip object-cover object-center align-middle max-md:h-203 max-md:max-h-dvh max-md:object-[93%_50%] md:max-lg:h-[51.1875rem] md:max-lg:max-h-dvh 2xl:h-254 2xl:max-h-[calc(100dvh-3.125rem)]" style={{ transform: "scaleX(-1)" }} data-id="n28" alt="Hero background" src="/assets/images/hero-omaya.webp" />
+                      <img decoding="async" fetchPriority="high" className="w-full h-[clamp(748.7px,min(calc(258.7px_+_47.8vw),calc(100dvh_-_6.5rem)),1024px)] min-h-full max-h-[calc(100dvh-2.8625rem)] block max-w-full overflow-clip object-cover object-center align-middle max-md:h-203 max-md:max-h-dvh max-md:object-[93%_50%] md:max-lg:h-[51.1875rem] md:max-lg:max-h-dvh 2xl:h-254 2xl:max-h-[calc(100dvh-3.125rem)]" style={{ transform: "scaleX(-1)" }} data-id="n28" alt="A new mother holding her newborn baby while talking on the phone during a postnatal check-in" src="/assets/images/hero-omaya.webp" />
                     </picture>
                     <div className="h-[370.7px] block absolute bottom-0 inset-x-0 opacity-30 [mix-blend-mode:overlay] pointer-events-none max-md:h-101.5 md:max-lg:h-[25.6rem] 2xl:h-127" style={{ backgroundImage: "linear-gradient(var(--clr-3) 0%, var(--clr-2) 100%)" }} data-id="n29" />
                     <div className="h-[34.75rem] block absolute bottom-0 inset-x-0 opacity-50 [mix-blend-mode:darken] pointer-events-none max-md:h-[38.0625rem] md:max-lg:h-[38.4rem] 2xl:h-190.5" style={{ backgroundImage: "linear-gradient(var(--clr-3) 0%, var(--clr-2) 100%)" }} data-id="n30" />
@@ -416,7 +412,7 @@ export default function Page() {
               <div className="block max-w-[73.275rem] mx-auto justify-center max-lg:max-w-320 2xl:max-w-320" data-id="n522">
                 <div className="grid items-center gap-[clamp(3rem,1.192857rem_+_3.764881vw,5rem)] grid-rows-[695.2px] [grid-auto-columns:1fr] grid-cols-2 max-lg:flex-col max-md:gap-8 max-md:grid-rows-[auto_auto] max-lg:grid-cols-1 md:max-lg:grid-rows-[auto_auto] md:max-lg:gap-8 2xl:grid-rows-[759px]" data-id="n523">
                   <div className="flex min-w-0 max-w-[35.725rem] flex-col shrink-0 gap-[1.375rem] max-lg:max-w-156 max-lg:gap-6 2xl:max-w-156 2xl:gap-6" data-id="n524">
-                    <MembershipCarousel data={Logo3_data.slice(0, 4)} cids={Logo3_cids} />
+                    <MembershipCarousel data={Logo3_data.slice(0, 3)} cids={Logo3_cids} />
                   </div>
                   <div className="flex flex-col shrink-0 gap-[18.3px] max-md:gap-4 md:max-lg:gap-5 2xl:gap-5" data-id="n558">
                     <div className="block -mt-4 max-md:mt-0 md:max-lg:mt-0 2xl:-mt-3" data-id="n559">
@@ -544,9 +540,7 @@ export default function Page() {
         </div>
         <div className="block" data-id="n864">
           <div className="block" data-id="n865">
-            <div className="w-317.5 h-200 flex fixed top-0 left-0 z-9999 invisible opacity-0 justify-center items-center bg-clr-15 pointer-events-none max-md:w-[22.8125rem] max-md:h-203 md:max-lg:w-189.5 md:max-lg:h-256 2xl:w-477.5 2xl:h-270" data-id="n866" id="om2Overlay">
-              <HeroSection />
-            </div>
+            <div className="w-317.5 h-200 flex fixed top-0 left-0 z-9999 invisible opacity-0 justify-center items-center bg-clr-15 pointer-events-none max-md:w-[22.8125rem] max-md:h-203 md:max-lg:w-189.5 md:max-lg:h-256 2xl:w-477.5 2xl:h-270" data-id="n866" id="om2Overlay"></div>
           </div>
           <div className="block" data-id="n897">
             <div className="block" data-id="n898" />

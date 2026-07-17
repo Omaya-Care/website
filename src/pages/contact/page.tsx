@@ -61,6 +61,13 @@ export default function Page() {
   const [company, setCompany] = useState("");
   const [role, setRole] = useState("");
   const [message, setMessage] = useState("");
+  // honeypot: hidden field bots fill and humans don't
+  const [website, setWebsite] = useState("");
+  // when the form mounted — used server-side to reject too-fast (bot) submits
+  const formStart = useRef<number>(Date.now());
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -94,11 +101,62 @@ export default function Page() {
   function handleSelectConcern(value: Concern) {
     setConcern(value);
     setStep(1);
+    setError(null);
+  }
+
+  async function submitContact() {
+    if (submitting || !concern) return;
+    setError(null);
+    if (!name.trim() || !email.trim()) {
+      setError("Please enter your name and email.");
+      return;
+    }
+    setSubmitting(true);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          concern,
+          name,
+          email,
+          company: concern === "demo" ? company : undefined,
+          role: concern === "demo" ? role : undefined,
+          message: concern === "general" ? message : undefined,
+          website, // honeypot
+          ts: formStart.current,
+        }),
+      });
+      if (res.status === 429) {
+        setError("Too many attempts. Please try again in a few minutes.");
+        return;
+      }
+      if (!res.ok) {
+        const data = await res.json().catch(() => null);
+        setError(data?.error || "Something went wrong. Please try again.");
+        return;
+      }
+      setSubmitted(true);
+    } catch {
+      setError("Network error. Please check your connection and try again.");
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   function handleStep1Submit(e: React.FormEvent) {
     e.preventDefault();
-    if (!isWaitlist) setStep(2);
+    if (isWaitlist) {
+      // waitlist has no step 2 — submit straight away
+      submitContact();
+    } else {
+      setStep(2);
+    }
+  }
+
+  function handleStep2Submit(e: React.FormEvent) {
+    e.preventDefault();
+    submitContact();
   }
 
   const step2Label = concern === "demo" ? "Your details" : "Your message";
@@ -166,6 +224,18 @@ export default function Page() {
               </div>
 
               {/* Form steps */}
+              {submitted ? (
+                <div className="border border-solid border-border flex flex-col gap-3 p-6 rounded-2xl bg-background" role="status">
+                  <h2 className="text-xl leading-6 tracking-[-0.45px]">
+                    {isWaitlist ? "You're on the list! 🎉" : "Message received 🎉"}
+                  </h2>
+                  <p className="text-color-001 leading-5 2xl:text-[0.875rem]">
+                    {isWaitlist
+                      ? "Thanks for joining the waitlist — we'll be in touch the moment Omaya Care launches."
+                      : "Thanks for reaching out. Our team will get back to you shortly at the email you provided."}
+                  </p>
+                </div>
+              ) : (
               <div className="flex flex-col gap-6" data-id="n42">
                 {/* Step 1 */}
                 <div className="flex flex-col gap-6" data-id="n43">
@@ -210,8 +280,24 @@ export default function Page() {
                         onChange={(e) => setEmail(e.target.value)}
                       />
                     </div>
-                    <button className={BTN_PRIMARY_CLASS} data-id="n52" type="submit">
-                      {isWaitlist ? "Join the waitlist" : "Continue"}
+                    {/* Honeypot — hidden from users, catches bots that fill every field */}
+                    <input
+                      type="text"
+                      name="website"
+                      tabIndex={-1}
+                      autoComplete="off"
+                      aria-hidden="true"
+                      value={website}
+                      onChange={(e) => setWebsite(e.target.value)}
+                      className="absolute -left-[9999px] h-px w-px opacity-0"
+                    />
+                    <button
+                      className={`${BTN_PRIMARY_CLASS}${submitting ? " opacity-60 pointer-events-none" : ""}`}
+                      data-id="n52"
+                      type="submit"
+                      disabled={submitting}
+                    >
+                      {isWaitlist ? (submitting ? "Joining…" : "Join the waitlist") : "Continue"}
                     </button>
                   </form>
                 </div>
@@ -236,7 +322,7 @@ export default function Page() {
                         Complete step 1 to continue.
                       </div>
                     ) : concern === "demo" ? (
-                      <form className="grid gap-4 grid-cols-2 max-md:grid-cols-1" onSubmit={(e) => e.preventDefault()}>
+                      <form className="grid gap-4 grid-cols-2 max-md:grid-cols-1" onSubmit={handleStep2Submit}>
                         <div className="block">
                           <label className="flex mb-2 items-center gap-2 leading-5 cursor-default 2xl:text-[0.875rem]" htmlFor="company">
                             Company / Organisation
@@ -264,14 +350,15 @@ export default function Page() {
                           />
                         </div>
                         <button
-                          className="h-13.5 flex py-4 px-5 rounded-xl justify-center items-center shrink-0 gap-2 col-start-[span_2] col-end-[span_2] text-background text-base leading-5.5 tracking-[-0.16px] text-center whitespace-nowrap bg-foreground cursor-pointer w-full max-md:h-[3.4375rem] hover:bg-clr-8"
+                          className={`h-13.5 flex py-4 px-5 rounded-xl justify-center items-center shrink-0 gap-2 col-start-[span_2] col-end-[span_2] text-background text-base leading-5.5 tracking-[-0.16px] text-center whitespace-nowrap bg-foreground cursor-pointer w-full max-md:h-[3.4375rem] hover:bg-clr-8${submitting ? " opacity-60 pointer-events-none" : ""}`}
                           type="submit"
+                          disabled={submitting}
                         >
-                          Book your demo
+                          {submitting ? "Booking…" : "Book your demo"}
                         </button>
                       </form>
                     ) : (
-                      <form className="flex flex-col gap-4" onSubmit={(e) => e.preventDefault()}>
+                      <form className="flex flex-col gap-4" onSubmit={handleStep2Submit}>
                         <div className="block">
                           <label className="flex mb-2 items-center gap-2 leading-5 cursor-default 2xl:text-[0.875rem]" htmlFor="message">
                             Your message
@@ -285,16 +372,24 @@ export default function Page() {
                           />
                         </div>
                         <button
-                          className="h-13.5 flex py-4 px-5 rounded-xl justify-center items-center shrink-0 gap-2 text-background text-base leading-5.5 tracking-[-0.16px] text-center whitespace-nowrap bg-foreground cursor-pointer w-full max-md:h-[3.4375rem] hover:bg-clr-8"
+                          className={`h-13.5 flex py-4 px-5 rounded-xl justify-center items-center shrink-0 gap-2 text-background text-base leading-5.5 tracking-[-0.16px] text-center whitespace-nowrap bg-foreground cursor-pointer w-full max-md:h-[3.4375rem] hover:bg-clr-8${submitting ? " opacity-60 pointer-events-none" : ""}`}
                           type="submit"
+                          disabled={submitting}
                         >
-                          Send message
+                          {submitting ? "Sending…" : "Send message"}
                         </button>
                       </form>
                     )}
                   </div>
                 )}
+
+                {error && (
+                  <p className="text-sm leading-5 text-red-600" role="alert">
+                    {error}
+                  </p>
+                )}
               </div>
+              )}
             </div>
 
             {/* Right column — desktop only */}

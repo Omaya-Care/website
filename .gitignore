@@ -14,3 +14,9 @@ playwright-report
 REACT_DOCTOR_FINDINGS.md
 
 dist-server
+
+# Local env / secrets — never commit the real webhook URL
+.env
+.env.*
+!.env.example
+.vercel

@@ -3,9 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Omaya Care</title>
-    <meta name="description" content="Take control of your health. A Omaya Care membership includes 100+ biomarker lab tests at the start of each year—no hidden fees, HSA/FSA eligible—a 24/7 care team in your pocket, and a health plan that evolves with you." />
+    <title>Omaya Care | Postpartum Care for Mothers in Ghana</title>
+    <meta
+      name="description"
+      content="Omaya Care delivers scheduled postnatal check-ins to new mothers after discharge, by voice and WhatsApp. For hospitals and mothers across Ghana. Never alone after birth."
+    />
     <link rel="canonical" href="https://omayacare.com/" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -14,14 +19,102 @@
     <!-- Preload the LCP hero image + primary body font so they fetch in parallel with CSS. -->
     <link rel="preload" as="image" type="image/avif" imagesrcset="/assets/images/hero-omaya-768.avif 768w, /assets/images/hero-omaya-1440.avif 1440w, /assets/images/hero-omaya.avif 3264w" imagesizes="100vw" fetchpriority="high" />
     <link rel="preload" as="font" type="font/woff2" href="/assets/media/fonts/fc62463004c9.woff2" crossorigin />
-    <meta property="og:title" content="Omaya Care" />
-    <meta property="og:description" content="Take control of your health. A Omaya Care membership includes 100+ biomarker lab tests at the start of each year—no hidden fees, HSA/FSA eligible—a 24/7 care team in your pocket, and a health plan that evolves with you." />
-    <meta property="og:image" content="https://omayacare.com/assets/images/og-image.jpg" />
+
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta name="twitter:title" content="Omaya Care" />
-    <meta name="twitter:description" content="Take control of your health. A Omaya Care membership includes 100+ biomarker lab tests at the start of each year—no hidden fees, HSA/FSA eligible—a 24/7 care team in your pocket, and a health plan that evolves with you." />
-    <meta name="twitter:image" content="https://omayacare.com/assets/images/og-image.jpg" />
+    <meta property="og:site_name" content="Omaya Care" />
+    <meta property="og:locale" content="en_GH" />
+    <meta property="og:url" content="https://omayacare.com/" />
+    <meta property="og:title" content="Omaya Care | Postpartum Care for Mothers in Ghana" />
+    <meta
+      property="og:description"
+      content="Scheduled postnatal check-ins for new mothers after discharge, by voice and WhatsApp. For hospitals and mothers across Ghana. Never alone after birth."
+    />
+    <meta property="og:image" content="https://omayacare.com/assets/images/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Omaya Care — postpartum follow-up for mothers in Ghana" />
+
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Omaya Care | Postpartum Care for Mothers in Ghana" />
+    <meta
+      name="twitter:description"
+      content="Scheduled postnatal check-ins for new mothers after discharge, by voice and WhatsApp. For hospitals and mothers across Ghana."
+    />
+    <meta name="twitter:image" content="https://omayacare.com/assets/images/og-image.jpg" />
+    <meta name="twitter:image:alt" content="Omaya Care — postpartum follow-up for mothers in Ghana" />
+
+    <!-- Structured data: brand entity + site + homepage + service (for Google + AI search) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": ["MedicalOrganization", "Organization"],
+            "@id": "https://omayacare.com/#organization",
+            "name": "Omaya Care",
+            "alternateName": "Omaya",
+            "url": "https://omayacare.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://omayacare.com/android-chrome-512x512.png",
+              "width": 512,
+              "height": 512
+            },
+            "image": "https://omayacare.com/assets/images/og-image.jpg",
+            "description": "Omaya Care delivers scheduled postnatal check-ins to new mothers after discharge, by voice and WhatsApp, for hospitals and mothers across Ghana.",
+            "areaServed": { "@type": "Country", "name": "Ghana" },
+            "knowsAbout": [
+              "Postpartum care",
+              "Postnatal care",
+              "Maternal health",
+              "Maternal mental health",
+              "WHO postnatal contact schedule",
+              "Breastfeeding support",
+              "Postpartum depression"
+            ],
+            "memberOf": {
+              "@type": "Organization",
+              "name": "MEST Africa AI Startup Program",
+              "url": "https://meltwater.org/mest-ai-startup-program/"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://omayacare.com/#website",
+            "url": "https://omayacare.com/",
+            "name": "Omaya Care",
+            "description": "Postpartum care for mothers in Ghana — scheduled postnatal check-ins by voice and WhatsApp.",
+            "inLanguage": "en",
+            "publisher": { "@id": "https://omayacare.com/#organization" }
+          },
+          {
+            "@type": ["WebPage", "MedicalWebPage"],
+            "@id": "https://omayacare.com/#webpage",
+            "url": "https://omayacare.com/",
+            "name": "Postpartum Care for Mothers in Ghana | Omaya Care",
+            "isPartOf": { "@id": "https://omayacare.com/#website" },
+            "about": { "@id": "https://omayacare.com/#organization" },
+            "description": "Omaya Care delivers scheduled postnatal check-ins to new mothers after discharge, by voice and WhatsApp. For hospitals and mothers across Ghana.",
+            "inLanguage": "en"
+          },
+          {
+            "@type": "Service",
+            "@id": "https://omayacare.com/#service",
+            "name": "Postpartum follow-up care",
+            "serviceType": "Postnatal check-ins",
+            "provider": { "@id": "https://omayacare.com/#organization" },
+            "areaServed": { "@type": "Country", "name": "Ghana" },
+            "description": "Scheduled postnatal check-ins after discharge by voice call and WhatsApp, following the WHO postnatal contact schedule, with clinical escalation and specialist routing. Clinical content reviewed and approved by a licensed senior midwife.",
+            "audience": [
+              { "@type": "Patient", "name": "New mothers in Ghana" },
+              { "@type": "MedicalAudience", "name": "Hospitals and maternity clinics" }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body class="min-h-full block text-foreground [font-family:'Nb_international_pro_webfont',_Arial,_sans-serif] text-[0.9375rem] font-normal not-italic leading-[1.3125rem] tracking-[normal] [word-spacing:0px] text-start normal-case whitespace-normal [word-break:normal] [overflow-wrap:normal] indent-0 [text-shadow:none] [font-variant-caps:normal] [font-feature-settings:normal] list-outside [writing-mode:horizontal-tb] [direction:ltr] bg-background max-lg:text-base max-lg:leading-[1.375rem] 2xl:text-base 2xl:leading-[1.375rem]" data-id="n0">
     <div id="root"></div>

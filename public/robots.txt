@@ -1,0 +1,33 @@
+# Omaya Care — https://omayacare.com
+# Postpartum care for mothers in Ghana.
+
+User-agent: *
+Allow: /
+
+# Legal/utility pages (contact, faq, privacy, terms, tos) are excluded from
+# indexing via per-page <meta name="robots" content="noindex">, not here.
+
+# Omaya is an AI product — explicitly welcome AI answer engines so the brand
+# and postpartum-care content can be cited in AI search (GEO).
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://omayacare.com/sitemap.xml

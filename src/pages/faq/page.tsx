@@ -5,7 +5,7 @@ import LogoCloudSection from "./sections/logo-cloud-section";
 import LogoCloudSection2 from "./sections/logo-cloud-section2";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
-import TextLink2, { type TextLink2Data } from "./components/text-link2";
+import FaqSectionNav, { type FaqSection } from "./components/faq-section-nav";
 import TextLink3, { type TextLink3Data } from "./components/text-link3";
 import ListRow, { type ListRowData } from "./components/list-row";
 import Tile2, { type Tile2Data } from "./components/tile2";
@@ -16,17 +16,9 @@ import TextLink5, { type TextLink5Data } from "./components/text-link5";
 import TextLink6, { type TextLink6Data } from "./components/text-link6";
 import Tile3, { type Tile3Data } from "./components/tile3";
 import TextLink7, { type TextLink7Data } from "./components/text-link7";
-import { TextLink2_cids, TextLink3_cids, ListRow_cids, Tile2_cids, ListRow2_cids, Logo_cids, TextLink4_cids, TextLink5_cids, TextLink4_cids2, TextLink6_cids, Tile3_cids, TextLink7_cids } from "./_cids";
-import { TextLink2_styles, TextLink3_styles, ListRow_styles, Tile2_styles, TextLink4_styles, TextLink5_styles, TextLink4_styles2 } from "./_styles";
+import { TextLink3_cids, ListRow_cids, Tile2_cids, ListRow2_cids, Logo_cids, TextLink4_cids, TextLink5_cids, TextLink4_cids2, TextLink6_cids, Tile3_cids, TextLink7_cids } from "./_cids";
+import { TextLink3_styles, ListRow_styles, Tile2_styles, TextLink4_styles, TextLink5_styles, TextLink4_styles2 } from "./_styles";
 
-const TextLink2_data: TextLink2Data[] = [
-    { href: "#about", label: "About Omaya Care" },
-    { href: "#getting-started", label: "Getting Started" },
-    { href: "#check-ins", label: "The Check-ins" },
-    { href: "#emergencies", label: "Concerns & Emergencies" },
-    { href: "#data-privacy", label: "Data & Privacy" },
-    { href: "#hospitals", label: "For Hospitals" }
-];
 const TextLink3_data: TextLink3Data[] = [
     { href: "#about", label: "About Omaya Care" },
     { href: "#getting-started", label: "Getting Started" },
@@ -142,6 +134,7 @@ const TextLink7_data: TextLink7Data[] = [
 ];
 
 const SECTION_IDS = ["about", "getting-started", "check-ins", "emergencies", "data-privacy", "hospitals"];
+const FAQ_SECTIONS: FaqSection[] = SECTION_IDS.map((id, i) => ({ id, label: TextLink3_data[i].label }));
 
 function useSectionSpy() {
   const [active, setActive] = useState("about");
@@ -171,33 +164,38 @@ function scrollToCenter(id: string) {
   window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
 }
 
+// On small screens the category bar is sticky under the fixed navbar, so land
+// the section just below both instead of centering it (desktop keeps centering).
+function scrollToSection(id: string) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const bar = document.getElementById("faq-mobile-nav");
+  if (bar && getComputedStyle(bar).display !== "none") {
+    const navH = window.innerWidth >= 768 ? 64 : 56;
+    const y = el.getBoundingClientRect().top + window.scrollY - navH - bar.offsetHeight;
+    window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
+  } else {
+    scrollToCenter(id);
+  }
+}
+
 export default function Page() {
   const activeSection = useSectionSpy();
   return (
     <>
       <div className="block relative" data-id="n1">
-        <Navbar light showBanner={false} />
+        <Navbar light="lg" showBanner={false} />
         <div className="block max-lg:relative" data-id="n15">
-          <section className="border-b border-solid border-b-surface hidden sticky top-0 z-99 bg-background max-md:h-64 max-lg:block max-lg:pt-8 md:max-lg:h-[21.0625rem]" data-id="n80">
-            <div className="block sticky top-0 z-4 pt-[5.5rem] max-md:h-[13.95rem] max-md:pt-12 md:max-lg:h-[19rem] md:max-lg:pt-24" data-id="n81">
-              <div className="h-full block max-w-[73.275rem] justify-center max-lg:max-w-320" data-id="n82">
-                <div className="h-full block" data-id="n83">
-                  <div className="flex max-w-[32.0625rem] flex-col justify-center items-start gap-[1.375rem] max-md:h-[5.725rem] max-lg:mb-12 max-md:pt-12 max-md:px-5 max-md:justify-between max-lg:items-center max-lg:gap-6 max-md:max-w-none max-md:[flex-direction:initial] md:max-lg:h-[7.775rem] md:max-lg:max-w-140 md:max-lg:mx-[96.5px]" data-id="n84">
-                    <h1 className="block min-w-0 text-[2.75rem] leading-[3.1875rem] tracking-[-0.99px] max-md:text-[2rem] max-md:leading-8 max-md:tracking-[-0.64px] md:max-lg:text-5xl md:max-lg:leading-12 md:max-lg:tracking-[-0.96px]" data-id="n85">
-                      FAQs
-                    </h1>
-                  </div>
-                  <div className="block max-lg:h-[2.225rem] max-lg:overflow-hidden" data-id="n91">
-                    <div className="block before:content-['_'] before:table before:text-foreground before:text-[0.9375rem] before:leading-[1.3125rem] max-lg:before:w-0 max-lg:before:h-0 max-lg:before:text-base max-lg:before:leading-[1.375rem] 2xl:before:text-base 2xl:before:leading-[1.375rem] after:content-['_'] after:table after:text-foreground after:text-[0.9375rem] after:leading-[1.3125rem] max-lg:after:w-0 max-lg:after:h-0 max-lg:after:text-base max-lg:after:leading-[1.375rem] 2xl:after:text-base 2xl:after:leading-[1.375rem]" data-id="n92" />
-                    <div className="flex relative overflow-x-auto overflow-y-hidden max-lg:h-[2.225rem] max-lg:py-2 max-md:px-5 max-md:justify-start max-lg:items-center max-lg:gap-4 max-lg:text-muted-foreground max-lg:text-sm max-lg:leading-[1.25rem] md:max-lg:justify-center" data-id="n93">
-                      {TextLink2_data.map((d, i) => <TextLink2 key={TextLink2_cids[i][0]} d={d} cids={TextLink2_cids[i]} styles={TextLink2_styles[i]} />)}
-                      <div className="w-0 h-px block absolute bottom-0 left-0 min-w-0 bg-color-002 transform-[none] pointer-events-none max-lg:w-[4.9375rem] max-md:transform-[matrix(1,0,0,1,20,0)] md:max-lg:transform-[matrix(1,0,0,1,92,0)]" data-id="n100" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          {/* Mobile/tablet FAQ heading — scrolls away to reclaim the viewport the
+              old 256px pinned header used to occupy. */}
+          <div className="lg:hidden px-6 pt-20 pb-5 max-md:px-5 md:pt-24">
+            <h1 className="block min-w-0 text-[2rem] leading-8 tracking-[-0.64px] md:text-5xl md:leading-12 md:tracking-[-0.96px]">
+              FAQs
+            </h1>
+          </div>
+          {/* Compact, interactive sticky category bar (< lg). Direct child of n15
+              so it stays pinned across the whole content column. */}
+          <FaqSectionNav sections={FAQ_SECTIONS} active={activeSection} onSelect={scrollToSection} />
           <section className="block relative pt-[9.1625rem] pb-[18rem] max-lg:pb-32 max-lg:pt-0 2xl:pt-40 2xl:pb-[20rem]" data-id="n101">
             <div className="block px-[2.2875rem] max-md:px-6 md:max-lg:px-10 2xl:px-10" data-id="n102">
               <div className="block relative z-1 max-w-[73.275rem] mx-auto justify-center max-lg:max-w-320 2xl:max-w-320" data-id="n103">
@@ -229,7 +227,7 @@ export default function Page() {
                     </div>
                   </div>
                   <div className="block" data-id="n132">
-                    <div className="flex relative pt-11 pb-[3.6625rem] flex-col justify-start items-start gap-[1.375rem] grid-cols-[1fr] grid-rows-[auto_auto] [grid-auto-columns:1fr] max-lg:pt-12 max-md:pb-8 max-lg:gap-6 md:max-lg:pb-16 2xl:pt-12 2xl:pb-16 2xl:gap-6" id="about">
+                    <div className="flex relative pt-11 pb-[3.6625rem] flex-col justify-start items-start gap-[1.375rem] grid-cols-[1fr] grid-rows-[auto_auto] [grid-auto-columns:1fr] max-lg:pt-12 max-md:pb-8 max-lg:gap-6 md:max-lg:pb-16 2xl:pt-12 2xl:pb-16 2xl:gap-6 max-md:scroll-mt-[6.5rem] md:max-lg:scroll-mt-[7.25rem]" id="about">
                       <section className="w-full block max-w-[293.1px] max-lg:max-w-80 2xl:max-w-80">
                         <div className="flex items-center gap-3">
                           <h3 className="block text-[1.625rem] leading-[2.125rem] font-bold tracking-[-0.4px] max-md:text-xl max-md:leading-[1.75rem] max-md:tracking-[-0.2px] md:max-lg:text-2xl md:max-lg:leading-[2rem] md:max-lg:tracking-[-0.4px] 2xl:text-3xl 2xl:leading-9 2xl:tracking-[-0.5px]">
@@ -309,7 +307,7 @@ export default function Page() {
                         </article>
                       </div>
                     </div>
-                    <div className="flex relative pt-11 pb-[3.6625rem] flex-col justify-start items-start gap-[1.375rem] grid-cols-[1fr] grid-rows-[auto_auto] [grid-auto-columns:1fr] max-lg:pt-12 max-md:pb-8 max-lg:gap-6 md:max-lg:pb-16 2xl:pt-12 2xl:pb-16 2xl:gap-6" id="getting-started">
+                    <div className="flex relative pt-11 pb-[3.6625rem] flex-col justify-start items-start gap-[1.375rem] grid-cols-[1fr] grid-rows-[auto_auto] [grid-auto-columns:1fr] max-lg:pt-12 max-md:pb-8 max-lg:gap-6 md:max-lg:pb-16 2xl:pt-12 2xl:pb-16 2xl:gap-6 max-md:scroll-mt-[6.5rem] md:max-lg:scroll-mt-[7.25rem]" id="getting-started">
                       <section className="w-full block max-w-[293.1px] max-lg:max-w-80 2xl:max-w-80">
                         <div className="flex items-center gap-3">
                           <h3 className="block text-[1.625rem] leading-[2.125rem] font-bold tracking-[-0.4px] max-md:text-xl max-md:leading-[1.75rem] max-md:tracking-[-0.2px] md:max-lg:text-2xl md:max-lg:leading-[2rem] md:max-lg:tracking-[-0.4px] 2xl:text-3xl 2xl:leading-9 2xl:tracking-[-0.5px]">
@@ -389,7 +387,7 @@ export default function Page() {
                         </article>
                       </div>
                     </div>
-                    <div className="flex relative pt-11 pb-[3.6625rem] flex-col justify-start items-start gap-[1.375rem] grid-cols-[1fr] grid-rows-[auto_auto] [grid-auto-columns:1fr] max-lg:pt-12 max-md:pb-8 max-lg:gap-6 md:max-lg:pb-16 2xl:pt-12 2xl:pb-16 2xl:gap-6" id="check-ins">
+                    <div className="flex relative pt-11 pb-[3.6625rem] flex-col justify-start items-start gap-[1.375rem] grid-cols-[1fr] grid-rows-[auto_auto] [grid-auto-columns:1fr] max-lg:pt-12 max-md:pb-8 max-lg:gap-6 md:max-lg:pb-16 2xl:pt-12 2xl:pb-16 2xl:gap-6 max-md:scroll-mt-[6.5rem] md:max-lg:scroll-mt-[7.25rem]" id="check-ins">
                       <section className="w-full block max-w-[293.1px] max-lg:max-w-80 2xl:max-w-80">
                         <div className="flex items-center gap-3">
                           <h3 className="block text-[1.625rem] leading-[2.125rem] font-bold tracking-[-0.4px] max-md:text-xl max-md:leading-[1.75rem] max-md:tracking-[-0.2px] md:max-lg:text-2xl md:max-lg:leading-[2rem] md:max-lg:tracking-[-0.4px] 2xl:text-3xl 2xl:leading-9 2xl:tracking-[-0.5px]">
@@ -503,7 +501,7 @@ export default function Page() {
                         </article>
                       </div>
                     </div>
-                    <div className="flex relative pt-11 pb-[3.6625rem] flex-col justify-start items-start gap-[1.375rem] grid-cols-[1fr] grid-rows-[auto_auto] [grid-auto-columns:1fr] max-lg:pt-12 max-md:pb-8 max-lg:gap-6 md:max-lg:pb-16 2xl:pt-12 2xl:pb-16 2xl:gap-6" id="emergencies">
+                    <div className="flex relative pt-11 pb-[3.6625rem] flex-col justify-start items-start gap-[1.375rem] grid-cols-[1fr] grid-rows-[auto_auto] [grid-auto-columns:1fr] max-lg:pt-12 max-md:pb-8 max-lg:gap-6 md:max-lg:pb-16 2xl:pt-12 2xl:pb-16 2xl:gap-6 max-md:scroll-mt-[6.5rem] md:max-lg:scroll-mt-[7.25rem]" id="emergencies">
                       <section className="w-full block max-w-[293.1px] max-lg:max-w-80 2xl:max-w-80">
                         <div className="flex items-center gap-3">
                           <h3 className="block text-[1.625rem] leading-[2.125rem] font-bold tracking-[-0.4px] whitespace-nowrap max-md:text-xl max-md:leading-[1.75rem] max-md:tracking-[-0.2px] md:max-lg:text-2xl md:max-lg:leading-[2rem] md:max-lg:tracking-[-0.4px] 2xl:text-3xl 2xl:leading-9 2xl:tracking-[-0.5px]">
@@ -583,7 +581,7 @@ export default function Page() {
                         </article>
                       </div>
                     </div>
-                    <div className="flex relative pt-11 pb-[3.6625rem] flex-col justify-start items-start gap-[1.375rem] grid-cols-[1fr] grid-rows-[auto_auto] [grid-auto-columns:1fr] max-lg:pt-12 max-md:pb-8 max-lg:gap-6 md:max-lg:pb-16 2xl:pt-12 2xl:pb-16 2xl:gap-6" id="data-privacy">
+                    <div className="flex relative pt-11 pb-[3.6625rem] flex-col justify-start items-start gap-[1.375rem] grid-cols-[1fr] grid-rows-[auto_auto] [grid-auto-columns:1fr] max-lg:pt-12 max-md:pb-8 max-lg:gap-6 md:max-lg:pb-16 2xl:pt-12 2xl:pb-16 2xl:gap-6 max-md:scroll-mt-[6.5rem] md:max-lg:scroll-mt-[7.25rem]" id="data-privacy">
                       <section className="w-full block max-w-[293.1px] max-lg:max-w-80 2xl:max-w-80">
                         <div className="flex items-center gap-3">
                           <h3 className="block text-[1.625rem] leading-[2.125rem] font-bold tracking-[-0.4px] max-md:text-xl max-md:leading-[1.75rem] max-md:tracking-[-0.2px] md:max-lg:text-2xl md:max-lg:leading-[2rem] md:max-lg:tracking-[-0.4px] 2xl:text-3xl 2xl:leading-9 2xl:tracking-[-0.5px]">
@@ -663,7 +661,7 @@ export default function Page() {
                         </article>
                       </div>
                     </div>
-                    <div className="flex relative pt-11 pb-[3.6625rem] flex-col justify-start items-start gap-[1.375rem] grid-cols-[1fr] grid-rows-[auto_auto] [grid-auto-columns:1fr] max-lg:pt-12 max-md:pb-8 max-lg:gap-6 md:max-lg:pb-16 2xl:pt-12 2xl:pb-16 2xl:gap-6" id="hospitals">
+                    <div className="flex relative pt-11 pb-[3.6625rem] flex-col justify-start items-start gap-[1.375rem] grid-cols-[1fr] grid-rows-[auto_auto] [grid-auto-columns:1fr] max-lg:pt-12 max-md:pb-8 max-lg:gap-6 md:max-lg:pb-16 2xl:pt-12 2xl:pb-16 2xl:gap-6 max-md:scroll-mt-[6.5rem] md:max-lg:scroll-mt-[7.25rem]" id="hospitals">
                       <section className="w-full block max-w-[293.1px] max-lg:max-w-80 2xl:max-w-80">
                         <div className="flex items-center gap-3">
                           <h3 className="block text-[1.625rem] leading-[2.125rem] font-bold tracking-[-0.4px] max-md:text-xl max-md:leading-[1.75rem] max-md:tracking-[-0.2px] md:max-lg:text-2xl md:max-lg:leading-[2rem] md:max-lg:tracking-[-0.4px] 2xl:text-3xl 2xl:leading-9 2xl:tracking-[-0.5px]">

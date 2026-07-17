@@ -8,7 +8,7 @@ import ChangesToThisSection from "./sections/changes-to-this-section";
 export default function Page() {
   return (
     <>
-      <Navbar light showBanner={false} />
+      <Navbar light="lg" showBanner={false} />
       <div className="block relative" data-id="n30">
         <HeroSection />
         <ChangesToThisSection />
