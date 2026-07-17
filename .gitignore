@@ -20,3 +20,28 @@ dist-server
 .env.*
 !.env.example
 .vercel
+
+# Local scratch scripts (root-level _-prefixed one-offs: screenshot/measure helpers)
+/_*.mjs
+/_*.js
+/_*.ts
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.vscode
+.idea
+*.swp
+*~
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build / tooling caches
+*.tsbuildinfo
+.vite
+.cache
