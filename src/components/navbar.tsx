@@ -36,40 +36,54 @@ export default function Navbar({ light = false, showBanner = true }: { light?: b
   const dotsAtLg = light ? DOT_GRID_DARK : DOT_GRID;
   const [drawerOpen, setDrawerOpen] = useState(false);
 
-  // Swipe-to-dismiss for the side drawer (touch screens): drag the panel to the
-  // right to close it, following the finger, with a snap-back / snap-shut on release.
+  // Swipe-to-dismiss for the side drawer: drag the panel to the right to close
+  // it, following the pointer, with a snap-back / snap-shut on release. Uses
+  // Pointer Events (not Touch) so it works uniformly across touch, pen, and
+  // mouse — a mouse/trackpad drag dismisses too, which is also why it's testable
+  // on desktop and not only on a real phone.
   const panelRef = useRef<HTMLDivElement>(null);
-  const dragStart = useRef<{ x: number; y: number } | null>(null);
+  const drag = useRef<{ startX: number; startY: number; lastX: number; lastT: number; vx: number } | null>(null);
   const dragAxis = useRef<"h" | "v" | null>(null);
   const [dragX, setDragX] = useState(0);
   const [dragging, setDragging] = useState(false);
 
-  const onDrawerTouchStart = (e: React.TouchEvent) => {
-    const t = e.touches[0];
-    dragStart.current = { x: t.clientX, y: t.clientY };
+  const onDrawerPointerDown = (e: React.PointerEvent) => {
+    if (e.pointerType === "mouse" && e.button !== 0) return; // primary button only
+    drag.current = { startX: e.clientX, startY: e.clientY, lastX: e.clientX, lastT: e.timeStamp, vx: 0 };
     dragAxis.current = null;
   };
-  const onDrawerTouchMove = (e: React.TouchEvent) => {
-    if (!dragStart.current) return;
-    const t = e.touches[0];
-    const dx = t.clientX - dragStart.current.x;
-    const dy = t.clientY - dragStart.current.y;
+  const onDrawerPointerMove = (e: React.PointerEvent) => {
+    const d = drag.current;
+    if (!d) return;
+    const dx = e.clientX - d.startX;
+    const dy = e.clientY - d.startY;
     if (dragAxis.current === null) {
       if (Math.abs(dx) < 6 && Math.abs(dy) < 6) return; // wait for a clear intent
       dragAxis.current = Math.abs(dx) > Math.abs(dy) ? "h" : "v";
-      if (dragAxis.current === "h") setDragging(true);
+      // Capture the pointer so the drag keeps tracking even if it slips off the
+      // panel or runs over a link/image mid-swipe.
+      if (dragAxis.current === "h") {
+        setDragging(true);
+        panelRef.current?.setPointerCapture(e.pointerId);
+      }
     }
     if (dragAxis.current !== "h") return; // vertical → let it be (scroll)
+    const dt = e.timeStamp - d.lastT;
+    if (dt > 0) d.vx = (e.clientX - d.lastX) / dt; // signed px/ms, for flick detection
+    d.lastX = e.clientX;
+    d.lastT = e.timeStamp;
     setDragX(Math.max(0, dx)); // only rightward (closing) drag
   };
-  const onDrawerTouchEnd = () => {
-    if (dragAxis.current === "h") {
+  const onDrawerPointerEnd = () => {
+    const d = drag.current;
+    if (dragAxis.current === "h" && d) {
       const w = panelRef.current?.offsetWidth ?? 320;
-      if (dragX > w * 0.3) setDrawerOpen(false); // past a third → dismiss
+      // Dismiss on a decisive rightward flick, or when dragged past a third.
+      if (dragX > w * 0.3 || d.vx > 0.5) setDrawerOpen(false);
       setDragging(false);
       setDragX(0); // snap back (open) or animate the rest of the way shut
     }
-    dragStart.current = null;
+    drag.current = null;
     dragAxis.current = null;
   };
 
@@ -105,9 +119,11 @@ export default function Navbar({ light = false, showBanner = true }: { light?: b
       )}
       <div className={cn("flex relative z-9999 py-[1.375rem] px-[4.125rem] justify-center items-center gap-[7.3px] max-lg:gap-2 max-lg:mx-4 max-lg:mt-2 max-lg:rounded-full max-lg:[backdrop-filter:blur(24px)] max-md:py-2 max-md:px-3 md:max-lg:py-2.5 md:max-lg:px-4 2xl:py-6 2xl:px-18 2xl:gap-2", lightBelowLg ? "max-lg:bg-background" : "max-lg:bg-clr-0")}>
         <a
-          className={cn("w-[153.9px] h-[1.3125rem] flex absolute top-[40.7px] left-1/2 z-1 min-w-0 max-w-full justify-center items-center shrink-0 transform-[translate(-50%,-10.4688px)] cursor-pointer transition-opacity duration-500 ease-in-out max-md:w-28 max-md:h-4 max-lg:transform-[none] max-lg:static max-lg:top-auto max-lg:left-auto max-lg:z-[initial] md:max-lg:w-36 md:max-lg:h-5 2xl:w-42 2xl:h-[22.9px] 2xl:top-[44.5px] 2xl:left-1/2 2xl:transform-[translate(-50%,-11.4297px)]", scrolled && "lg:opacity-0 lg:pointer-events-none")}
+          className={cn("w-[153.9px] h-[1.3125rem] flex absolute top-[40.7px] left-1/2 z-1 min-w-0 max-w-full justify-center items-center shrink-0 transform-[translate(-50%,-10.4688px)] cursor-pointer transition-opacity duration-500 ease-in-out max-md:w-auto max-md:h-4 max-lg:transform-[none] max-lg:static max-lg:top-auto max-lg:left-auto max-lg:z-[initial] max-lg:justify-start max-lg:gap-2 md:max-lg:w-auto md:max-lg:h-5 2xl:w-42 2xl:h-[22.9px] 2xl:top-[44.5px] 2xl:left-1/2 2xl:transform-[translate(-50%,-11.4297px)]", scrolled && "lg:opacity-0 lg:pointer-events-none")}
           href="/"
         >
+          {/* Icon mark: only on mobile/tablet (below lg); the lg+ navbar keeps the wordmark alone. */}
+          <img decoding="async" className={cn("w-auto h-5 block shrink-0 align-middle lg:hidden md:max-lg:h-6", logoInvert)} alt="" aria-hidden="true" src="/assets/images/omaya-logo-mark-white.svg" />
           <img decoding="async" className={cn("w-auto h-[1.3125rem] block relative top-[0.1875rem] -bottom-[0.1875rem] max-w-full overflow-clip align-middle max-md:h-3.5 max-md:top-[0.15rem] max-md:-bottom-[0.15rem] max-lg:top-[0.2rem] max-lg:-bottom-[0.2rem] md:max-lg:h-[1.125rem] 2xl:h-[1.4375rem] 2xl:top-[0.2rem] 2xl:-bottom-[0.2rem]", logoInvert)} alt="Omaya Care" src="/assets/images/omaya-care-wordmark.svg" />
         </a>
         <div className={cn("w-full h-[37.5px] flex max-w-full rounded-full justify-between items-center [backdrop-filter:blur(0px)] transition-opacity duration-500 ease-in-out max-md:h-8 md:max-lg:h-9 max-lg:justify-end max-lg:rounded-[initial] max-lg:[backdrop-filter:initial] 2xl:h-[2.5625rem]", scrolled && "lg:opacity-0 lg:pointer-events-none")}>
@@ -167,11 +183,12 @@ export default function Navbar({ light = false, showBanner = true }: { light?: b
         {/* Drawer panel */}
         <div
           ref={panelRef}
-          onTouchStart={onDrawerTouchStart}
-          onTouchMove={onDrawerTouchMove}
-          onTouchEnd={onDrawerTouchEnd}
+          onPointerDown={onDrawerPointerDown}
+          onPointerMove={onDrawerPointerMove}
+          onPointerUp={onDrawerPointerEnd}
+          onPointerCancel={onDrawerPointerEnd}
           style={dragging ? { transform: `translateX(${dragX}px)`, transition: "none" } : undefined}
-          className={cn("absolute right-0 top-0 bottom-0 w-[min(380px,90vw)] bg-background rounded-l-3xl flex flex-col transition-transform duration-300 ease-in-out overflow-hidden touch-pan-y", drawerOpen ? "translate-x-0" : "translate-x-full")}
+          className={cn("absolute right-0 top-0 bottom-0 w-[min(380px,90vw)] bg-background rounded-l-3xl flex flex-col transition-transform duration-300 ease-in-out overflow-hidden touch-pan-y select-none", drawerOpen ? "translate-x-0" : "translate-x-full")}
         >
           {/* Header */}
           <div className="flex items-center justify-between px-6 pt-6 pb-4 shrink-0">
