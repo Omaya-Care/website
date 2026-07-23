@@ -89,7 +89,6 @@ export const Logo_styles: LogoStyles[] = [
 ];
 export const Logo2_styles: Logo2Styles[] = [
     { className: "opacity-60 max-w-[11.25rem] h-[5.375rem]" },
-    { className: "opacity-60 max-w-[8.75rem]" },
     { className: "opacity-60 max-w-[7.5rem]" },
     { className: "opacity-60 max-w-[11.25rem]" }
 ];

@@ -26,7 +26,6 @@ export type Logos2Item = {
 };
 export const logos2: Logos2Item[] = [
     { alt: "UG HCI Lab", imgSrc: "/assets/images/logo-ug-hci.png" },
-    { alt: "Solis Hospital", imgSrc: "/assets/images/logo-solis.png" },
     { alt: "Telecel", imgSrc: "/assets/images/logo-telecel.png" },
     { alt: "Nova Surgery Center", imgSrc: "/assets/images/logo-nova-sc.png" }
 ];

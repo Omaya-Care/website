@@ -12,7 +12,6 @@ export const Logo_cids: string[][] = [
 ];
 export const Logo2_cids: string[][] = [
     ["n74"],
-    ["n75"],
     ["n76"],
     ["n77"]
 ];
